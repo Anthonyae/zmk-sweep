@@ -43,9 +43,9 @@
 #define MEH LS(LA(LCTRL))
 
 // Home row speed settings 
-#define hms_base_low_resistance_keycaps 1000
+#define hms_base_low_resistance_keycaps 5000
 #define hms_base_high_resistance_keycaps 200
-#define hms_base 1000
+#define hms_base 5000
 #define HMS_VVSLO (hms_base + 300)
 #define HMS_VSLO (hms_base + 100)
 #define HMS_SLOW (hms_base + 50)
