@@ -42,13 +42,13 @@
 // global keys
 #define HYPER LG(LS(LA(LCTRL)))
 #define MEH LS(LA(LCTRL))
-#define HIKE LS(LA(LG))
+#define HIKE LG(LA(LCTRL))
 #define HALT LG(LA)
 
 // Home row speed settings 
 #define hms_base_low_resistance_keycaps 500
 #define hms_base_high_resistance_keycaps 200
-#define hms_base 500
+#define hms_base 500a 
 #define HMS_VVSLO (hms_base + 300)
 #define HMS_VSLO (hms_base + 100)
 #define HMS_SLOW (hms_base + 50)
