@@ -42,7 +42,7 @@
 // global keys
 #define HYPER LG(LS(LA(LCTRL)))
 #define MEH LS(LA(LCTRL))
-#define HIKE LS(LG(LA))
+#define HIKE LS(LA(LG))
 #define HALT LG(LA)
 
 // Home row speed settings 
