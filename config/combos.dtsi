@@ -29,7 +29,7 @@ compatible = "zmk,combos";
 compatible = "zmk,combos";
     switch_base_layer {
     timeout-ms = <30>;
-    key-positions = <4 14 24>;
+    key-positions = <6 7 8 9>;
     bindings = <&to DEFAULT>;
     layers = <0 1 2>;
 };
