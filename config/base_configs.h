@@ -44,4 +44,3 @@
 #define MEH LS(LA(LCTRL))
 #define HIKE LG(LA(LCTRL))
 #define HALT LG(LA) 
-
