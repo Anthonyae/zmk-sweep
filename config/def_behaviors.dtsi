@@ -1,7 +1,17 @@
-#include "base_configs.h"
+// Home row speed settings 
+#define hms_base_low_resistance_keycaps 500
+#define hms_base_high_resistance_keycaps 200
+#define hms_base 500
+#define HMS_VVSLO (hms_base + 300)
+#define HMS_VSLO (hms_base + 100)
+#define HMS_SLOW (hms_base + 50)
+#define HMS_EXP  (hms_base + 20)
+#define HMS_MEDI (hms_base - 50)
+#define HMS_FAST (hms_base - 150)
+#define HMS_VFAS 130
 
 
-            hm: homerow_mods {
+        hm: homerow_mods {
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOMEROW_MODS";
                 #binding-cells = <2>;
@@ -9,10 +19,10 @@
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
-            };
-            
+        };
+        
 
-            hm_exp: homerow_mods {
+        hm_exp: homerow_mods {
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOMEROW_MODS";
                 #binding-cells = <2>;
@@ -20,50 +30,49 @@
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
-            };
-            
-            hm_vvslow: homerow_mods {
-                    compatible = "zmk,behavior-hold-tap";
-                    label = "HOMEROW_MODS";
-                    #binding-cells = <2>;
-                    tapping-term-ms = <HMS_VVSLO>;
-                    quick-tap-ms = <0>;
-                    flavor = "tap-preferred";
-                    bindings = <&kp>, <&kp>;
-            };
-            
-            hm_vslow: homerow_mods {
-                    compatible = "zmk,behavior-hold-tap";
-                    label = "HOMEROW_MODS";
-                    #binding-cells = <2>;
-                    tapping-term-ms = <HMS_VSLO>;
-                    quick-tap-ms = <0>;
-                    flavor = "tap-preferred";
-                    bindings = <&kp>, <&kp>;
-            };
-            
-            hm_fast: homerow_mods {
-                    compatible = "zmk,behavior-hold-tap";
-                    label = "HO
-                    ROW_MODS";
-                    #binding-cells = <2>;
-                    tapping-term-ms = <HMS_FAST>;
-                    quick-tap-ms = <0>;
-                    flavor = "tap-preferred";
-                    bindings = <&kp>, <&kp>;
-            };
+        };
+        
+        hm_vvslow: homerow_mods {
+                compatible = "zmk,behavior-hold-tap";
+                label = "HOMEROW_MODS";
+                #binding-cells = <2>;
+                tapping-term-ms = <HMS_VVSLO>;
+                quick-tap-ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+        };
+        
+        hm_vslow: homerow_mods {
+                compatible = "zmk,behavior-hold-tap";
+                label = "HOMEROW_MODS";
+                #binding-cells = <2>;
+                tapping-term-ms = <HMS_VSLO>;
+                quick-tap-ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+        };
+        
+        hm_fast: homerow_mods {
+                compatible = "zmk,behavior-hold-tap";
+                label = "HOMEROW_MODS";
+                #binding-cells = <2>;
+                tapping-term-ms = <HMS_FAST>;
+                quick-tap-ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+        };
 
-            hm_vfast: homerow_mods {
-                    compatible = "zmk,behavior-hold-tap";
-                    label = "HOMEROW_MODS";
-                    #binding-cells = <2>;
-                    tapping-term-ms = <HMS_VFAS>;
-                    quick-tap-ms = <0>;
-                    flavor = "tap-preferred";
-                    bindings = <&kp>, <&kp>;
-            };
+        hm_vfast: homerow_mods {
+                compatible = "zmk,behavior-hold-tap";
+                label = "HOMEROW_MODS";
+                #binding-cells = <2>;
+                tapping-term-ms = <HMS_VFAS>;
+                quick-tap-ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+        };
 
-            ltms: layer_tap_mod {
+        ltms: layer_tap_mod {
                 compatible = "zmk,behavior-hold-tap";
                 label = "ltms";
                 #binding-cells = <2>;
@@ -71,32 +80,31 @@
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&mo>, <&kp>;
-                    };
+        };
 
-            mmv_constant: mouse_mod {
-                    compatible = "zmk,behavior-mouse-move";
-                    label = "mouse_move_constant";
-                    #binding-cells = <1>;
-                    delay-ms = <0>;
-                    time-to-max-speed-ms = <0>;
-                    acceleration-exponent = <0>;
-            };
+        mmv_constant: mouse_mod {
+                compatible = "zmk,behavior-mouse-move";
+                label = "mouse_move_constant";
+                #binding-cells = <1>;
+                delay-ms = <0>;
+                time-to-max-speed-ms = <0>;
+                acceleration-exponent = <0>;
+        };
 
-            mwh_acceleration_fast: mouse_scroll_mod_fast {
+        mwh_acceleration_fast: mouse_scroll_mod_fast {
                 compatible = "zmk,behavior-mouse-scroll";
                 label = "MOUSE_SCROLL";
                 #binding-cells = <1>;
                 delay-ms = <0>;
                 time-to-max-speed-ms = <2000>;
                 acceleration-exponent = <1>;
-            }; 
+        }; 
 
-            mwh_accel_crawl: mouse_scroll_mod_slow {
+        mwh_accel_crawl: mouse_scroll_mod_slow {
                 compatible = "zmk,behavior-mouse-scroll";
                 label = "MOUSE_SCROLL";
                 #binding-cells = <1>;
                 delay-ms = <0>;
                 time-to-max-speed-ms = <0>;
                 acceleration-exponent = <0>;
-            };
-        
+        };
