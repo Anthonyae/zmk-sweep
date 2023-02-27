@@ -32,8 +32,7 @@
         behaviors {
                 #include "def_behaviors.dtsi"
         };
- };
-
+ 
 
         keymap {
                 compatible = "zmk,keymap";
