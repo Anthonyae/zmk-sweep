@@ -48,11 +48,11 @@
 // Home row speed settings 
 #define hms_base_low_resistance_keycaps 500
 #define hms_base_high_resistance_keycaps 200
-#define hms_base 500
+#define hms_base 1000
 #define HMS_VVSLO (hms_base + 300)
 #define HMS_VSLO (hms_base + 100)
-#define HMS_SLOW (hms_base + 50)
-#define HMS_EXP  (hms_base + 20)
-#define HMS_MEDI (hms_base - 50)
+// #define HMS_SLOW (hms_base + 50)
+// #define HMS_EXP  (hms_base + 20)
+// #define HMS_MEDI (hms_base - 50)
 #define HMS_FAST (hms_base - 150)
 #define HMS_VFAS 130
