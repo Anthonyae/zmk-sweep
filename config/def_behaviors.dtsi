@@ -36,7 +36,7 @@
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOMEROW_MODS";
                 #binding-cells = <2>;
-                tapping-term-ms = <HMS_VVSLO>;
+                tapping-term-ms = <800>;
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
@@ -46,7 +46,7 @@
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOMEROW_MODS";
                 #binding-cells = <2>;
-                tapping-term-ms = <HMS_VSLO>;
+                tapping-term-ms = <600>;
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
@@ -56,7 +56,7 @@
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOMEROW_MODS";
                 #binding-cells = <2>;
-                tapping-term-ms = <HMS_SLOW>;
+                tapping-term-ms = <500>;
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
