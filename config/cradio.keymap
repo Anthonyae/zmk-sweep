@@ -30,7 +30,7 @@
         }; 
 
         behaviors {
-            #include "def_behaviors.dtsi"
+            #include "user_behaviors.dtsi"
         };
 
 
