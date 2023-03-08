@@ -73,7 +73,7 @@ combo_esc_left {
 combo_esc_right {
     timeout-ms = <20>;
     key-positions = <15 16>;
-    bindings = <&kp ESC>, <&delay 50>, <&kp ESC>;
+    bindings = <&kp ESC>, <&kp ESC>;
     layers = <0 1 2>;
 };
 
