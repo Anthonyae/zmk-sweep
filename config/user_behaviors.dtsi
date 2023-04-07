@@ -22,7 +22,7 @@
         };
         
         
-        hm_gq: homerow_mods {   
+        hm_gq: homerow_mods_gq {   
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOMEROW_MODS_gq";
                 #binding-cells = <2>;
@@ -33,7 +33,7 @@
                 bindings = <&kp>, <&kp>;
         };
         
-        hm_vvslow: homerow_mods {
+        hm_vvslow: homerow_mods_vvslow {
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOMEROW_MODS_vvslow";
                 #binding-cells = <2>;
@@ -43,7 +43,7 @@
                 bindings = <&kp>, <&kp>;
         };
         
-        hm_vslow: homerow_mods {
+        hm_vslow: homerow_mods_vslow {
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOMEROW_MODS_vslow";
                 #binding-cells = <2>;
@@ -54,7 +54,7 @@
                 bindings = <&kp>, <&kp>;
         };
 
-        hm_slow: homerow_mods {
+        hm_slow: homerow_mods_slow {
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOMEROW_MODS_slow";
                 #binding-cells = <2>;
@@ -64,7 +64,7 @@
                 bindings = <&kp>, <&kp>;
         };
         
-        hm_fast: homerow_mods {
+        hm_fast: homerow_mods_fast {
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOMEROW_MODS_fast";
                 #binding-cells = <2>;
@@ -74,7 +74,7 @@
                 bindings = <&kp>, <&kp>;
         };
 
-        hm_vfast: homerow_mods {
+        hm_vfast: homerow_mods_vfast {
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOMEROW_MODS_vfast";
                 #binding-cells = <2>;
