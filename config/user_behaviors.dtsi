@@ -13,7 +13,7 @@
 
         hm: homerow_mods {
                 compatible = "zmk,behavior-hold-tap";
-                label = "HOMEROW_MODS_hm";
+                label = "HOMEROW_MODS";
                 #binding-cells = <2>;
                 tapping-term-ms = <3000>;
                 quick-tap-ms = <0>;
@@ -24,7 +24,7 @@
         
         hm_gq: homerow_mods_gq {   
                 compatible = "zmk,behavior-hold-tap";
-                label = "HOMEROW_MODS_gq";
+                label = "HOMEROW_MODS";
                 #binding-cells = <2>;
                 tapping-term-ms = <800>;
                 quick-tap-ms = <175>;
@@ -35,7 +35,7 @@
         
         hm_vvslow: homerow_mods_vvslow {
                 compatible = "zmk,behavior-hold-tap";
-                label = "HOMEROW_MODS_vvslow";
+                label = "HOMEROW_MODS";
                 #binding-cells = <2>;
                 tapping-term-ms = <800>;
                 quick-tap-ms = <0>;
@@ -45,7 +45,7 @@
         
         hm_vslow: homerow_mods_vslow {
                 compatible = "zmk,behavior-hold-tap";
-                label = "HOMEROW_MODS_vslow";
+                label = "HOMEROW_MODS";
                 #binding-cells = <2>;
                 tapping-term-ms = <600>;
                 quick-tap-ms = <125>;
@@ -56,7 +56,7 @@
 
         hm_slow: homerow_mods_slow {
                 compatible = "zmk,behavior-hold-tap";
-                label = "HOMEROW_MODS_slow";
+                label = "HOMEROW_MODS";
                 #binding-cells = <2>;
                 tapping-term-ms = <500>;
                 quick-tap-ms = <0>;
@@ -66,7 +66,7 @@
         
         hm_fast: homerow_mods_fast {
                 compatible = "zmk,behavior-hold-tap";
-                label = "HOMEROW_MODS_fast";
+                label = "HOMEROW_MODS";
                 #binding-cells = <2>;
                 tapping-term-ms = <HMS_FAST>;
                 quick-tap-ms = <0>;
@@ -76,7 +76,7 @@
 
         hm_vfast: homerow_mods_vfast {
                 compatible = "zmk,behavior-hold-tap";
-                label = "HOMEROW_MODS_vfast";
+                label = "HOMEROW_MODS";
                 #binding-cells = <2>;
                 tapping-term-ms = <HMS_VFAS>;
                 quick-tap-ms = <0>;
