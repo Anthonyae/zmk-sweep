@@ -1,6 +1,4 @@
 
-
-// General purpose 
     arrow_single: arrow_single {
         label = "arrow_single";
         compatible = "zmk,behavior-macro";
@@ -94,7 +92,7 @@
         ;
     };
 
-// system shortcuts
+
     macro_undo: macro_undo {
         compatible = "zmk,behavior-macro";
         label = "macro_undo";
