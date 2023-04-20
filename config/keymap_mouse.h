@@ -1,9 +1,3 @@
-/*
-* Mouse Settings Base layer
-*/
-#define U_MOUSE_MOVE_MAX 3200
-#define U_MOUSE_SCROLL_MAX 50
-
 #undef MOVE_UP
 #undef MOVE_DOWN
 #undef MOVE_LEFT
@@ -12,6 +6,12 @@
 #undef SCROLL_DOWN
 #undef SCROLL_LEFT
 #undef SCROLL_RIGHT
+
+/*
+* Mouse Settings Base layer
+*/
+#define U_MOUSE_MOVE_MAX 3200
+#define U_MOUSE_SCROLL_MAX 75
 
 #define MOVE_UP MOVE_VERT(-U_MOUSE_MOVE_MAX)
 #define MOVE_DOWN MOVE_VERT(U_MOUSE_MOVE_MAX)

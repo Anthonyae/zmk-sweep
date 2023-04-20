@@ -18,7 +18,6 @@ switch_no_hm_layer {
     layers = <0 1 2>;
 };
 
-
 switch_base_layer {
     timeout-ms = <30>;
     key-positions = <0 1 2 3>;
@@ -32,6 +31,7 @@ switch_long_hm_layer {
     bindings = <&to DEFAULT_LONG_HM>;
     layers = <0 1 2>;
 };
+
 
 // Device settings
 
@@ -62,7 +62,6 @@ combo_bootloader_right {
     bindings = <&bootloader>;
     layers = <0 1 2>;
 };
-
 
 
 // Modifiers locks 
