@@ -1,10 +1,20 @@
 
 
 // General purpose 
+    arrow_single: arrow_single {
+        label = "arrow_single";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <30>;
+        tap-ms = <20>;
+        bindings = 
+            <&macro_press &kp LCTRL>
+            , <&macro_tap &kp Z>
+            , <&macro_release &kp LCTRL>
+        ;
+    };
 
     
-
-
 // system shortcuts
     macro_undo: macro_undo {
         compatible = "zmk,behavior-macro";
