@@ -12,7 +12,7 @@
 #define MOUSE_MEDIUM 10
 #define MOUSE_SLOW 11
 #define MOUSE_CRAWL 12
-
+#define NUMBER_TEST 13
 
 // global settings
 &mt {
