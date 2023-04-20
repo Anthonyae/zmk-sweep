@@ -11,7 +11,6 @@
 #define HMS_VFAS 130
 
 
-
         hm: homerow_mods {
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOMEROW_MODS";
@@ -85,8 +84,6 @@
                 bindings = <&kp>, <&kp>;
         };
 
-
-
         ltms: layer_tap_mod {
                 compatible = "zmk,behavior-hold-tap";
                 label = "ltms";
@@ -95,9 +92,7 @@
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&mo>, <&kp>;
-        };        
-  
-
+        };
 
         mmv_constant: mouse_mod {
                 compatible = "zmk,behavior-mouse-move";
@@ -107,8 +102,6 @@
                 time-to-max-speed-ms = <0>;
                 acceleration-exponent = <0>;
         };
-
-
 
         mwh_acceleration_fast: mouse_scroll_mod_fast {
                 compatible = "zmk,behavior-mouse-scroll";
@@ -127,5 +120,3 @@
                 time-to-max-speed-ms = <0>;
                 acceleration-exponent = <0>;
         };
-
-
