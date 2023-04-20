@@ -27,10 +27,7 @@
                      then-layer = <CONVENIENCE_LAYER>;
              };
 
-             tri_layer_three {
-                     if-layers = <FUNC NUMBER>;
-                     then-layer = <CONVENIENCE_LAYER>;
-             };
+             
         };
 
         macros {
