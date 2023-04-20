@@ -13,6 +13,7 @@
 #define MOUSE_SLOW 11
 #define MOUSE_CRAWL 12
 #define NUMBER_TEST 13
+#define CONVENIENCE_LAYER 14
 
 // global settings
 &mt {

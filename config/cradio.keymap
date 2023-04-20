@@ -23,6 +23,14 @@
             };
         };
 
+        conditional_layers {
+            compatible = "zmk,conditional-layers";
+            tri_layer {
+                    if-layers = <FUNC NAV>;
+                    then-layer = <CONVENIENCE_LAYER>;
+            };
+        };
+
         macros {
             #include "macros.dtsi"
         };
@@ -136,7 +144,7 @@
                 &kp DOT        	&kp COMMA      	&kp ASTRK      	&kp FSLH       	&kp F11        	               	&kp F12        	&kp PLUS       	&kp MINUS      	&kp UNDER      	&kp EQUAL      
                 &kp DOT        	&kp COMMA      	&kp ASTRK      	&kp FSLH       	&kp F11        	               	&kp F12        	&kp PLUS       	&kp MINUS      	&kp UNDER      	&kp EQUAL      
                                                                 &trans         	&trans         	               	&trans         	&trans         	               	               	               
-
+                                                                                        &trans           	&trans           	                 	&trans           	&trans           	                 	                 	                 
 
 
                 >; };											
