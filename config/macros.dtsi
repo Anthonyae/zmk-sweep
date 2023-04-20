@@ -30,7 +30,16 @@
             bindings = <&macro_tap &kp LBRC &kp RBRC &kp LEFT>
             ;
     };
-        
+
+    surround_paran: surround_paran {
+        label = "surround_paran";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <30>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp LPAR &kp RPAR &kp LEFT>
+        ;
+};
     
     surround_bracket: surround_bracket {
         label = "surround_bracket";
@@ -72,7 +81,19 @@
         ;
     };
 
-    
+    double_esc: double_esc {
+        label = "double_esc";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <30>;
+        tap-ms = <20>;
+        bindings = 
+            <&macro_tap &kp ESC>
+            , <&macro_wait_time 30>
+            , <&macro_tap &kp ESC>
+        ;
+    };
+
 // system shortcuts
     macro_undo: macro_undo {
         compatible = "zmk,behavior-macro";
