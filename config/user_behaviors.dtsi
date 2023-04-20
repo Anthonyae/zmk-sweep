@@ -10,7 +10,7 @@
 #define HMS_FAST (hms_base - 150)
 #define HMS_VFAS 130
 
-// home row mods
+
 
         hm: homerow_mods {
                 compatible = "zmk,behavior-hold-tap";
@@ -85,7 +85,7 @@
                 bindings = <&kp>, <&kp>;
         };
 
-// layer settings 
+
 
         ltms: layer_tap_mod {
                 compatible = "zmk,behavior-hold-tap";
@@ -98,9 +98,6 @@
         };        
   
 
-// mouse settings
-
-// this changes the movement speed of the mouse
 
         mmv_constant: mouse_mod {
                 compatible = "zmk,behavior-mouse-move";
@@ -112,7 +109,7 @@
         };
 
 
-// this changes the scrolling behavior
+
         mwh_acceleration_fast: mouse_scroll_mod_fast {
                 compatible = "zmk,behavior-mouse-scroll";
                 label = "MOUSE_SCROLL";
