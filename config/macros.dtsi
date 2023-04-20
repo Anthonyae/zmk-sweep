@@ -7,10 +7,7 @@
         #binding-cells = <0>;
         wait-ms = <30>;
         tap-ms = <20>;
-        bindings = 
-            <&macro_press &kp LCTRL>
-            , <&macro_tap &kp Z>
-            , <&macro_release &kp LCTRL>
+        bindings = <&macro_tap &kp minus &kp GREATER_THAN>
         ;
     };
 
