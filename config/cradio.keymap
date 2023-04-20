@@ -38,27 +38,26 @@
 
         keymap {
                 compatible = "zmk,keymap";
-                
-                default_layer {
-                        bindings = <									
+
+                default_layer {										
                 &kp Q            	&kp W            	&kp E            	&kp R            	&kp T            	                 	&kp Y            	&kp U            	&kp I            	&kp O            	&kp P            
                 &hm_gq LCTRL A   	&hm_gq LSHFT S   	&hm_gq LGUI D    	&hm_gq LALT F    	&hm_gq HIKE G    	                 	&hm_gq HIKE H    	&hm_gq RALT J    	&hm_gq RGUI K    	&hm_gq RSHFT L   	&hm_gq RCTRL APOS
-                &ltms UTILITY Z  	&kp X            	&kp C            	&&hm_gq MEH V    	&kp B            	                 	&kp N            	&&hm_gq MEH M    	&kp COMMA        	&kp DOT          	&kp FSLH         
+                &ltms UTILITY Z  	&kp X            	&kp C            	&hm_gq MEH V     	&kp B            	                 	&kp N            	&hm_gq MEH M     	&kp COMMA        	&kp DOT          	&kp FSLH         
                                                                                         &lt SYMBOL BSPC  	&mo NUMBER       	                 	&lt FUNC ENTER   	&lt NAV SPACE    	                 	                 	                 
                 >; };										
                 default_no_hm_layer {										
                         bindings = <									
                 &kp Q               	&kp W               	&kp E               	&kp R               	&kp T               	                    	&kp Y               	&kp U               	&kp I               	&kp O               	&kp P               
-                &hm_slow LCTRL A    	&kp S               	&kp D               	&kp F               	&&hm_gq HIKE G      	                    	&&hm_gq HIKE H      	&kp J               	&kp K               	&kp L               	&hm_vfast RCTRL APOS
-                &kp Z               	&kp X               	&kp C               	&&hm_gq MEH V       	&kp B               	                    	&kp N               	&&hm_gq MEH M       	&kp COMMA           	&kp DOT             	&kp FSLH            
+                &hm_slow LCTRL A    	&kp S               	&kp D               	&kp F               	&hm_gq HIKE G       	                    	&hm_gq HIKE H       	&kp J               	&kp K               	&kp L               	&hm_vfast RCTRL APOS
+                &kp Z               	&kp X               	&kp C               	&hm_gq MEH V        	&kp B               	                    	&kp N               	&hm_gq MEH M        	&kp COMMA           	&kp DOT             	&kp FSLH            
                                                                                         &lt SYMBOL BSPC     	&mo NUMBER          	                    	&lt FUNC ENTER      	&lt NAV SPACE       	                    	                    	                    
                 >; };		                 	                 	                 	                 	                 	                 	                 	                 	                 
                 default_qt_hm_test_layer {										
                         bindings = <									
-                &kp Q                  	&kp W                  	&kp E                  	&kp R                  	&kp T                  	                       	&kp Y                  	&kp U                  	&kp I                  	&kp O                  	&kp P                  
-                &&hm_gq_test LCTRL A   	&&hm_gq_test LSHFT S   	&&hm_gq_test LGUI D    	&&hm_gq_test LALT F    	&&&hm_gq_test HIKE G   	                       	&&&hm_gq_test HIKE H   	&&hm_gq_test RALT J    	&&hm_gq_test RGUI K    	&&hm_gq_test RSHFT L   	&&hm_gq_test RCTRL APOS
-                &ltms UTILITY Z        	&kp X                  	&kp C                  	&&&hm_gq_test MEH V    	&kp B                  	                       	&kp N                  	&&&hm_gq_test MEH M    	&kp COMMA              	&kp DOT                	&kp FSLH               
-                                                                                        &lt SYMBOL BSPC        	&mo NUMBER             	                       	&lt FUNC ENTER         	&lt NAV SPACE          	                       	                       	                       
+                &kp Q                 	&kp W                 	&kp E                 	&kp R                 	&kp T                 	                      	&kp Y                 	&kp U                 	&kp I                 	&kp O                 	&kp P                 
+                &hm_gq_test LCTRL A   	&hm_gq_test LSHFT S   	&hm_gq_test LGUI D    	&hm_gq_test LALT F    	&hm_gq_test HIKE G    	                      	&hm_gq_test HIKE H    	&hm_gq_test RALT J    	&hm_gq_test RGUI K    	&hm_gq_test RSHFT L   	&hm_gq_test RCTRL APOS
+                &ltms UTILITY Z       	&kp X                 	&kp C                 	&hm_gq_test MEH V     	&kp B                 	                      	&kp N                 	&hm_gq_test MEH M     	&kp COMMA             	&kp DOT               	&kp FSLH              
+                                                                                        &lt SYMBOL BSPC       	&mo NUMBER            	                      	&lt FUNC ENTER        	&lt NAV SPACE         	                      	                      	                      
                 >; };										
                 symbol_layer {										
                         bindings = <									
@@ -76,7 +75,7 @@
                 >; };		                 	                 	                 	                 	                 	                 	                 	                 	                 
                 nav_layer {										
                         bindings = <									
-                &kp PSCRN   	&kp SLCK    	&macro_undo 	&macro_redo 	&kp INS     	            	&kp CAPS    	&kp HOME    	&kp UP      	&kp END     	&kp LBRC    
+                &kp PSCRN   	&kp SLCK    	&macro_redo 	&macro_undo 	&kp INS     	            	&kp CAPS    	&kp HOME    	&kp UP      	&kp END     	&kp LBRC    
                 &kp LCTRL   	&kp LSHFT   	&kp LGUI    	&kp LALT    	&kp DEL     	            	&caps_word  	&kp LEFT    	&kp DOWN    	&kp RIGHT   	&kp LPAR    
                 &macro_undo 	&macro_cut  	&macro_copy 	&macro_paste	&key_repeat 	            	&kp HOME    	&kp PG_DN   	&kp PG_UP   	&kp END     	&kp LBKT    
                                                                 &trans      	&trans      	            	&trans      	&trans      	            	            	            
@@ -136,6 +135,7 @@
                 &kp DOT        	&kp COMMA      	&kp ASTRK      	&kp FSLH       	&kp F11        	               	&kp F12        	&kp PLUS       	&kp MINUS      	&kp UNDER      	&kp EQUAL      
                 &kp DOT        	&kp COMMA      	&kp ASTRK      	&kp FSLH       	&kp F11        	               	&kp F12        	&kp PLUS       	&kp MINUS      	&kp UNDER      	&kp EQUAL      
                                                                 &trans         	&trans         	               	&trans         	&trans         	               	               	               
+
 
 
                 >; };											
