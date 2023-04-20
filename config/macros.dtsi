@@ -17,7 +17,7 @@
         #binding-cells = <0>;
         wait-ms = <30>;
         tap-ms = <20>;
-        bindings = <&macro_tap &kp equal &kp GREATER_THAN>
+        bindings = <&macro_tap &kp EQUAL &kp GREATER_THAN>
         ;
     };
 
@@ -31,6 +31,47 @@
             ;
     };
         
+    
+    surround_bracket: surround_bracket {
+        label = "surround_bracket";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <30>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp LBKT &kp RBKT &kp LEFT>
+        ;
+    };
+    
+    git_add: git_add {
+        label = "git_add";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <30>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp A &kp D &kp D &kp SPACE &kp DOT>
+        ;
+    };
+
+    git_commit: git_commit {
+        label = "ZMK_git_commit";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <30>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp M &kp SPACE &kp APOS &kp APOS &kp LEFT>
+        ;
+    };
+
+    git_push: git_push {
+        label = "ZMK_git_push";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <30>;
+        tap-ms = <20>;
+        bindings = <&MACRO_TAP &kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H >
+        ;
+    };
+
     
 // system shortcuts
     macro_undo: macro_undo {
