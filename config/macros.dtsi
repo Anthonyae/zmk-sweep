@@ -7,10 +7,30 @@
         #binding-cells = <0>;
         wait-ms = <30>;
         tap-ms = <20>;
-        bindings = <&macro_tap &kp minus &kp GREATER_THAN>
+        bindings = <&macro_tap &kp MINUS &kp GREATER_THAN>
         ;
     };
 
+    arrow_double: arrow_double {
+        label = "arrow_double";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <30>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp equal &kp GREATER_THAN>
+        ;
+    };
+
+    surround_brace: surround_brace {
+            label = "surround_brace";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <20>;
+            bindings = <&macro_tap &kp LBRC &kp RBRC &kp LEFT>
+            ;
+    };
+        
     
 // system shortcuts
     macro_undo: macro_undo {
