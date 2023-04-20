@@ -21,19 +21,13 @@
                     if-layers = <SYMBOL NAV>;
                     then-layer = <MOUSE_BASE>;
             };
-        };
-
-        conditional_layers {
-             compatible = "zmk,conditional-layers";
-             tri_layer {
+            
+             tri_layer_two {
                      if-layers = <FUNC NAV>;
                      then-layer = <CONVENIENCE_LAYER>;
              };
-        };
 
-        conditional_layers {
-             compatible = "zmk,conditional-layers";
-             tri_layer {
+             tri_layer_three {
                      if-layers = <FUNC NUMBER>;
                      then-layer = <CONVENIENCE_LAYER>;
              };
