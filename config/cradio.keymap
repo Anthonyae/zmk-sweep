@@ -23,6 +23,21 @@
             };
         };
 
+        conditional_layers {
+             compatible = "zmk,conditional-layers";
+             tri_layer {
+                     if-layers = <FUNC NAV>;
+                     then-layer = <CONVENIENCE_LAYER>;
+             };
+        };
+
+        conditional_layers {
+             compatible = "zmk,conditional-layers";
+             tri_layer {
+                     if-layers = <FUNC NUMBER>;
+                     then-layer = <CONVENIENCE_LAYER>;
+             };
+        };
 
         macros {
             #include "macros.dtsi"
@@ -138,9 +153,15 @@
                 &kp DOT        	&kp COMMA      	&kp ASTRK      	&kp FSLH       	&kp F11        	               	&kp F12        	&kp PLUS       	&kp MINUS      	&kp UNDER      	&kp EQUAL      
                                                                 &trans         	&trans         	               	&trans         	&trans         	               	               	               
                                                                                         &trans           	&trans           	                 	&trans           	&trans           	                 	                 	                 
+                >; };										
+                convenience_layer {										
+                        bindings = <									
+                &none            	&surround_bracket	&surround_paran  	&surround_bracket	&git_add         	                 	&none            	&none            	&none            	&none            	&none            
+                &none            	&none            	&none            	&none            	&git_commit      	                 	&none            	&none            	&none            	&none            	&none            
+                &none            	&none            	&none            	&none            	&git_push        	                 	&none            	&none            	&none            	&arrow_single    	&arrow_double    
+                                                                                        &trans           	&trans           	                 	&trans           	&trans           	                 	                 	                 
 
 
-                >; };											
-
+                >; };										
         };
  }; 
