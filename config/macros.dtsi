@@ -11,6 +11,14 @@
         bindings = <&macro_tap &kp minus &kp GREATER_THAN>;
     };
 
+    // conditional_layers {
+    //     compatible = "zmk,conditional-layers";
+    //     tri_layer {
+    //             if-layers = <FUNC NAV>;
+    //             then-layer = <CONVENIENCE_LAYER>;
+    //     };
+    // };
+    
 // >; };										
 // convenience_layer {										
 //         bindings = <									
@@ -81,7 +89,7 @@
     //     wait-ms = <30>;
     //     tap-ms = <20>;
     //     bindings = 
-    //         <&macro_tap &kp g &kp i &kp t &kp space &kp c &kp o &kp m &kp m &kp i &kp t &kp space &kp minus &kp m &kp space>
+    //         <&macro_tap &kp g &kp i &kp t &kp space &kp c &kp o &kp m &kp m &kp i &kp t &kp space &kp minus &kp m &kp space &kp APOS &kp APOS &kp LEFT>
     //         ;
     // };
 

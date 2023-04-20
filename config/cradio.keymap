@@ -23,13 +23,6 @@
             };
         };
 
-        conditional_layers {
-            compatible = "zmk,conditional-layers";
-            tri_layer {
-                    if-layers = <FUNC NAV>;
-                    then-layer = <CONVENIENCE_LAYER>;
-            };
-        };
 
         macros {
             #include "macros.dtsi"
