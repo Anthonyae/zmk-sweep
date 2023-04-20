@@ -6,10 +6,10 @@
         label = "ZMK_arrow_single";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <40>;
+        wait-ms = <30>;
+        tap-ms = <20>;
         bindings = 
-            <&macro_tap &kp minus &kp GREATER_THAN >
+            <&macro_tap &kp minus &kp GREATER_THAN>
             ;
     };
 
@@ -17,10 +17,10 @@
         label = "ZMK_arrow_double";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <40>;
+        wait-ms = <30>;
+        tap-ms = <20>;
         bindings = 
-            <&macro_tap &kp equal &kp GREATER_THAN >
+            <&macro_tap &kp equal &kp GREATER_THAN>
             ;
     };
 
@@ -28,10 +28,10 @@
         label = "ZMK_surround_paran";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <40>;
+        wait-ms = <30>;
+        tap-ms = <20>;
         bindings = 
-            <&macro_tap &kp LPAR &kp RPAR &kp LEFT >
+            <&macro_tap &kp LPAR &kp RPAR &kp LEFT>
             ;
     };
 
@@ -39,10 +39,10 @@
         label = "ZMK_surround_bracket";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <40>;
+        wait-ms = <30>;
+        tap-ms = <20>;
         bindings = 
-            <&macro_tap &kp LBRC &kp RBRC &kp LEFT >
+            <&macro_tap &kp LBRC &kp RBRC &kp LEFT>
             ;
     };
     
@@ -50,10 +50,10 @@
         label = "ZMK_git_add";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <40>;
+        wait-ms = <30>;
+        tap-ms = <20>;
         bindings = 
-            <&macro_tap &kp g &kp i &kp t &kp a &kp d &kp d &kp space &kp dot >
+            <&macro_tap &kp g &kp i &kp t &kp a &kp d &kp d &kp space &kp dot>
             ;
     };
 
@@ -61,10 +61,10 @@
         label = "ZMK_git_commit";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <40>;
+        wait-ms = <30>;
+        tap-ms = <20>;
         bindings = 
-            <&macro_tap &kp g &kp i &kp t &kp c &kp o &kp m &kp m &kp i &kp t &kp space &kp minus &kp m &kp space >
+            <&macro_tap &kp g &kp i &kp t &kp c &kp o &kp m &kp m &kp i &kp t &kp space &kp minus &kp m &kp space>
             ;
     };
 
