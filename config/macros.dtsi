@@ -1,4 +1,43 @@
 
+
+// General purpose 
+
+    arrow_single: arrow_single {
+        label = "ZMK_arrow_single";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <40>;
+        bindings
+            = 
+            <&macro_tap &kp minus &kp GREATER_THAN >
+            ;
+    };
+
+    arrow_double: arrow_double {
+        label = "ZMK_arrow_double";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <40>;
+        bindings
+            = 
+            <&macro_tap &kp equal &kp GREATER_THAN >
+            ;
+    };
+
+    surround_bracket: surround_bracket {
+        label = "ZMK_surround_bracket";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <40>;
+        bindings
+            = 
+            <&macro_tap &kp LBRC &kp RBRC &kp LEFT >
+            ;
+    };
+
 // system shortcuts
     macro_undo: macro_undo {
         compatible = "zmk,behavior-macro";
