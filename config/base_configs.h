@@ -24,13 +24,11 @@
     tapping-term-ms = <130>;
 };
 
-// this changes the movement speed of the mouse
 &mmv {
   time-to-max-speed-ms = <400>;
   acceleration-exponent = <1>;
 };
 
-// this changes the scrolling behavior
 &mwh {
   time-to-max-speed-ms = <300>;
   acceleration-exponent = <0>;

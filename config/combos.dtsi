@@ -9,7 +9,6 @@ compatible = "zmk,combos";
 */
 
 
-// layers
 
 switch_no_hm_layer {
     timeout-ms = <30>;
@@ -33,7 +32,7 @@ switch_long_hm_layer {
 };
 
 
-// Device settings
+
 
 combo_reset_left {
     timeout-ms = <50>;
@@ -64,7 +63,7 @@ combo_bootloader_right {
 };
 
 
-// Modifiers locks 
+
 
 combo_caps_word {
     timeout-ms = <50>;
@@ -81,7 +80,7 @@ combo_caps_lock {
 };
 
 
-// modifiers
+
 
 combo_esc_left {
     timeout-ms = <20>;
