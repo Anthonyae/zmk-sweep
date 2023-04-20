@@ -22,10 +22,7 @@
                     then-layer = <MOUSE_BASE>;
             };
             
-             tri_layer_two {
-                     if-layers = <FUNC NAV>;
-                     then-layer = <CONVENIENCE_LAYER>;
-             };
+         
 
              
         };
