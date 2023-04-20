@@ -1,40 +1,39 @@
 compatible = "zmk,combos";
 
 
-/*
-* corne 6*3
-* 0	    1	2	3	4	5			6	7	8	9	10	11
-* 12	13	14	15	16	17			18	19	20	21	22	23
-* 24	25	26	27	28	29			30	31	32	33	34	35
-* 			36	37 	38			    39	40	41
+/* 5 columns 
+0	1	2	3	4		5	6	7	8	9
+10	11	12	13	14		15	16	17	18	19
+20	21	22	23	24		25	26	27	28	29
+		30	31				32	33		
 */
 
 
-compatible = "zmk,combos";
-    switch_no_hm_layer {
+// layers
+
+switch_no_hm_layer {
     timeout-ms = <30>;
     key-positions = <6 7 8 9>;
     bindings = <&to DEFAULT_NO_HM>;
     layers = <0 1 2>;
 };
 
-compatible = "zmk,combos";
-    switch_base_layer {
+
+switch_base_layer {
     timeout-ms = <30>;
     key-positions = <0 1 2 3>;
     bindings = <&to DEFAULT>;
     layers = <0 1 2>;
 };
 
-compatible = "zmk,combos";
-    switch_long_hm_layer {
+switch_long_hm_layer {
     timeout-ms = <30>;
     key-positions = <20 21 22 23>;
     bindings = <&to DEFAULT_LONG_HM>;
     layers = <0 1 2>;
 };
 
-compatible = "zmk,combos";
+// Device settings
 
 combo_reset_left {
     timeout-ms = <50>;
@@ -64,19 +63,9 @@ combo_bootloader_right {
     layers = <0 1 2>;
 };
 
-combo_esc_left {
-    timeout-ms = <20>;
-    key-positions = <13 14>;
-    bindings = <&kp ESC>;
-    layers = <0 1 2>;
-};
 
-combo_esc_right {
-    timeout-ms = <20>;
-    key-positions = <15 16>;
-    bindings = <&kp ESC>, <&kp ESC>;
-    layers = <0 1 2>;
-};
+
+// Modifiers locks 
 
 combo_caps_word {
     timeout-ms = <50>;
@@ -92,26 +81,23 @@ combo_caps_lock {
     layers = <0 1 2>;
 };
 
-combo_alt_left_down {
-    timeout-ms = <50>; 
-    key-positions = <13 23>;
-    bindings = <&kp LALT>;
+
+// modifiers
+
+combo_esc_left {
+    timeout-ms = <20>;
+    key-positions = <13 14>;
+    bindings = <&kp ESC>;
     layers = <0 1 2>;
 };
 
-combo_alt_right_down {
-    timeout-ms = <50>;
-    key-positions = <16 26>;
-    bindings = <&kp RALT>;
+combo_esc_right {
+    timeout-ms = <20>;
+    key-positions = <15 16>;
+    bindings = <&kp ESC>, <&kp ESC>;
     layers = <0 1 2>;
 };
 
-combo_tab_bottom_left {
-    timeout-ms = <50>;
-    key-positions = <20 21>;
-    bindings = <&kp TAB>;
-    layers = <0 1 2>;
-};
 
 combo_tab_left {
     timeout-ms = <40>;
@@ -127,6 +113,8 @@ combo_tab_right {
     layers = <0 1 2>;
 };
 
+
+// symbols
 combo_brace_left {
     timeout-ms = <40>;
     key-positions = <1 11>;
