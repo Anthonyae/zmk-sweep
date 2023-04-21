@@ -30,7 +30,6 @@ hm_gq_test: homerow_mods_gq_test {
         bindings = <&kp>, <&kp>;
 };
 
-f       
 
 // layer settings 
 
