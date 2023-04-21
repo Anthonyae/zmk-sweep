@@ -18,8 +18,8 @@
         conditional_layers {
             compatible = "zmk,conditional-layers";
             tri_layer {
-                    if-layers = <SYMBOL NAV>;
-                    then-layer = <MOUSE_BASE>;
+                    if-layers = <3 5>;
+                    then-layer = <7>;
             };
         };
 
@@ -41,10 +41,10 @@
 
                 default_layer {
                 bindings = <
-                &kp Q            	&kp W            	&kp E            	&kp R            	&kp T            	                 	&kp Y            	&kp U            	&kp I            	&kp O            	&kp P            
-                &hm_gq LCTRL A   	&hm_gq LSHFT S   	&hm_gq LGUI D    	&hm_gq LALT F    	&hm_vvslow HIKE G	                 	&hm_vvslow HIKE H	&hm_gq RALT J    	&hm_gq RGUI K    	&hm_gq RSHFT L   	&hm_gq RCTRL APOS
-                &ltms UTILITY Z  	&kp X            	&kp C            	&hm_vvslow MEH V 	&kp B            	                 	&kp N            	&hm_vvslow MEH M 	&kp COMMA        	&kp DOT          	&kp FSLH         
-                                                                                        &lt SYMBOL BSPC  	&mo NUMBER       	                 	&lt FUNC ENTER   	&lt NAV SPACE    	                 	                 	                 
+                &mkp MCLK        	&mkp RCLK        	&mmv MOVE_UP     	&mkp LCLK        	&kp K_CMENU      	                 	&kp K_CMENU      	&mkp LCLK        	&mkp MCLK        	&mkp RCLK        	&mkp MCLK        
+                &mwh SCROLL_LEFT 	&mmv MOVE_LEFT   	&mmv MOVE_DOWN   	&mmv MOVE_RIGHT  	&mwh SCROLL_RIGHT	                 	&trans           	&kp RALT         	&kp RGUI         	&kp RSHFT        	&kp RCTRL        
+                &trans           	&mwh SCROLL_LEFT 	&mwh SCROLL_UP   	&mwh SCROLL_DOWN 	&mwh SCROLL_RIGHT	                 	&trans           	&mo MOUSE_CRAWL  	&mo MOUSE_SLOW   	&mo MOUSE_MEDIUM 	&mo MOUSE_FAST   
+                                                                                        &trans           	&trans           	                 	&trans           	&trans           	                 	                 	                 
                 >; };										
                 default_no_hm_layer {										
                         bindings = <									
@@ -58,7 +58,7 @@
                 &kp Q            	&kp W            	&kp E            	&kp R            	&kp T            	                 	&kp Y            	&kp U            	&kp I            	&kp O            	&kp P            
                 &hm_gq LCTRL A   	&hm_gq LSHFT S   	&hm_gq LGUI D    	&hm_gq LALT F    	&hm_vvslow HIKE G	                 	&hm_vvslow HIKE H	&hm_gq RALT J    	&hm_gq RGUI K    	&hm_gq RSHFT L   	&hm_gq RCTRL APOS
                 &ltms UTILITY Z  	&kp X            	&kp C            	&hm_vvslow MEH V 	&kp B            	                 	&kp N            	&hm_vvslow MEH M 	&kp COMMA        	&kp DOT          	&kp FSLH         
-                                                                                        &lt SYMBOL BSPC  	&mo NUMBER       	                 	&lt FUNC ENTER   	&lt NAV SPACE    	                 	                 	                 
+                                                                                        &trans          	&trans          	                	&trans          	&trans    	                 	                 	                 
                 >; };										
                 symbol_layer {										
                         bindings = <									
