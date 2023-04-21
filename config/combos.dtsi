@@ -93,7 +93,7 @@ combo_esc_left {
 combo_esc_right {
     timeout-ms = <20>;
     key-positions = <15 16>;
-    bindings = <&git_add>;
+    bindings = <&double_esc>;
     layers = <0 1 2>;
 };
 

@@ -39,7 +39,7 @@
         tap-ms = <20>;
         bindings = <&macro_tap &kp LPAR &kp RPAR &kp LEFT>
         ;
-};
+    };
     
     surround_bracket: surround_bracket {
         label = "surround_bracket";
@@ -50,7 +50,16 @@
         bindings = <&macro_tap &kp LBKT &kp RBKT &kp LEFT>
         ;
     };
+
+// extras
+    triple_grave_macro: triple_grave_macro {
+        label = "TRIPLE_GRAVE_MACRO";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp GRAVE &kp GRAVE &kp GRAVE>;
+    };
     
+// Git commands
     git_add: git_add {
         label = "git_add";
         compatible = "zmk,behavior-macro";
@@ -77,10 +86,12 @@
         #binding-cells = <0>;
         wait-ms = <20>;
         tap-ms = <20>;
-        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H>
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H &kp ENTER>
         ;
     };
 
+
+// modifiers 
     double_esc: double_esc {
         label = "double_esc";
         compatible = "zmk,behavior-macro";
