@@ -12,8 +12,8 @@ hm_gq: homerow_mods_gq {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
-        tapping-term-ms = <175>;
-        quick-tap-ms = <125>;
+        tapping-term-ms = <150>;
+        quick-tap-ms = <100>;
         global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
@@ -23,12 +23,14 @@ hm_gq_test: homerow_mods_gq_test {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
-        tapping-term-ms = <250>;
-        quick-tap-ms = <175>;
+        tapping-term-ms = <175>;
+        quick-tap-ms = <100>;
         global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
+
+f       
 
 // layer settings 
 
