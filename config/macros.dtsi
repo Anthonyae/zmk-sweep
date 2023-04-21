@@ -5,7 +5,7 @@
         label = "arrow_single";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <30>;
+        wait-ms = <20>;
         tap-ms = <20>;
         bindings = <&macro_tap &kp MINUS &kp GREATER_THAN>
         ;
@@ -15,7 +15,7 @@
         label = "arrow_double";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <30>;
+        wait-ms = <20>;
         tap-ms = <20>;
         bindings = <&macro_tap &kp EQUAL &kp GREATER_THAN>
         ;
@@ -25,7 +25,7 @@
             label = "surround_brace";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
+            wait-ms = <20>;
             tap-ms = <20>;
             bindings = <&macro_tap &kp LBRC &kp RBRC &kp LEFT>
             ;
@@ -35,7 +35,7 @@
         label = "surround_paran";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <30>;
+        wait-ms = <20>;
         tap-ms = <20>;
         bindings = <&macro_tap &kp LPAR &kp RPAR &kp LEFT>
         ;
@@ -45,7 +45,7 @@
         label = "surround_bracket";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <30>;
+        wait-ms = <20>;
         tap-ms = <20>;
         bindings = <&macro_tap &kp LBKT &kp RBKT &kp LEFT>
         ;
@@ -55,7 +55,7 @@
         label = "git_add";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <30>;
+        wait-ms = <20>;
         tap-ms = <20>;
         bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp A &kp D &kp D &kp SPACE &kp DOT &kp ENTER>
         ;
@@ -65,7 +65,7 @@
         label = "git_commit";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <30>;
+        wait-ms = <20>;
         tap-ms = <20>;
         bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp M &kp SPACE &kp APOS &kp APOS &kp LEFT>
         ;
@@ -75,7 +75,7 @@
         label = "git_push";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <30>;
+        wait-ms = <20>;
         tap-ms = <20>;
         bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H>
         ;
@@ -85,7 +85,7 @@
         label = "double_esc";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <30>;
+        wait-ms = <20>;
         tap-ms = <20>;
         bindings = 
             <&macro_tap &kp ESC>
