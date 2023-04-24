@@ -69,6 +69,16 @@
     };
 
 // Git commands
+    git_status: git_status {
+        label = "git_status";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp S &kp T &kp A &kp T &kp U &kp S &kp ENTER>
+        ;
+    };
+
     git_add: git_add {
         label = "git_add";
         compatible = "zmk,behavior-macro";
