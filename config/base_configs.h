@@ -27,7 +27,7 @@
 // this changes the movement speed of the mouse
 // time-to-max-speed-ms = <400>; // trying to speed up the mouse movement
 &mmv {
-  time-to-max-speed-ms = <375>;
+  time-to-max-speed-ms = <385>;
   acceleration-exponent = <1>;
 };
 
@@ -40,7 +40,6 @@
 &sk {
     release-after-ms = <400>;
     quick-release;
-    /delete-property/ ignore-modifiers;
 };
 
 // global keys

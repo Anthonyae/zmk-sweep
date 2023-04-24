@@ -30,6 +30,17 @@ hm_gq_test: homerow_mods_gq_test {
         bindings = <&kp>, <&kp>;
 };
 
+// keys 
+
+skq: sticky_key_quick_release {
+        compatible = "zmk,behavior-sticky-key";
+        label = "STICKY_KEY_QUICK_RELEASE";
+        #binding-cells = <1>;
+        bindings = <&kp>;
+        release-after-ms = <400>;
+        quick-release;
+        ignore-modifiers;
+};
 
 // layer settings 
 

@@ -65,7 +65,7 @@
         #binding-cells = <0>;
         wait-ms = <30>;
         tap-ms = <30>;
-        bindings = <&kp DOT &kp SPACE &kp RSHIFT>;
+        bindings = <&kp DOT &kp SPACE &skq RSHIFT>;
     };
 
 // Git commands
