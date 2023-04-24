@@ -58,7 +58,7 @@
 /*
 * Mouse Settings Slow layer
 */
-#define U_MOUSE_MOVE_MAX_SLOW 2000
+#define U_MOUSE_MOVE_MAX_SLOW 1500
 #define U_MOUSE_SCROLL_MAX_SLOW 50
 
 #define MOVE_UP_SLOW MOVE_VERT(-U_MOUSE_MOVE_MAX_SLOW)
@@ -74,7 +74,7 @@
 /*
 * Mouse Settings Crawl layer
 */
-#define U_MOUSE_MOVE_MAX_CRAWL 900
+#define U_MOUSE_MOVE_MAX_CRAWL 800
 #define U_MOUSE_SCROLL_MAX_CRAWL 15
 
 #define MOVE_UP_CRAWL MOVE_VERT(-U_MOUSE_MOVE_MAX_CRAWL)
