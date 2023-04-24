@@ -45,7 +45,6 @@
             #include "user_behaviors.dtsi"
         };
 
-
         keymap {
                 compatible = "zmk,keymap";
 
