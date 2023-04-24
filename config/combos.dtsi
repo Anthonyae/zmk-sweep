@@ -80,6 +80,13 @@ combo_caps_lock {
     layers = <0 1 2>;
 };
 
+combo_new_sentence {
+    timeout-ms = <30>;
+    key-positions = <28 29>;
+    bindings = <&new_sentence>;
+    layers = <0 1 2>;
+};
+
 
 // modifiers
 
