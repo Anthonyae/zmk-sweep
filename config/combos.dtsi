@@ -81,7 +81,7 @@ combo_caps_lock {
 };
 
 combo_new_sentence {
-    timeout-ms = <30>;
+    timeout-ms = <50>;
     key-positions = <28 29>;
     bindings = <&new_sentence>;
     layers = <0 1 2>;

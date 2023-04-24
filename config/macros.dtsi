@@ -63,9 +63,9 @@
         label = "new_sentence";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <10>;
-        tap-ms = <10>;
-        bindings = <&kp DOT &kp SPACE &sk LSHIFT>;
+        wait-ms = <30>;
+        tap-ms = <30>;
+        bindings = <&kp DOT &kp SPACE &kp RSHIFT>;
     };
 
 // Git commands
