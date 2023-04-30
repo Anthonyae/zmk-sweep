@@ -107,6 +107,94 @@
         bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H &kp ENTER>
         ;
     };
+    
+    // add: this adds the latest changes staged to the last commit
+    git_commit_amend: git_commit_amend {
+        label = "git_commit_amend";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp MINUS &kp A &kp M &kp E &kp N &kp D &kp ENTER>
+        ;
+    };
+
+    // add: git add interactively for pieces of a file
+    git_add_i_hunk: git_add_i_hunk {
+        label = "git_add_i_hunk";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp A &kp D &kp D &kp SPACE &kp MINUS &kp P &kp ENTER>
+        ;
+    };
+
+    // log: get list of branches
+    git_reflog: git_reflog {
+        label = "git_reflog";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp R &kp E &kp F &kp L &kp O &kp G &kp SPACE>
+        ;
+    };
+
+    // diff: view changes staged vs latest commit. Can pass a commit to see changes relative to it
+    git_diff_cached: git_diff_cached {
+        label = "git_diff_cached";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp D &kp I &kp F &kp F &kp SPACE &kp MINUS &kp MINUS &kp C &kp A &kp C &kp H &kp E &kp D &kp ENTER>
+        ;
+    };
+
+    // branch_creation: create a branch and switch to it
+    git_checkout_switch: git_checkout_switch {
+        label = "git_checkout_switch";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp C &kp H &kp E &kp C &kp K &kp O &kp U &kp T &kp MINUS &kp b &kp SPACE>
+        ;
+    };
+
+    // branch_list: check which branches are merge to master
+    git_merged_list: git_merged_list {
+        label = "git_merged_list";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp B &kp R &kp A &kp N &kp C &kp H &kp SPACE &kp MINU &kp MINUS &kp M &kp E &kp R &kp G &kp E &kp D &kp SPACE &kp M &kp A &kp S &kp T &kp E &kp R>
+        ;
+    };
+    
+    // branch_list: check which branches are not merged to master
+    git_no_merged_list: git_no_merged_list {
+        label = "git_no_merged_list";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp B &kp R &kp A &kp N &kp C &kp H &kp SPACE &kp MINUS &kp MINUS &kp N &kp O &kp MINUS &kp M &kp E &kp R &kp G &kp E &kp D &kp SPACE &kp M &kp A &kp S &kp T &kp E &kp R>
+        ;
+    };
+
+    // review: get a dry run of cleaning the working tree, by removing files that are not in version control
+    git_clean_n: git_clean_n {
+        label = "git_clean_n";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp C &kp L &kp E &kp N &kp SPACE &kp MINUS &kp N &kp ENTER>
+        ;
+    };
 
 // notes
     note_one: note_one {
