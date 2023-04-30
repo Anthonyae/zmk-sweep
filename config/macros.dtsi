@@ -108,6 +108,16 @@
         ;
     };
 
+// notes
+    note_one: note_one {
+        label = "git_push";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H &kp ENTER>
+        ;
+    };
 
 // modifiers 
     double_esc: double_esc {

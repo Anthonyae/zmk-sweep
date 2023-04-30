@@ -69,14 +69,14 @@
                 &ltms UTILITY Z      	&kp X                	&kp C                	&hm_gq_two MEH V     	&kp B                	                     	&kp N                	&hm_gq_two MEH M     	&kp COMMA            	&kp DOT              	&kp FSLH             
                                                                                         &lt SYMBOL BSPC      	&mo NUMBER           	                     	&lt FUNC ENTER       	&lt NAV SPACE        	                     	                     	                     
                 >; };										
-                symbol_layer {										
+                default_hm_none_layer {										
                         bindings = <									
                 &kp Q            	&kp W            	&kp E            	&kp R            	&kp T            	                 	&kp Y            	&kp U            	&kp I            	&kp O            	&kp P            
                 &hm_gq LCTRL A   	&kp S            	&kp D            	&kp F            	&hm_gq HIKE G    	                 	&hm_gq HIKE H    	&kp J            	&kp K            	&kp L            	&hm_gq RCTRL APOS
                 &kp Z            	&kp X            	&kp C            	&hm_gq MEH V     	&kp B            	                 	&kp N            	&hm_gq MEH M     	&kp COMMA        	&kp DOT          	&kp FSLH         
                                                                                         &lt SYMBOL BSPC  	&mo NUMBER       	                 	&lt FUNC ENTER   	&lt NAV SPACE    	                 	                 	                 
                 >; };										
-                number_layer {										
+                symbol_layer {										
                         bindings = <									
                 &kp EXCL           	&kp AT             	&kp HASH           	&kp DOLLAR         	&kp PERCENT        	                   	&kp CARET          	&kp AMPS           	&kp STAR           	&kp PIPE           	&kp GRAVE          
                 &triple_grave_macro	&kp GRAVE          	&kp SEMI           	&lt NUMBER COLON   	&none              	                   	&none              	&kp UNDER          	&kp EQUAL          	&kp COMMA          	&none              
@@ -160,7 +160,6 @@
                 &none            	&none            	&none            	&none            	&git_push        	                 	&none            	&none            	&none            	&arrow_single    	&arrow_double    
                                                                                         &trans           	&trans           	                 	&trans           	&trans           	                 	                 	                 
                 >; };										
-
 
                 
         };
