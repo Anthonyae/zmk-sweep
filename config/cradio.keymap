@@ -48,28 +48,35 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {										
-                	bindings = <									
+                default_layer {									
+                bindings = <									
                 &kp Q            	&kp W            	&kp E            	&kp R            	&kp T            	                 	&kp Y            	&kp U            	&kp I            	&kp O            	&kp P            
-                &hm_gq LCTRL A   	&hm_gq LSHFT S   	&hm_gq LGUI D    	&hm_gq LALT F    	&hm_gq HIKE G    	                 	&hm_gq HIKE H    	&hm_gq RALT J    	&hm_gq RGUI K    	&hm_gq RSHFT L   	&hm_gq RCTRL APOS
-                &ltms UTILITY Z  	&kp X            	&kp C            	&hm_gq MEH V     	&kp B            	                 	&kp N            	&hm_gq MEH M     	&kp COMMA        	&kp DOT          	&kp FSLH         
+                &hm_gq LCTRL A   	&hm_gq LSHFT S   	&hm_gq LGUI D    	&hm_gq LALT F    	&hm_vvslow HIKE G	                 	&hm_vvslow HIKE H	&hm_gq RALT J    	&hm_gq RGUI K    	&hm_gq RSHFT L   	&hm_gq RCTRL APOS
+                &ltms UTILITY Z  	&kp X            	&kp C            	&hm_vvslow MEH V 	&kp B            	                 	&kp N            	&hm_vvslow MEH M 	&kp COMMA        	&kp DOT          	&kp FSLH         
                                                                                         &lt SYMBOL BSPC  	&mo NUMBER       	                 	&lt FUNC ENTER   	&lt NAV SPACE    	                 	                 	                 
                 >; };										
-                default_no_hm_layer {										
+                default_qt_hm_test_layer {										
+                        bindings = <									
+                &kp Q                	&kp W                	&kp E                	&kp R                	&kp T                	                     	&kp Y                	&kp U                	&kp I                	&kp O                	&kp P                
+                &hm_gq_one LCTRL A   	&hm_gq_one LSHFT S   	&hm_gq_one LGUI D    	&hm_gq_one LALT F    	&hm_gq_one HIKE G    	                     	&hm_gq_one HIKE H    	&hm_gq_one RALT J    	&hm_gq_one RGUI K    	&hm_gq_one RSHFT L   	&hm_gq_one RCTRL APOS
+                &ltms UTILITY Z      	&kp X                	&kp C                	&hm_gq_one MEH V     	&kp B                	                     	&kp N                	&hm_gq_one MEH M     	&kp COMMA            	&kp DOT              	&kp FSLH             
+                                                                                        &lt SYMBOL BSPC      	&mo NUMBER           	                     	&lt FUNC ENTER       	&lt NAV SPACE        	                     	                     	                     
+                >; };		                 	                 	                 	                 	                 	                 	                 	                 	                 
+                default_qt_hm_exp_layer {										
+                        bindings = <									
+                &kp Q                	&kp W                	&kp E                	&kp R                	&kp T                	                     	&kp Y                	&kp U                	&kp I                	&kp O                	&kp P                
+                &hm_gq_two LCTRL A   	&hm_gq_two LSHFT S   	&hm_gq_two LGUI D    	&hm_gq_two LALT F    	&hm_gq_two HIKE G    	                     	&hm_gq_two HIKE H    	&hm_gq_two RALT J    	&hm_gq_two RGUI K    	&hm_gq_two RSHFT L   	&hm_gq_two RCTRL APOS
+                &ltms UTILITY Z      	&kp X                	&kp C                	&hm_gq_two MEH V     	&kp B                	                     	&kp N                	&hm_gq_two MEH M     	&kp COMMA            	&kp DOT              	&kp FSLH             
+                                                                                        &lt SYMBOL BSPC      	&mo NUMBER           	                     	&lt FUNC ENTER       	&lt NAV SPACE        	                     	                     	                     
+                >; };										
+                symbol_layer {										
                         bindings = <									
                 &kp Q            	&kp W            	&kp E            	&kp R            	&kp T            	                 	&kp Y            	&kp U            	&kp I            	&kp O            	&kp P            
                 &hm_gq LCTRL A   	&kp S            	&kp D            	&kp F            	&hm_gq HIKE G    	                 	&hm_gq HIKE H    	&kp J            	&kp K            	&kp L            	&hm_gq RCTRL APOS
                 &kp Z            	&kp X            	&kp C            	&hm_gq MEH V     	&kp B            	                 	&kp N            	&hm_gq MEH M     	&kp COMMA        	&kp DOT          	&kp FSLH         
                                                                                         &lt SYMBOL BSPC  	&mo NUMBER       	                 	&lt FUNC ENTER   	&lt NAV SPACE    	                 	                 	                 
-                >; };		                 	                 	                 	                 	                 	                 	                 	                 	                 
-                default_qt_hm_test_layer {										
-                        bindings = <									
-                &kp Q                 	&kp W                 	&kp E                 	&kp R                 	&kp T                 	                      	&kp Y                 	&kp U                 	&kp I                 	&kp O                 	&kp P                 
-                &hm_gq_test LCTRL A   	&hm_gq_test LSHFT S   	&hm_gq_test LGUI D    	&hm_gq_test LALT F    	&hm_gq_test HIKE G    	                      	&hm_gq_test HIKE H    	&hm_gq_test RALT J    	&hm_gq_test RGUI K    	&hm_gq_test RSHFT L   	&hm_gq_test RCTRL APOS
-                &ltms UTILITY Z       	&kp X                 	&kp C                 	&hm_gq_test MEH V     	&kp B                 	                      	&kp N                 	&hm_gq_test MEH M     	&kp COMMA             	&kp DOT               	&kp FSLH              
-                                                                                        &lt SYMBOL BSPC       	&mo NUMBER            	                      	&lt FUNC ENTER        	&lt NAV SPACE         	                      	                      	                      
                 >; };										
-                symbol_layer {										
+                number_layer {										
                         bindings = <									
                 &kp EXCL           	&kp AT             	&kp HASH           	&kp DOLLAR         	&kp PERCENT        	                   	&kp CARET          	&kp AMPS           	&kp STAR           	&kp PIPE           	&kp GRAVE          
                 &triple_grave_macro	&kp GRAVE          	&kp SEMI           	&lt NUMBER COLON   	&none              	                   	&none              	&kp UNDER          	&kp EQUAL          	&kp COMMA          	&none              
@@ -152,8 +159,9 @@
                 &none            	&none            	&none            	&git_status      	&git_commit      	                 	&none            	&none            	&none            	&none            	&none            
                 &none            	&none            	&none            	&none            	&git_push        	                 	&none            	&none            	&none            	&arrow_single    	&arrow_double    
                                                                                         &trans           	&trans           	                 	&trans           	&trans           	                 	                 	                 
-
-
                 >; };										
+
+
+                
         };
  }; 
