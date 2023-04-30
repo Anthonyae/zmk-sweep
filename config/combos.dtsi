@@ -68,7 +68,7 @@ combo_layer_three {
     layers = <3>;
 };
 
-combo_layer_three {
+combo_layer_four {
     timeout-ms = <30>;
     key-positions = <0 10 20>;
     bindings = <&layer_four>;
