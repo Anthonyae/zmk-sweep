@@ -160,16 +160,6 @@
         ;
     };
 
-    layer_four: layer_four {
-        label = "layer_four";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <20>;
-        tap-ms = <20>;
-        bindings = <&macro_tap &kp L &kp A &kp Y &kp E &kp R &kp SPACE &kp N4>
-        ;
-    };
-
 // modifiers 
     double_esc: double_esc {
         label = "double_esc";

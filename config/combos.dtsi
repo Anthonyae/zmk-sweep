@@ -12,7 +12,7 @@ compatible = "zmk,combos";
 // layers
 
 switch_base_layer {
-    timeout-ms = <30>;
+    timeout-ms = <50>;
     key-positions = <0 1 2 3>;
     bindings = <&to DEFAULT_HM>;
     layers = <0 1 2 3>;
@@ -68,12 +68,6 @@ combo_layer_three {
     layers = <3>;
 };
 
-combo_layer_four {
-    timeout-ms = <30>;
-    key-positions = <0 10 20>;
-    bindings = <&layer_four>;
-    layers = <4>;
-};
 
 // Device settings
 
