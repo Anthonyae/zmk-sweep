@@ -119,6 +119,57 @@
         ;
     };
 
+// what layer am I on?
+    layer_zero: layer_zero {
+        label = "git_push";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp L &kp A &kp Y &kp E &kp R &kp SPACE &kp N0>
+        ;
+    };
+
+    layer_one: layer_one {
+        label = "git_push";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp L &kp A &kp Y &kp E &kp R &kp SPACE &kp N1>
+        ;
+    };
+
+    layer_two: layer_two {
+        label = "git_push";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp L &kp A &kp Y &kp E &kp R &kp SPACE &kp N2>
+        ;
+    };
+
+    layer_three: layer_three {
+        label = "git_push";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp L &kp A &kp Y &kp E &kp R &kp SPACE &kp N3>
+        ;
+    };
+
+    layer_four: layer_four {
+        label = "git_push";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp L &kp A &kp Y &kp E &kp R &kp SPACE &kp N4>
+        ;
+    };
+
 // modifiers 
     double_esc: double_esc {
         label = "double_esc";

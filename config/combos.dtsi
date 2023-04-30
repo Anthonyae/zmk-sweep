@@ -39,6 +39,42 @@ switch_hm_none_layer {
     layers = <0 1 2 3>;
 };
 
+// What layer am I on? 
+combo_layer_zero {
+    timeout-ms = <30>;
+    key-positions = <0 10 20>;
+    bindings = <&layer_zero>;
+    layers = <0>;
+};
+
+combo_layer_one {
+    timeout-ms = <30>;
+    key-positions = <0 10 20>;
+    bindings = <&layer_one>;
+    layers = <1>;
+};
+
+combo_layer_two {
+    timeout-ms = <30>;
+    key-positions = <0 10 20>;
+    bindings = <&layer_two>;
+    layers = <2>;
+};
+
+combo_layer_three {
+    timeout-ms = <30>;
+    key-positions = <0 10 20>;
+    bindings = <&layer_three>;
+    layers = <3>;
+};
+
+combo_layer_four {
+    timeout-ms = <30>;
+    key-positions = <0 10 20>;
+    bindings = <&layer_four>;
+    layers = <4>;
+};
+
 // Device settings
 
 combo_reset_left {
