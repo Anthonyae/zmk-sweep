@@ -11,27 +11,33 @@ compatible = "zmk,combos";
 
 // layers
 
-switch_no_hm_layer {
-    timeout-ms = <30>;
-    key-positions = <6 7 8 9>;
-    bindings = <&to DEFAULT_NO_HM>;
-    layers = <0 1 2>;
-};
-
 switch_base_layer {
     timeout-ms = <30>;
     key-positions = <0 1 2 3>;
-    bindings = <&to DEFAULT>;
-    layers = <0 1 2>;
+    bindings = <&to DEFAULT_HM>;
+    layers = <0 1 2 3>;
 };
 
-switch_long_hm_layer {
+switch_hm_one_layer {
     timeout-ms = <30>;
     key-positions = <20 21 22 23>;
-    bindings = <&to DEFAULT_LONG_HM>;
-    layers = <0 1 2>;
+    bindings = <&to DEFAULT_HM_ONE>;
+    layers = <0 1 2 3>;
 };
 
+switch_hm_two_layer {
+    timeout-ms = <30>;
+    key-positions = <6 7 8 9>;
+    bindings = <&to DEFAULT_HM_TWO>;
+    layers = <0 1 2 3>;
+};
+
+switch_hm_none_layer {
+    timeout-ms = <30>;
+    key-positions = <26 27 28 29>;
+    bindings = <&to DEFAULT_HM_NONE>;
+    layers = <0 1 2 3>;
+};
 
 // Device settings
 
