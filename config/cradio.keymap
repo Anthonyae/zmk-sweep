@@ -155,12 +155,11 @@
                 >; };										
                 convenience_layer {										
                         bindings = <									
-                &none            	&surround_brace  	&surround_paran  	&surround_bracket	&git_add         	                 	&none            	&none            	&none            	&none            	&none            
-                &none            	&none            	&none            	&git_status      	&git_commit      	                 	&none            	&none            	&none            	&none            	&none            
-                &none            	&none            	&none            	&none            	&git_push        	                 	&none            	&none            	&none            	&arrow_single    	&arrow_double    
-                                                                                        &trans           	&trans           	                 	&trans           	&trans           	                 	                 	                 
+                &none               	&surround_brace     	&surround_paran     	&surround_bracket   	&git_add            	                    	&git_add_i_hunk     	&git_add_i_hunk     	&none               	&none               	&none               
+                &git_clean_n        	&git_diff_cached    	&git_reflog         	&git_status         	&git_commit         	                    	&git_commit_amend   	&git_checkout_switch	&none               	&none               	&none               
+                &none               	&none               	&git_merged_list    	&git_no_merged_list 	&git_push           	                    	&git_checkout_switch	&none               	&none               	&arrow_single       	&arrow_double       
+                                                                                        &trans              	&trans              	                    	&trans              	&trans              	                    	                    	                    
                 >; };										
-
 
                 
         };
