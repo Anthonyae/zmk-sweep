@@ -159,7 +159,7 @@
         #binding-cells = <0>;
         wait-ms = <20>;
         tap-ms = <20>;
-        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp C &kp H &kp E &kp C &kp K &kp O &kp U &kp T &kp MINUS &kp B &kp SPACE>
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp C &kp H &kp E &kp C &kp K &kp O &kp U &kp T &kp SPACE &kp MINUS &kp B &kp SPACE>
         ;
     };
 
@@ -192,7 +192,7 @@
         #binding-cells = <0>;
         wait-ms = <20>;
         tap-ms = <20>;
-        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp C &kp L &kp E &kp N &kp SPACE &kp MINUS &kp N &kp ENTER>
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp C &kp L &kp E &kp A &kp N &kp SPACE &kp MINUS &kp N &kp ENTER>
         ;
     };
 
