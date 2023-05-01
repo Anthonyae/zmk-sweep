@@ -170,7 +170,7 @@
         #binding-cells = <0>;
         wait-ms = <20>;
         tap-ms = <20>;
-        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp B &kp R &kp A &kp N &kp C &kp H &kp SPACE &kp MINU &kp MINUS &kp M &kp E &kp R &kp G &kp E &kp D &kp SPACE &kp M &kp A &kp S &kp T &kp E &kp R>
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp B &kp R &kp A &kp N &kp C &kp H &kp SPACE &kp MINUS &kp MINUS &kp M &kp E &kp R &kp G &kp E &kp D &kp SPACE &kp M &kp A &kp S &kp T &kp E &kp R>
         ;
     };
     
