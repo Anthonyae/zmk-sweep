@@ -28,7 +28,7 @@ hm_gq: homerow_mods_gq {
         global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
-};
+}; 
 
 hm_gq_one: homerow_mods_gq_one {   
         compatible = "zmk,behavior-hold-tap";
