@@ -50,10 +50,10 @@
 
                 default_layer {										
                 bindings = <									
-                &kp Q            	&kp W            	&kp E            	&kp R            	&kp T            	                 	&kp Y            	&kp U            	&kp I            	&kp O            	&kp P            
-                &hm_gq LCTRL A   	&hm_gq LSHFT S   	&hm_gq LGUI D    	&hm_gq LALT F    	&hm_gq HIKE G    	                 	&hm_gq HIKE H    	&hm_gq RALT J    	&hm_gq RGUI K    	&hm_gq RSHFT L   	&hm_gq RCTRL APOS
-                &ltms UTILITY Z  	&kp X            	&kp C            	&hm_gq MEH V     	&kp B            	                 	&kp N            	&hm_gq MEH M     	&kp COMMA        	&kp DOT          	&kp FSLH         
-                                                                                        &lt SYMBOL BSPC  	&mo NUMBER       	                 	&lt FUNC ENTER   	&lt NAV SPACE    	                 	                 	                 
+                &kp Q                     	&kp W                     	&kp E                     	&kp R                     	&kp T                     	                          	&kp Y                     	&kp U                     	&kp I                     	&kp O                     	&kp P                     
+                &hm_fast_finger LCTRL A   	&hm_gq LSHFT S            	&hm_gq LGUI D             	&hm_fast_finger LALT F    	&hm_gq HIKE G             	                          	&hm_gq HIKE H             	&hm_fast_finger RALT J    	&hm_gq RGUI K             	&hm_gq RSHFT L            	&hm_fast_finger RCTRL APOS
+                &ltms UTILITY Z           	&kp X                     	&kp C                     	&hm_gq MEH V              	&kp B                     	                          	&kp N                     	&hm_gq MEH M              	&kp COMMA                 	&kp DOT                   	&kp FSLH                  
+                                                                                                                &lt SYMBOL BSPC           	&mo NUMBER                	                          	&lt FUNC ENTER            	&lt NAV SPACE             	                          	                          	                          
                 >; };										
                 default_hm_one_layer {										
                         bindings = <									
@@ -61,7 +61,7 @@
                 &hm_gq_one LCTRL A   	&hm_gq_one LSHFT S   	&hm_gq_one LGUI D    	&hm_gq_one LALT F    	&hm_gq_one HIKE G    	                     	&hm_gq_one HIKE H    	&hm_gq_one RALT J    	&hm_gq_one RGUI K    	&hm_gq_one RSHFT L   	&hm_gq_one RCTRL APOS
                 &ltms UTILITY Z      	&kp X                	&kp C                	&hm_gq_one MEH V     	&kp B                	                     	&kp N                	&hm_gq_one MEH M     	&kp COMMA            	&kp DOT              	&kp FSLH             
                                                                                         &lt SYMBOL BSPC      	&mo NUMBER           	                     	&lt FUNC ENTER       	&lt NAV SPACE        	                     	                     	                     
-                >; };		                 	                 	                 	                 	                 	                 	                 	                 	                 
+                >; };		                          	                          	                          	                          	                          	                          	                          	                          	                          
                 default_hm_two_layer {										
                         bindings = <									
                 &kp Q                	&kp W                	&kp E                	&kp R                	&kp T                	                     	&kp Y                	&kp U                	&kp I                	&kp O                	&kp P                
@@ -82,21 +82,21 @@
                 &triple_grave_macro	&kp GRAVE          	&kp SEMI           	&lt NUMBER COLON   	&none              	                   	&none              	&kp UNDER          	&kp EQUAL          	&kp COMMA          	&none              
                 &none              	&kp TILDE          	&kp FSLH           	&kp BSLH           	&none              	                   	&none              	&kp MINUS          	&kp PLUS           	&kp DOT            	&none              
                                                                                         &trans             	&trans             	                   	&trans             	&trans             	                   	                   	                   
-                >; };		                 	                 	                 	                 	                 	                 	                 	                 	                 
+                >; };		                          	                          	                          	                          	                          	                          	                          	                          	                          
                 number_layer {										
                         bindings = <									
                 &none    	&kp COMMA	&kp ASTRK	&kp FSLH 	&trans   	         	&trans   	&kp N7   	&kp N8   	&kp N9   	&kp N0   
                 &none    	&kp DOT  	&kp EQUAL	&kp UNDER	&trans   	         	&trans   	&kp N4   	&kp N5   	&kp N6   	&kp N0   
                 &none    	&none    	&kp PLUS 	&kp MINUS	&trans   	         	&trans   	&kp N1   	&kp N2   	&kp N3   	&kp N0   
                                                                 &trans   	&trans   	         	&kp N0   	&kp N0   	         	         	         
-                >; };		                 	                 	                 	                 	                 	                 	                 	                 	                 
+                >; };		                          	                          	                          	                          	                          	                          	                          	                          	                          
                 nav_layer {										
                         bindings = <									
                 &kp PSCRN   	&kp SLCK    	&macro_redo 	&macro_undo 	&kp INS     	            	&kp CAPS    	&kp HOME    	&kp UP      	&kp END     	&kp LBRC    
                 &kp LCTRL   	&kp LSHFT   	&kp LGUI    	&kp LALT    	&kp DEL     	            	&caps_word  	&kp LEFT    	&kp DOWN    	&kp RIGHT   	&kp LPAR    
                 &macro_undo 	&macro_cut  	&macro_copy 	&macro_paste	&key_repeat 	            	&kp HOME    	&kp PG_DN   	&kp PG_UP   	&kp END     	&kp LBKT    
                                                                 &trans      	&trans      	            	&trans      	&trans      	            	            	            
-                >; };		                 	                 	                 	                 	                 	                 	                 	                 	                 
+                >; };		                          	                          	                          	                          	                          	                          	                          	                          	                          
                 util_layer {										
                         bindings = <									
                 &trans            	&trans            	&trans            	&trans            	&bt BT_CLR        	                  	&kp K_PLAY_PAUSE  	&kp C_BRI_DN      	&kp C_BRI_UP      	&ext_power EP_OFF 	&ext_power EP_ON  
@@ -156,7 +156,7 @@
                 convenience_layer {										
                         bindings = <									
                 &none               	&surround_brace     	&surround_paran     	&surround_bracket   	&git_add            	                    	&git_add_i_hunk     	&git_add_i_hunk     	&none               	&none               	&none               
-                &git_clean_n        	&git_diff_cached    	&git_reflog         	&git_status         	&git_commit         	                    	&git_commit_amend   	&none            	&none               	&none               	&none               
+                &git_clean_n        	&git_diff_cached    	&git_reflog         	&git_status         	&git_commit         	                    	&git_commit_amend   	&none               	&none               	&none               	&none               
                 &none               	&none               	&git_merged_list    	&git_no_merged_list 	&git_push           	                    	&git_checkout_switch	&none               	&none               	&arrow_single       	&arrow_double       
                                                                                         &trans              	&trans              	                    	&trans              	&trans              	                    	                    	                    
                 >; };										

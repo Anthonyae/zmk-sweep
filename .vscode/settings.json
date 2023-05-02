@@ -18,5 +18,6 @@
         "titleBar.inactiveBackground": "#ea3b2e99",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "#ea3b2e"
+    "peacock.color": "#ea3b2e",
+    "autoHide.autoHideSideBar": false
 }
