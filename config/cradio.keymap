@@ -51,7 +51,7 @@
                 default_layer {										
                 bindings = <									
                 &kp Q                     	&kp W                     	&kp E                     	&kp R                     	&kp T                     	                          	&kp Y                     	&kp U                     	&kp I                     	&kp O                     	&kp P                     
-                &hm_fast_finger LCTRL A   	&hm_gq LSHFT S            	&hm_gq LGUI D             	&hm_fast_finger LALT F    	&hm_gq HIKE G             	                          	&hm_gq HIKE H             	&hm_fast_finger RALT J    	&hm_gq RGUI K             	&hm_gq RSHFT L            	&hm_fast_finger RCTRL APOS
+                &hm_gq LCTRL A   	&hm_gq LSHFT S            	&hm_gq LGUI D             	&hm_fast_finger LALT F    	&hm_gq HIKE G             	                          	&hm_gq HIKE H             	&hm_fast_finger RALT J    	&hm_gq RGUI K             	&hm_gq RSHFT L            	&hm_gq RCTRL APOS
                 &ltms UTILITY Z           	&kp X                     	&kp C                     	&hm_gq MEH V              	&kp B                     	                          	&kp N                     	&hm_gq MEH M              	&kp COMMA                 	&kp DOT                   	&kp FSLH                  
                                                                                                                 &lt SYMBOL BSPC           	&mo NUMBER                	                          	&lt FUNC ENTER            	&lt NAV SPACE             	                          	                          	                          
                 >; };										
