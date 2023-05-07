@@ -9,8 +9,6 @@
 #define hms_base 500
 #define HMS_VVSLO (hms_base + 300)
 
-
-
 // home row mods
 
 hm_gq: homerow_mods_gq {   
@@ -58,7 +56,6 @@ hm_urob_l: hm_urob_l {
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_R THUMBS>;
         hold-trigger-on-release;
-
 };
 
 hm_urob_r: hm_urob_r {   
@@ -73,7 +70,6 @@ hm_urob_r: hm_urob_r {
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_L THUMBS>;
         hold-trigger-on-release;
-
 };
 
 hm_fast_finger: hm_fast_finger {
