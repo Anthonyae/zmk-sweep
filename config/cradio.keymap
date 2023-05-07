@@ -51,7 +51,7 @@
                 default_layer {										
                 bindings = <									
                 &kp Q                     	&kp W                     	&kp E                     	&kp R                     	&kp T                     	                          	&kp Y                     	&kp U                     	&kp I                     	&kp O                     	&kp P                     
-                &hm_gq LCTRL A   	&hm_gq LSHFT S            	&hm_gq LGUI D             	&hm_fast_finger LALT F    	&hm_gq HIKE G             	                          	&hm_gq HIKE H             	&hm_fast_finger RALT J    	&hm_gq RGUI K             	&hm_gq RSHFT L            	&hm_gq RCTRL APOS
+                &hm_gq LCTRL A             	&hm_gq LSHFT S            	&hm_gq LGUI D             	&hm_fast_finger LALT F    	&hm_gq HIKE G             	                          	&hm_gq HIKE H             	&hm_fast_finger RALT J    	&hm_gq RGUI K             	&hm_gq RSHFT L            	&hm_gq RCTRL APOS
                 &ltms UTILITY Z           	&kp X                     	&kp C                     	&hm_gq MEH V              	&kp B                     	                          	&kp N                     	&hm_gq MEH M              	&kp COMMA                 	&kp DOT                   	&kp FSLH                  
                                                                                                                 &lt SYMBOL BSPC           	&mo NUMBER                	                          	&lt FUNC ENTER            	&lt NAV SPACE             	                          	                          	                          
                 >; };										
@@ -65,8 +65,8 @@
                 default_hm_two_layer {										
                         bindings = <									
                 &kp Q                	&kp W                	&kp E                	&kp R                	&kp T                	                     	&kp Y                	&kp U                	&kp I                	&kp O                	&kp P                
-                &hm_gq_two LCTRL A   	&hm_gq_two LSHFT S   	&hm_gq_two LGUI D    	&hm_gq_two LALT F    	&hm_gq_two HIKE G    	                     	&hm_gq_two HIKE H    	&hm_gq_two RALT J    	&hm_gq_two RGUI K    	&hm_gq_two RSHFT L   	&hm_gq_two RCTRL APOS
-                &ltms UTILITY Z      	&kp X                	&kp C                	&hm_gq_two MEH V     	&kp B                	                     	&kp N                	&hm_gq_two MEH M     	&kp COMMA            	&kp DOT              	&kp FSLH             
+                &hm_urob_l LCTRL A   	&hm_urob_l LSHFT S   	&hm_urob_l LGUI D    	&hm_urob_l LALT F    	&hm_urob_l HIKE G    	                     	&hm_urob_r HIKE H    	&hm_urob_r RALT J    	&hm_urob_r RGUI K    	&hm_urob_r RSHFT L   	&hm_urob_r RCTRL APOS
+                &ltms UTILITY Z      	&kp X                	&kp C                	&hm_urob_l MEH V     	&kp B                	                     	&kp N                	&hm_urob_r MEH M     	&kp COMMA            	&kp DOT              	&kp FSLH             
                                                                                         &lt SYMBOL BSPC      	&mo NUMBER           	                     	&lt FUNC ENTER       	&lt NAV SPACE        	                     	                     	                     
                 >; };										
                 default_hm_none_layer {										

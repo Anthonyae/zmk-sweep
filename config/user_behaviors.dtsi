@@ -13,17 +13,6 @@
 
 // home row mods
 
-hm_fast_finger: hm_fast_finger {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping-term-ms = <150>;
-        // quick-tap-ms = <-1>;
-        // global-quick-tap;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
-};
-
 hm_gq: homerow_mods_gq {   
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
@@ -53,6 +42,47 @@ hm_gq_two: homerow_mods_gq_two {
         tapping-term-ms = <150>;
         quick-tap-ms = <10>;
         global-quick-tap;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+};
+
+hm_urob_l: hm_urob_l {   
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <280>;
+        quick-tap-ms = <175>;
+        global-quick-tap-ms = <150>;
+        global-quick-tap;
+        flavor = "balanced";
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-postions = <KEYS_R THUMBS>;
+        hold-trigger-on-release;
+
+};
+
+hm_urob_r: hm_urob_r {   
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <280>;
+        quick-tap-ms = <175>;
+        global-quick-tap-ms = <150>;
+        global-quick-tap;
+        flavor = "balanced";
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-postions = <KEYS_L THUMBS>;
+        hold-trigger-on-release;
+
+};
+
+hm_fast_finger: hm_fast_finger {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
+        // quick-tap-ms = <-1>;
+        // global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
