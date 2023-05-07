@@ -4,6 +4,10 @@ compatible = "zmk,combos";
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right-hand keys
 #define THUMBS LH1 LH0 RH0 RH1  // tHumb keys
 
+#define COMBO_TERM_LOW 30
+#define COMBO_TERM_MEDIUM 40
+#define COMBO_TERM_HIGH 50
+
 /* 5 columns 
 0	1	2	3	4		5	6	7	8	9
 10	11	12	13	14		15	16	17	18	19
@@ -23,28 +27,28 @@ compatible = "zmk,combos";
 // layers
 
 switch_base_layer {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_HIGH>;
     key-positions = <LT4 LT3 LT2 LT1>;
     bindings = <&to DEFAULT_HM>;
     layers = <0 1 2 3>;
 };
 
 switch_hm_one_layer {
-    timeout-ms = <30>;
+    timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <LB4 LB3 LB2 LB1>;
     bindings = <&to DEFAULT_HM_ONE>;
     layers = <0 1 2 3>;
 };
 
 switch_hm_two_layer {
-    timeout-ms = <30>;
+    timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <RT1 RT2 RT3 RT4>;
     bindings = <&to DEFAULT_HM_TWO>;
     layers = <0 1 2 3>;
 };
 
 switch_hm_none_layer {
-    timeout-ms = <30>;
+    timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <RB1 RB2 RB3 RB4>;
     bindings = <&to DEFAULT_HM_NONE>;
     layers = <0 1 2 3>;
@@ -52,28 +56,28 @@ switch_hm_none_layer {
 
 // What layer am I on? 
 combo_layer_zero {
-    timeout-ms = <30>;
+    timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <LT4 LM4 LB4>;
     bindings = <&layer_zero>;
     layers = <0>;
 };
 
 combo_layer_one {
-    timeout-ms = <30>;
+    timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <LT4 LM4 LB4>;
     bindings = <&layer_one>;
     layers = <1>;
 };
 
 combo_layer_two {
-    timeout-ms = <30>;
+    timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <LT4 LM4 LB4>;
     bindings = <&layer_two>;
     layers = <2>;
 };
 
 combo_layer_three {
-    timeout-ms = <30>;
+    timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <LT4 LM4 LB4>;
     bindings = <&layer_three>;
     layers = <3>;
@@ -83,28 +87,28 @@ combo_layer_three {
 // Device settings
 
 combo_reset_left {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_HIGH>;
     key-positions = <LT0 LT1 LT2>;
     bindings = <&sys_reset>;
     layers = <0 1 2>;
 };
     
 combo_reset_right {
-    timeout-ms = <50>; 
+    timeout-ms = <COMBO_TERM_HIGH>; 
     key-positions = <RT0 RT1 RT2>;
     bindings = <&sys_reset>;
     layers = <0 1 2>;
 };
     
 combo_bootloader_left {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_HIGH>;
     key-positions = <LT0 LT1 LT2 LT3>;
     bindings = <&bootloader>;
     layers = <0 1 2>;
 };
 
 combo_bootloader_right {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_HIGH>;
     key-positions = <RT0 RT1 RT2 RT3>;
     bindings = <&bootloader>;
     layers = <0 1 2>;
@@ -114,7 +118,7 @@ combo_bootloader_right {
 // Tricks 
 
 combo_new_sentence {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_HIGH>;
     key-positions = <RB3 RB4>;
     bindings = <&new_sentence>;
     layers = <0 1 2>;
@@ -138,21 +142,21 @@ combo_esc_right {
 };
 
 combo_tab_left {
-    timeout-ms = <40>;
+    timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <LM1 LM2>;
     bindings = <&kp TAB>;
     layers = <0 1 2>;
 };
 
 combo_tab_right {
-    timeout-ms = <40>;
+    timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <RM1 RM2>;
     bindings = <&kp TAB>;
     layers = <0 1 2>;
 };
 
 combo_backspace_right {
-    timeout-ms = <40>;
+    timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <RT1 RT2>;
     bindings = <&kp BSPC>;
     layers = <0 1 2>;
@@ -160,42 +164,42 @@ combo_backspace_right {
 
 // symbols
 combo_brace_left {
-    timeout-ms = <40>;
+    timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <LT3 LM3>;
     bindings = <&kp LBRC>;
     layers = <0 1 2>;
 };
 
 combo_paranthesis_left {
-    timeout-ms = <40>;
+    timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <LT2 LM2>;
     bindings = <&kp LPAR>;
     layers = <0 1 2>;
 };
 
 combo_bracket_left {
-    timeout-ms = <40>;
+    timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <LT1 LM1>;
     bindings = <&kp LBKT>;
     layers = <0 1 2>;
 };
 
 combo_brace_right {
-    timeout-ms = <40>;
+    timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <RT3 RM3>;
     bindings = <&kp RBRC>;
     layers = <0 1 2>;
 };
 
 combo_paranthesis_right {
-    timeout-ms = <40>;
+    timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <RT2 RM2>;
     bindings = <&kp RPAR>;
     layers = <0 1 2>;
 };
 
 combo_bracket_right {
-    timeout-ms = <40>;
+    timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <RT1 RM1>;
     bindings = <&kp RBKT>;
     layers = <0 1 2>;
@@ -203,7 +207,7 @@ combo_bracket_right {
 
 // keys
 combo_bracket_right {
-    timeout-ms = <40>;
+    timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <RT1 RT2>;
     bindings = <&kp &key_repeat>;
     layers = <0 1 2>;

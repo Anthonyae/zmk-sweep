@@ -47,4 +47,4 @@
 #define HYPER LG(LS(LA(LCTRL)))
 #define MEH LS(LA(LCTRL))
 #define HIKE LG(LA(LCTRL))
-#define HALT LG(LA) 
+#define HALT LG(LA)
