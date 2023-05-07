@@ -12,7 +12,8 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 #include "keymap_mouse.h"
-#include "base_configs.h" 
+#include "base_configs.h"
+#include "../zmk-nodefree-config/helper.h" 
 
 / {
         conditional_layers {
