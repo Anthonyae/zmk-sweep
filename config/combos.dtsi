@@ -206,7 +206,7 @@ combo_bracket_right {
 };
 
 // keys
-combo_bracket_right {
+combo_repeat {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <RT1 RT2>;
     bindings = <&kp &key_repeat>;
