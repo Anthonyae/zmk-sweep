@@ -54,8 +54,8 @@ hm_urob_l: hm_urob_l {
         global-quick-tap;
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <KEYS_R THUMBS>;
-        hold-trigger-on-release;
+        hold-trigger-key-positions = <KEYS_R THUMBS>; // including this will automatically turn on positional hold-tap
+        hold-trigger-on-release; // delays determining the next key press to when it is relased instead to allow chaining modifiers.
 };
 
 hm_urob_r: hm_urob_r {   
