@@ -56,7 +56,7 @@ hm_urob_l: hm_urob_l {
         global-quick-tap;
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
-        hold-trigger-key-postions = <KEYS_R THUMBS>;
+        hold-trigger-key-positions = <KEYS_R THUMBS>;
         hold-trigger-on-release;
 
 };
@@ -71,7 +71,7 @@ hm_urob_r: hm_urob_r {
         global-quick-tap;
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
-        hold-trigger-key-postions = <KEYS_L THUMBS>;
+        hold-trigger-key-positions = <KEYS_L THUMBS>;
         hold-trigger-on-release;
 
 };
