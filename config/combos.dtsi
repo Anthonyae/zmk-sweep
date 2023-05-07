@@ -200,3 +200,11 @@ combo_bracket_right {
     bindings = <&kp RBKT>;
     layers = <0 1 2>;
 };
+
+// keys
+combo_bracket_right {
+    timeout-ms = <40>;
+    key-positions = <RT1 RT2>;
+    bindings = <&kp &key_repeat>;
+    layers = <0 1 2>;
+};
