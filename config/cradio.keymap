@@ -13,7 +13,6 @@
 
 #include "keymap_mouse.h"
 #include "base_configs.h"
-#include "../zmk-nodefree-config/helper.h" 
 
 / {
         conditional_layers {
