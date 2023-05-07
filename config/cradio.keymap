@@ -93,7 +93,7 @@
                 nav_layer {										
                         bindings = <									
                 &kp PSCRN   	&kp SLCK    	&macro_redo 	&macro_undo 	&kp INS     	            	&kp CAPS    	&kp HOME    	&kp UP      	&kp END     	&kp LBRC    
-                &kp LCTRL   	&kp LSHFT   	&kp LGUI    	&kp LALT    	&kp DEL     	            	&caps_word  	&kp LEFT    	&kp DOWN    	&kp RIGHT   	&kp LPAR    
+                &kp LCTRL   	&kp LSHFT   	&kp LGUI    	&hm_urob_l LALT &macro_find    	&kp DEL     	            	&caps_word  	&kp LEFT    	&kp DOWN    	&kp RIGHT   	&kp LPAR    
                 &macro_undo 	&macro_cut  	&macro_copy 	&macro_paste	&key_repeat 	            	&kp HOME    	&kp PG_DN   	&kp PG_UP   	&kp END     	&kp LBKT    
                                                                 &trans      	&trans      	            	&trans      	&trans      	            	            	            
                 >; };		                          	                          	                          	                          	                          	                          	                          	                          	                          

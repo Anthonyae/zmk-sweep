@@ -151,6 +151,12 @@ combo_tab_right {
     layers = <0 1 2>;
 };
 
+combo_backspace_right {
+    timeout-ms = <40>;
+    key-positions = <Rf T1 RT2>;
+    bindings = <&kp BSPC>;
+    layers = <0 1 2>;
+};
 
 // symbols
 combo_brace_left {
