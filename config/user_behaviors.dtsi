@@ -30,7 +30,7 @@ hm_gq: homerow_mods_gq {
         bindings = <&kp>, <&kp>;
 }; 
 
-hm_gq_one: homerow_mods_gq_one {   
+hm_gq_one: homerow_mods_gq_one {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
