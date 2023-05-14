@@ -4,6 +4,7 @@ compatible = "zmk,combos";
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right-hand keys
 #define THUMBS LH1 LH0 RH0 RH1  // tHumb keys
 
+#define COMBO_TERM_LOWEST 10
 #define COMBO_TERM_LOW 30
 #define COMBO_TERM_MEDIUM 40
 #define COMBO_TERM_HIGH 50
@@ -156,7 +157,7 @@ combo_tab_right {
 };
 
 combo_backspace_right {
-    timeout-ms = <COMBO_TERM_MEDIUM>;
+    timeout-ms = <COMBO_TERM_LOWEST>;
     key-positions = <RT1 RT2>;
     bindings = <&kp BSPC>;
     layers = <0 1 2>;
@@ -207,8 +208,8 @@ combo_bracket_right {
 
 // keys
 combo_repeat {
-    timeout-ms = <COMBO_TERM_MEDIUM>;
+    timeout-ms = <COMBO_TERM_LOWEST>;
     key-positions = <LT1 LT2>;
-    bindings = <&kp &key_repeat>;
+    bindings = <&key_repeat>;
     layers = <0 1 2>;
 };

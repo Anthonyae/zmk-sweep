@@ -19,5 +19,6 @@
         "titleBar.inactiveForeground": "#e7e7e799"
     },
     "peacock.color": "#ea3b2e",
-    "autoHide.autoHideSideBar": false
+    "autoHide.autoHideSideBar": false,
+    "autoHide.autoHidePanel": false
 }
