@@ -49,10 +49,10 @@
                 compatible = "zmk,keymap";
 
                 default_layer {										
-                bindings = <									
+        	bindings = <									
                 &kp Q                	&kp W                	&kp E                	&kp R                	&kp T                	                     	&kp Y                	&kp U                	&kp I                	&kp O                	&kp P                
                 &hm_urob_l LCTRL A   	&hm_urob_l LSHFT S   	&hm_urob_l LGUI D    	&hm_urob_l LALT F    	&hm_urob_l HIKE G    	                     	&hm_urob_r HIKE H    	&hm_urob_r RALT J    	&hm_urob_r RGUI K    	&hm_urob_r RSHFT L   	&hm_urob_r RCTRL APOS
-                &lt UTILITY Z        	&kp X                	&kp C                	&hm_urob_l MEH V     	&kp B                	                     	&kp N                	&hm_urob_r MEH M     	&kp COMMA            	&kp DOT              	&lt UTILITY FSLH             
+                &lt UTILITY Z        	&kp X                	&kp C                	&hm_urob_l MEH V     	&kp B                	                     	&kp N                	&hm_urob_r MEH M     	&kp COMMA            	&kp DOT              	&lt UTILITY FSLH     
                                                                                         &lt SYMBOL BSPC      	&mo NUMBER           	                     	&lt FUNC ENTER       	&lt NAV SPACE        	                     	                     	                     
                 >; };										
                 default_hm_one_layer {										
@@ -79,15 +79,15 @@
                 symbol_layer {										
                         bindings = <									
                 &kp EXCL           	&kp AT             	&kp HASH           	&kp DOLLAR         	&kp PERCENT        	                   	&kp CARET          	&kp AMPS           	&kp STAR           	&kp PIPE           	&none              
-                &triple_grave_macro	&kp GRAVE          	&kp SEMI           	&lt NUMBER COLON   	&none              	                   	&none              	&kp UNDER          	&kp EQUAL          	&kp COMMA          	&none              
-                &none              	&kp TILDE          	&kp FSLH           	&kp BSLH           	&none              	                   	&none              	&kp MINUS          	&kp PLUS           	&kp DOT            	&none              
+                &triple_grave_macro	&kp GRAVE          	&kp SEMI           	&lt NUMBER COLON   	&none              	                   	&none              	&kp UNDER          	&kp EQUAL          	&arrow_single      	&none              
+                &none              	&kp TILDE          	&kp FSLH           	&kp BSLH           	&none              	                   	&none              	&kp MINUS          	&kp PLUS           	&arrow_double      	&none              
                                                                                         &trans             	&trans             	                   	&trans             	&trans             	                   	                   	                   
                 >; };		                     	                     	                     	                     	                     	                     	                     	                     	                     
                 number_layer {										
                         bindings = <									
-                &none    	&kp COMMA	&kp ASTRK	&kp FSLH 	&trans   	         	&trans   	&kp N7   	&kp N8   	&kp N9   	&kp N0   
-                &none    	&kp DOT  	&kp EQUAL	&kp UNDER	&trans   	         	&trans   	&kp N4   	&kp N5   	&kp N6   	&kp N0   
-                &none    	&none    	&kp PLUS 	&kp MINUS	&trans   	         	&trans   	&kp N1   	&kp N2   	&kp N3   	&kp N0   
+                &none    	&kp COMMA	&kp ASTRK	&kp FSLH 	&trans   	         	&kp FSLH 	&kp N7   	&kp N8   	&kp N9   	&kp MINUS
+                &none    	&kp DOT  	&kp EQUAL	&kp UNDER	&trans   	         	&kp STAR 	&kp N4   	&kp N5   	&kp N6   	&kp PLUS 
+                &none    	&none    	&kp PLUS 	&kp MINUS	&trans   	         	&none    	&kp N1   	&kp N2   	&kp N3   	&none    
                                                                 &trans   	&trans   	         	&kp N0   	&kp N0   	         	         	         
                 >; };		                     	                     	                     	                     	                     	                     	                     	                     	                     
                 nav_layer {										
@@ -155,9 +155,9 @@
                 >; };										
                 convenience_layer {										
                         bindings = <									
-                &none               	&surround_brace     	&surround_paran     	&surround_bracket   	&git_add            	                    	&git_add_i_hunk     	&git_add_i_hunk     	&none               	&none               	&none               
+                &none               	&surround_brace     	&surround_paran     	&surround_bracket   	&git_add            	                    	&git_add_i_hunk     	&none               	&none               	&none               	&none               
                 &git_clean_n        	&git_diff_cached    	&git_reflog         	&git_status         	&git_commit         	                    	&git_commit_amend   	&none               	&none               	&none               	&none               
-                &none               	&none               	&git_merged_list    	&git_no_merged_list 	&git_push           	                    	&git_checkout_switch	&none               	&none               	&arrow_single       	&arrow_double       
+                &none               	&none               	&git_merged_list    	&git_no_merged_list 	&git_push           	                    	&git_checkout_switch	&none               	&none               	&none               	&none               
                                                                                         &trans              	&trans              	                    	&trans              	&trans              	                    	                    	                    
                 >; };										
 
