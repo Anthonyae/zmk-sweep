@@ -206,6 +206,20 @@ combo_bracket_right {
     layers = <0 1 2>;
 };
 
+combo_comma {
+    timeout-ms = <COMBO_TERM_MEDIUM>;
+    key-positions = <RT2 RM2>;
+    bindings = <&kp COMMA>;
+    layers = <NUMBER>;
+};
+
+combo_comma {
+    timeout-ms = <COMBO_TERM_MEDIUM>;
+    key-positions = <RT3 RM3>;
+    bindings = <&kp PERIOD>;
+    layers = <NUMBER>;
+};
+
 // keys
 combo_repeat {
     timeout-ms = <COMBO_TERM_LOWEST>;
