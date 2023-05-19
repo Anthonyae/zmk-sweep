@@ -220,6 +220,13 @@ combo_period {
     layers = <NUMBER>;
 };
 
+combo_period_next {
+    timeout-ms = <COMBO_TERM_MEDIUM>;
+    key-positions = <RT1 RM1>;
+    bindings = <&kp PERIOD>;
+    layers = <NUMBER>;
+};
+
 // keys
 combo_repeat {
     timeout-ms = <COMBO_TERM_LOWEST>;
