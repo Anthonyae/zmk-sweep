@@ -223,7 +223,7 @@ combo_period {
 combo_comma_next {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <RT1 RM1>;
-    bindings = <&kp COMMA>;
+    bindings = <&kp PERIOD>;
     layers = <NUMBER>;
 };
 
