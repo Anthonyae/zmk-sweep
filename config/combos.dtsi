@@ -166,21 +166,21 @@ combo_tab_right {
 };
 
 // two different ways of achieving control backspace
-combo_backspace_right {
-    timeout-ms = <COMBO_TERM_LOWEST>;
-    key-positions = <RT1 RT2>;
-    bindings = <&kp RC(BSPC)>;
-    layers = <0 1 2>;
-};
 
 combo_control_backspace_left {
     timeout-ms = <COMBO_TERM_LOWEST>;
-    key-positions = <LB1 LB2>;
+    key-positions = <LT1 LT2>;
+    bindings = <&kp LC(BSPC)>;
+    layers = <0 1 2>;
+};
+
+combo_backspace_right {
+    timeout-ms = <COMBO_TERM_LOWEST>;
+    key-positions = <RT1 RT2>;
     bindings = <&macro_control_back>;
     layers = <0 1 2>;
 };
 
-// 
 combo_alt_tab_left {
     timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <LT0 LT1>;
@@ -191,7 +191,7 @@ combo_alt_tab_left {
 combo_alt_tab_right {
     timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <RT0 RT1>;
-    bindings = <&kp RA(TAB)>;
+    bindings = <&macro_alt_tab>;
     layers = <0 1 2>;
 };
 
