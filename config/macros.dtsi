@@ -1,5 +1,14 @@
 
 // General purpose 
+// extras
+// Git commands
+// notes 
+// what layer am I on?
+// modifiers 
+// system shortcuts
+
+
+// General purpose 
     arrow_single: arrow_single {
         label = "arrow_single";
         compatible = "zmk,behavior-macro";

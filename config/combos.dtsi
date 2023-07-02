@@ -25,6 +25,15 @@ compatible = "zmk,combos";
   ╰───────╮ LH2 LH1 LH0 │ │ RH0 RH1 RH2 ╭───────╯
           ╰─────────────╯ ╰─────────────╯ */
 
+
+// layers
+// What layer am I on?
+// Device settings
+// Tricks
+// modifiers
+// symbols
+// keys
+
 // layers
 
 switch_base_layer {
@@ -55,7 +64,7 @@ switch_hm_none_layer {
     layers = <0 1 2 3>;
 };
 
-// What layer am I on? 
+// What layer am I on?
 combo_layer_zero {
     timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <LT4 LM4 LB4>;
@@ -159,7 +168,7 @@ combo_tab_right {
 combo_backspace_right {
     timeout-ms = <COMBO_TERM_LOWEST>;
     key-positions = <RT1 RT2>;
-    bindings = <&kp BSPC>;
+    bindings = <&kp LC(BSPC)>;
     layers = <0 1 2>;
 };
 
