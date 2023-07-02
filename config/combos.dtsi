@@ -139,14 +139,14 @@ combo_new_sentence {
 
 combo_esc_left {
     timeout-ms = <20>;
-    key-positions = <LM0 LM1>;
+    key-positions = <LT0 LT1>;
     bindings = <&kp ESC>;
     layers = <0 1 2>;
 };
 
 combo_esc_right {
     timeout-ms = <20>;
-    key-positions = <RM0 RM1>;
+    key-positions = <RT0 RT1>;
     bindings = <&double_esc>;
     layers = <0 1 2>;
 };
@@ -169,28 +169,28 @@ combo_tab_right {
 
 combo_control_backspace_left {
     timeout-ms = <COMBO_TERM_LOWEST>;
-    key-positions = <LT1 LT2>;
+    key-positions = <LM0 LM1>;
     bindings = <&kp LC(BSPC)>;
     layers = <0 1 2>;
 };
 
-combo_backspace_right {
+combo_control_backspace_right {
     timeout-ms = <COMBO_TERM_LOWEST>;
-    key-positions = <RT1 RT2>;
+    key-positions = <RM0 RM1>;
     bindings = <&macro_control_back>;
     layers = <0 1 2>;
 };
 
 combo_alt_tab_left {
-    timeout-ms = <COMBO_TERM_LOW>;
-    key-positions = <LT0 LT1>;
+    timeout-ms = <COMBO_TERM_LOWEST>;
+    key-positions = <LT1 LT2>;
     bindings = <&kp LA(TAB)>;
     layers = <0 1 2>;
 };
 
 combo_alt_tab_right {
-    timeout-ms = <COMBO_TERM_LOW>;
-    key-positions = <RT0 RT1>;
+    timeout-ms = <COMBO_TERM_LOWEST>;
+    key-positions = <RT1 RT2>;
     bindings = <&macro_alt_tab>;
     layers = <0 1 2>;
 };
