@@ -262,7 +262,7 @@ combo_comma_next {
 // keys
 combo_repeat {
     timeout-ms = <COMBO_TERM_LOWEST>;
-    key-positions = <LT1 LT2>;
+    key-positions = <LB0 LB1>;
     bindings = <&key_repeat>;
     layers = <0 1 2>;
 };
