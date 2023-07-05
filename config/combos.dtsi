@@ -170,6 +170,7 @@ combo_tab_right {
 combo_control_backspace_left {
     timeout-ms = <COMBO_TERM_LOWEST>;
     key-positions = <LM0 LM1>;
+    global-quick-tap;
     bindings = <&kp LC(BSPC)>;
     layers = <0 1 2>;
 };
