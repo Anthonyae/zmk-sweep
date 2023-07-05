@@ -157,7 +157,7 @@ combo_esc_right {
 combo_repeat_left {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <LM1 LM2>;
-    bindings = <&repeat>;
+    bindings = <&key_repeat>;
     layers = <0 1 2>;
 };
 
@@ -270,10 +270,3 @@ combo_comma_next {
     layers = <NUMBER>;
 };
 
-// keys
-combo_repeat {
-    timeout-ms = <COMBO_TERM_LOWEST>;
-    key-positions = <LB0 LB1>;
-    bindings = <&key_repeat>;
-    layers = <0 1 2>;
-};
