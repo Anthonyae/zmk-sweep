@@ -161,7 +161,7 @@ combo_repeat_left {
     layers = <0 1 2>;
 };
 
-deactivating this combo in order to try repeat combo here
+// deactivating this combo in order to try repeat combo here
 // combo_tab_left {
 //     timeout-ms = <COMBO_TERM_MEDIUM>;
 //     key-positions = <LM1 LM2>;
