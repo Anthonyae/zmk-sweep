@@ -154,12 +154,20 @@ combo_esc_right {
     layers = <0 1 2>;
 };
 
-combo_tab_left {
+combo_repeat_left {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <LM1 LM2>;
-    bindings = <&kp TAB>;
+    bindings = <&repeat>;
     layers = <0 1 2>;
 };
+
+deactivating this combo in order to try repeat combo here
+// combo_tab_left {
+//     timeout-ms = <COMBO_TERM_MEDIUM>;
+//     key-positions = <LM1 LM2>;
+//     bindings = <&kp TAB>;
+//     layers = <0 1 2>;
+// };
 
 combo_tab_right {
     timeout-ms = <COMBO_TERM_MEDIUM>;
