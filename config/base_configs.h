@@ -16,6 +16,8 @@
 #define NUMBER_TEST 14
 #define CONVENIENCE_LAYER 15
 
+// #include "combos.dtsi"  // requires layer aliases
+
 // global settings
 &mt {
     tapping-term-ms = <200>;

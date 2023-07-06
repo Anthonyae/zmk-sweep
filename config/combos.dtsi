@@ -141,14 +141,14 @@ combo_new_sentence {
 // modifiers
 
 combo_esc_left {
-    timeout-ms = <20>;
+    timeout-ms = <COMBO_TERM_MEDIUM>; //20
     key-positions = <LT0 LT1>;
     bindings = <&kp ESC>;
     layers = <0 1 2>;
 };
 
 combo_esc_right {
-    timeout-ms = <20>;
+    timeout-ms = <COMBO_TERM_MEDIUM>; //20
     key-positions = <RT0 RT1>;
     bindings = <&double_esc>;
     layers = <0 1 2>;
