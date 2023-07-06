@@ -217,14 +217,14 @@ combo_brace_left {
 combo_paranthesis_left {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <LT2 LM2>;
-    bindings = <&kp LPAR>;
+    bindings = <&kp LBKT>;
     layers = <0 1 2>;
 };
 
 combo_bracket_left {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <LT1 LM1>;
-    bindings = <&kp LBKT>;
+    bindings = <&kp LPAR>;
     layers = <0 1 2>;
 };
 
