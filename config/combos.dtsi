@@ -154,12 +154,12 @@ combo_esc_right {
     layers = <0 1 2>;
 };
 
-combo_repeat_left {
-    timeout-ms = <COMBO_TERM_MEDIUM>;
-    key-positions = <LM1 LM2>;
-    bindings = <&key_repeat>;
-    layers = <0 1 2>;
-};
+// combo_repeat_left {
+//     timeout-ms = <COMBO_TERM_MEDIUM>;
+//     key-positions = <LM1 LM2>;
+//     bindings = <&key_repeat>;
+//     layers = <0 1 2>;
+// };
 
 // deactivating this combo in order to try repeat combo here
 // combo_tab_left {
@@ -178,12 +178,12 @@ combo_tab_right {
 
 // two different ways of achieving control backspace
 
-combo_control_backspace_left {
-    timeout-ms = <COMBO_TERM_LOWEST>;
-    key-positions = <LM0 LM1>;
-    bindings = <&kp LC(BSPC)>;
-    layers = <0 1 2>;
-};
+// combo_control_backspace_left {
+//     timeout-ms = <COMBO_TERM_LOWEST>;
+//     key-positions = <LM0 LM1>;
+//     bindings = <&kp LC(BSPC)>;
+//     layers = <0 1 2>;
+// };
 
 combo_control_backspace_right {
     timeout-ms = <COMBO_TERM_LOWEST>;
