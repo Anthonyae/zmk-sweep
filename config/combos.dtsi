@@ -10,7 +10,7 @@ compatible = "zmk,combos";
 #define COMBO_TERM_HIGH 50
 
 #undef COMBO_HOOK
-#define COMBO_HOOK global-quick-tap-ms = <100>;
+#define COMBO_HOOK global-quick-tap-ms = <100>f i    know   ;
 
 /* 5 columns 
 0	1	2	3	4		5	6	7	8	9
@@ -140,7 +140,6 @@ combo_new_sentence {
 
 // modifiers
 
-
 combo_tab_right {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <RM1 RM2>;
@@ -176,12 +175,12 @@ combo_alt_tab_right {
     layers = <0 1 2>;
 };
 
-// combo_repeat_left {
-//     timeout-ms = <COMBO_TERM_MEDIUM>;
-//     key-positions = <LM1 LM2>;   
-//     bindings = <&key_repeat>;
-//     layers = <0 1 2>;
-// };
+combo_repeat_left {
+    timeout-ms = <COMBO_TERM_MEDIUM>;
+    key-positions = <LM1 LM2>;   
+    bindings = <&key_repeat>;
+    layers = <0 1 2>;
+};
 
 // symbols
 combo_brace_left {
@@ -248,15 +247,16 @@ combo_comma_next {
 };
 
 
+// modifiers 2 -- not sure if this placement is what was fixing my collisions with brackets
 combo_esc_left {
-    timeout-ms = <COMBO_TERM_MEDIUM>; //20
+    timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <LT0 LT1>;
     bindings = <&kp ESC>;
     layers = <0 1 2>;
 };
 
 combo_esc_right {
-    timeout-ms = <COMBO_TERM_MEDIUM>; //20
+    timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <RT0 RT1>;
     bindings = <&double_esc>;
     layers = <0 1 2>;
