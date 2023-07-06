@@ -103,28 +103,28 @@ combo_reset_left {
     timeout-ms = <COMBO_TERM_HIGH>;
     key-positions = <LT0 LT1 LT2>;
     bindings = <&sys_reset>;
-    layers = <0 1 2>;
+    layers = <9>;
 };
     
 combo_reset_right {
     timeout-ms = <COMBO_TERM_HIGH>; 
     key-positions = <RT0 RT1 RT2>;
     bindings = <&sys_reset>;
-    layers = <0 1 2>;
+    layers = <9>;
 };
     
 combo_bootloader_left {
     timeout-ms = <COMBO_TERM_HIGH>;
     key-positions = <LT0 LT1 LT2 LT3>;
     bindings = <&bootloader>;
-    layers = <0 1 2>;
+    layers = <9>;
 };
 
 combo_bootloader_right {
     timeout-ms = <COMBO_TERM_HIGH>;
     key-positions = <RT0 RT1 RT2 RT3>;
     bindings = <&bootloader>;
-    layers = <0 1 2>;
+    layers = <9>;
 };
 
 
@@ -154,20 +154,6 @@ combo_esc_right {
     layers = <0 1 2>;
 };
 
-// combo_repeat_left {
-//     timeout-ms = <COMBO_TERM_MEDIUM>;
-//     key-positions = <LM1 LM2>;
-//     bindings = <&key_repeat>;
-//     layers = <0 1 2>;
-// };
-
-// deactivating this combo in order to try repeat combo here
-// combo_tab_left {
-//     timeout-ms = <COMBO_TERM_MEDIUM>;
-//     key-positions = <LM1 LM2>;
-//     bindings = <&kp TAB>;
-//     layers = <0 1 2>;
-// };
 
 combo_tab_right {
     timeout-ms = <COMBO_TERM_MEDIUM>;
@@ -175,15 +161,6 @@ combo_tab_right {
     bindings = <&kp TAB>;
     layers = <0 1 2>;
 };
-
-// two different ways of achieving control backspace
-
-// combo_control_backspace_left {
-//     timeout-ms = <COMBO_TERM_LOWEST>;
-//     key-positions = <LM0 LM1>;
-//     bindings = <&kp LC(BSPC)>;
-//     layers = <0 1 2>;
-// };
 
 combo_control_backspace_right {
     timeout-ms = <COMBO_TERM_LOWEST>;
@@ -217,14 +194,14 @@ combo_brace_left {
 combo_paranthesis_left {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <LT2 LM2>;
-    bindings = <&kp LBKT>;
+    bindings = <&kp LPAR>;
     layers = <0 1 2>;
 };
 
 combo_bracket_left {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <LT1 LM1>;
-    bindings = <&kp LPAR>;
+    bindings = <&kp LBKT>;
     layers = <0 1 2>;
 };
 
