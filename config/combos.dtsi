@@ -140,24 +140,18 @@ combo_new_sentence {
 
 // modifiers
 
-// combo_esc_left {
-//     timeout-ms = <COMBO_TERM_MEDIUM>; //20
-//     key-positions = <LT0 LT1>;
-//     bindings = <&kp ESC>;
-//     layers = <0 1 2>;
-// };
-
-// combo_esc_right {
-//     timeout-ms = <COMBO_TERM_MEDIUM>; //20
-//     key-positions = <RT0 RT1>;
-//     bindings = <&double_esc>;
-//     layers = <0 1 2>;
-// };
 
 combo_tab_right {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <RM1 RM2>;
     bindings = <&kp TAB>;
+    layers = <0 1 2>;
+};
+
+combo_control_backspace_left {
+    timeout-ms = <COMBO_TERM_LOWEST>;
+    key-positions = <LM0 LM1>;
+    bindings = <&macro_control_back>;
     layers = <0 1 2>;
 };
 
@@ -182,6 +176,13 @@ combo_alt_tab_right {
     layers = <0 1 2>;
 };
 
+// combo_repeat_left {
+//     timeout-ms = <COMBO_TERM_MEDIUM>;
+//     key-positions = <LM1 LM2>;   
+//     bindings = <&key_repeat>;
+//     layers = <0 1 2>;
+// };
+
 // symbols
 combo_brace_left {
     timeout-ms = <COMBO_TERM_MEDIUM>;
@@ -198,7 +199,7 @@ combo_paranthesis_left {
 };
 
 combo_bracket_left {
-    timeout-ms = <COMBO_TERM_MEDIUM>;
+    timeout-ms = <COMBO_TERM_LOWEST>;
     key-positions = <LT1 LM1>;
     bindings = <&kp LBKT>;
     layers = <0 1 2>;
@@ -219,7 +220,7 @@ combo_paranthesis_right {
 };
 
 combo_bracket_right {
-    timeout-ms = <COMBO_TERM_LOWEST>;
+    timeout-ms = <COMBO_TERM_HIGH>;
     key-positions = <RT1 RM1>;
     bindings = <&kp RBKT>;
     layers = <0 1 2>;
@@ -246,3 +247,17 @@ combo_comma_next {
     layers = <NUMBER>;
 };
 
+
+combo_esc_left {
+    timeout-ms = <COMBO_TERM_MEDIUM>; //20
+    key-positions = <LT0 LT1>;
+    bindings = <&kp ESC>;
+    layers = <0 1 2>;
+};
+
+combo_esc_right {
+    timeout-ms = <COMBO_TERM_MEDIUM>; //20
+    key-positions = <RT0 RT1>;
+    bindings = <&double_esc>;
+    layers = <0 1 2>;
+};
