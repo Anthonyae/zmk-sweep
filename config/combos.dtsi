@@ -162,7 +162,7 @@ combo_control_backspace_right {
 };
 
 combo_alt_tab_left {
-    timeout-ms = <COMBO_TERM_LOW>;
+    timeout-ms = <COMBO_TERM_LOWEST>; // tried 30 ms, was still getting false positives
     key-positions = <LT1 LT2>;
     bindings = <&kp LA(TAB)>;
     layers = <0 1 2>;
