@@ -74,11 +74,11 @@ hm_vvslow: homerow_mods {
 
 hm_urob_l: hm_urob_l {   
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
+        label = "HOMEROW_MODS_LEFT";
         #binding-cells = <2>;
         tapping-term-ms = <280>;
         quick-tap-ms = <175>;
-        // global-quick-tap-ms = <150>;
+        global-quick-tap-ms = <150>; // requires pr #1387
         global-quick-tap;
         flavor = "balanced"; // will trigger the hold behavior when the tapping-term-ms has expired or another key is pressed and released.
         bindings = <&kp>, <&kp>;
@@ -88,11 +88,11 @@ hm_urob_l: hm_urob_l {
 
 hm_urob_r: hm_urob_r {   
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
+        label = "HOMEROW_MODS_RIGHT";
         #binding-cells = <2>;
         tapping-term-ms = <280>;
         quick-tap-ms = <175>;
-        // global-quick-tap-ms = <150>;
+        global-quick-tap-ms = <150>; // requires pr #1387
         global-quick-tap;
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
