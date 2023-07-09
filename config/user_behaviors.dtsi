@@ -116,7 +116,7 @@ hm_shift_l: hm_shift_l {
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_R KEYS_L_T>;
-        // hold-trigger-on-release;
+        hold-trigger-on-release;
 };
 
 hm_shift_r: hm_shift_r {
@@ -130,7 +130,7 @@ hm_shift_r: hm_shift_r {
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_L KEYS_R_T>;
-        // hold-trigger-on-release;
+        hold-trigger-on-release;
 };
 
 
