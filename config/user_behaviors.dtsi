@@ -109,12 +109,13 @@ hm_shift_l: hm_shift_l {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS_FAST_LEFT";
         #binding-cells = <2>;
-        bindings = <&kp>, <&kp>;
-        flavor = "balanced";
         tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-        quick_tap_ms = <175>;
+        quick-tap-ms = <175>;
         global-quick-tap-ms = <150>;
-        hold-trigger-key-positions = <KEYS_R KEYS_T>;
+        global-quick-tap;
+        flavor = "balanced";
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <KEYS_R KEYS_L_T>;
         hold-trigger-on-release;
 };
 
@@ -122,12 +123,13 @@ hm_shift_r: hm_shift_r {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS_FAST_RIGHT";
         #binding-cells = <2>;
-        bindings = <&kp>, <&kp>;
-        flavor = "balanced";
         tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-        quick_tap_ms = <175>;
+        quick-tap-ms = <175>;
         global-quick-tap-ms = <150>;
-        hold-trigger-key-positions = <KEYS_L KEYS_T>;
+        global-quick-tap;
+        flavor = "balanced";
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <KEYS_L KEYS_R_T>;
         hold-trigger-on-release;
 };
 
