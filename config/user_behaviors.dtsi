@@ -84,8 +84,8 @@ hm_urob_l: hm_urob_l {
         global-quick-tap;
         flavor = "balanced"; // will trigger the hold behavior when the tapping-term-ms has expired or another key is pressed and released.
         bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <KEYS_R>; // including this will automatically turn on positional hold-tap
-        hold-trigger-on-release; // If set to true, the evaluation of hold-trigger-key-positions gets delayed until key release. This allows combining multiple modifiers when the next key is held, while still deciding the hold-tap in favor of a tap when the next key is tapped.
+        hold-trigger-key-positions = <KEYS_R KEYS_L_T>; // including this will automatically turn on positional hold-tap
+        hold-trigger-on-release; // If set to true, the evaluation of hold-trigger-key-positions gets delayed until key release. Ths allows combining multiple modifiers when the next key is held, while still deciding the hold-tap in favor of a tap when the next key is tapped.
 };
 
 hm_urob_r: hm_urob_r {   
@@ -98,7 +98,7 @@ hm_urob_r: hm_urob_r {
         global-quick-tap;
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <KEYS_L>;
+        hold-trigger-key-positions = <KEYS_L KEYS_R_T>;
         hold-trigger-on-release;
 };
 
