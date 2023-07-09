@@ -1,7 +1,7 @@
 #include "../zmk-nodefree-config/keypos_def/keypos_34keys.h"
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // left-hand keys
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right-hand keys
-#define THUMBS LH1 LH0 RH0 RH1  // tHumb keys
+#define KEYS_T LH1 LH0 RH0 RH1  // tHumb keys
 
 // Home row speed settings 
 #define hms_base_low_resistance_keycaps 500
@@ -9,7 +9,11 @@
 #define hms_base 500
 #define HMS_VVSLO (hms_base + 300)
 
-// home row mods
+
+#define HM_TAPPING_TERM 300
+#define HM_TAPPING_TERM_FAST 200
+
+// home row mods - old
 
 hm_gq: homerow_mods_gq {   
         compatible = "zmk,behavior-hold-tap";
@@ -44,34 +48,6 @@ hm_gq_two: homerow_mods_gq_two {
         bindings = <&kp>, <&kp>;
 };
 
-hm_urob_l: hm_urob_l {   
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping-term-ms = <280>;
-        quick-tap-ms = <175>;
-        // global-quick-tap-ms = <150>;
-        global-quick-tap;
-        flavor = "balanced"; // will trigger the hold behavior when the tapping-term-ms has expired or another key is pressed and released.
-        bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <KEYS_R THUMBS>; // including this will automatically turn on positional hold-tap
-        hold-trigger-on-release; // If set to true, the evaluation of hold-trigger-key-positions gets delayed until key release. This allows combining multiple modifiers when the next key is held, while still deciding the hold-tap in favor of a tap when the next key is tapped.
-};
-
-hm_urob_r: hm_urob_r {   
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping-term-ms = <280>;
-        quick-tap-ms = <175>;
-        // global-quick-tap-ms = <150>;
-        global-quick-tap;
-        flavor = "balanced";
-        bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <KEYS_L THUMBS>;
-        hold-trigger-on-release;
-};
-
 hm_fast_finger: hm_fast_finger {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
@@ -91,6 +67,68 @@ hm_vvslow: homerow_mods {
         quick-tap-ms = <0>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
+};
+
+
+// home row mods - urob
+
+hm_urob_l: hm_urob_l {   
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <280>;
+        quick-tap-ms = <175>;
+        // global-quick-tap-ms = <150>;
+        global-quick-tap;
+        flavor = "balanced"; // will trigger the hold behavior when the tapping-term-ms has expired or another key is pressed and released.
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <KEYS_R KEYS_T>; // including this will automatically turn on positional hold-tap
+        hold-trigger-on-release; // If set to true, the evaluation of hold-trigger-key-positions gets delayed until key release. This allows combining multiple modifiers when the next key is held, while still deciding the hold-tap in favor of a tap when the next key is tapped.
+};
+
+hm_urob_r: hm_urob_r {   
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <280>;
+        quick-tap-ms = <175>;
+        // global-quick-tap-ms = <150>;
+        global-quick-tap;
+        flavor = "balanced";
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <KEYS_L KEYS_T>;
+        hold-trigger-on-release;
+};
+
+// Positional Homerow mods for shift
+// Use faster tapping term and disable some features that may
+// cause false negatives.
+hm_shift_l: hm_shift_l {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS_FAST_LEFT";
+        #binding-cells = <2>;
+        bindings = <&kp>, <&kp>;
+
+        flavor = "balanced";
+        tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+        quick_tap_ms = <175>;
+        // global-quick-tap-ms = <150>;         // requires PR #1387
+        hold-trigger-key-positions = <KEYS_R KEYS_T>;
+        // hold-trigger-on-release;             // requires PR #1423
+};
+
+hm_shift_r: hm_shift_r {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS_FAST_RIGHT";
+        #binding-cells = <2>;
+        bindings = <&kp>, <&kp>;
+
+        flavor = "balanced";
+        tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+        quick_tap_ms = <175>;
+        // global-quick-tap-ms = <150>;         // requires PR #1387
+        hold-trigger-key-positions = <KEYS_L KEYS_T>;
+        // hold-trigger-on-release;             // requires PR #1423
 };
 
 
