@@ -54,7 +54,7 @@ switch_hm_one_layer {
 };
 
 switch_hm_two_layer {
-    timeout-ms = <COMBO_TERM_MEDIUM>;
+    timeout-ms = <COMBO_TERM_HIGH>;
     key-positions = <RT1 RT2 RT3 RT4>;
     bindings = <&to DEFAULT_HM_TWO>;
     layers = <0 1 2 3>;
