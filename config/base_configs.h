@@ -23,7 +23,7 @@
 };
 
 &lt {
-    tapping-term-ms = <130>;
+    tapping-term-ms = <130>; 
 };
 
 // this changes the movement speed of the mouse
