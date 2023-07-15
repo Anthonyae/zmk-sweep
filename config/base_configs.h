@@ -13,7 +13,7 @@
 #define MOUSE_MEDIUM 11
 #define MOUSE_SLOW 12
 #define MOUSE_CRAWL 13
-#define NUMBER_TEST 14
+#define MOUSE_DEAD 14
 #define CONVENIENCE_LAYER 15
 
 
