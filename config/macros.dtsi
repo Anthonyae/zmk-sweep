@@ -182,6 +182,17 @@
         bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp B &kp R &kp A &kp N &kp C &kp H &kp SPACE &kp MINUS &kp MINUS &kp M &kp E &kp R &kp G &kp E &kp D &kp SPACE &kp M &kp A &kp S &kp T &kp E &kp R>
         ;
     };
+
+    // brach_list: see log of last committed branches and their last commit
+    git_branch_commit_list: git_branch_commit_list {
+        label = "git_branch_commit_list";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp F &kp O &kp R &kp MINUS &kp E &kp A &kp C &kp H &kp MINUS &kp R &kp E &kp F &kp SPACE &kp MINUS &kp MINUS &kp S &kp O &kp R &kp T &kp EQUAL &kp MINUS &kp C &kp O &kp M &kp M &kp I &kp T &kp T &kp E &kp R &kp D &kp A &kp T &kp E &kp SPACE &kp R &kp E &kp F &kp S &kp FSLH &kp H &kp E &kp A &kp D &kp S &kp FSLH>
+        ;
+    };
     
     // branch_list: check which branches are not merged to master
     git_no_merged_list: git_no_merged_list {
