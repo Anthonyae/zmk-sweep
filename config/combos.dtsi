@@ -60,6 +60,14 @@ switch_hm_two_layer {
     layers = <0 1 2 3>;
 };
 
+switch_hm_two_layer_side {
+    timeout-ms = <COMBO_TERM_HIGH>;
+    key-positions = <RT4 RM4 RB4>;
+    bindings = <&to DEFAULT_HM_TWO>;
+    layers = <0 1 2 3>;
+};
+
+
 switch_hm_none_layer {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <RB1 RB2 RB3 RB4>;
