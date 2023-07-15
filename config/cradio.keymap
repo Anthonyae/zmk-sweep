@@ -64,10 +64,10 @@
                 >; };		                     	                     	                     	                     	                     	                     	                     	                     	                     
                 default_hm_two_layer {										
                         bindings = <									
-                &kp Q                	&kp W                	&kp E                	&kp R                	&kp T                	                     	&kp Y                	&kp U                	&kp I                	&kp O                	&kp P                
-                &hm_urob_l LCTRL A   	&hm_urob_l LSHFT S   	&hm_urob_l LGUI D    	&hm_urob_l LALT F    	&hm_urob_l HIKE G    	                     	&hm_gq_two HIKE H    	&hm_gq_two RALT J    	&hm_gq_two RGUI K    	&hm_gq_two RSHFT L   	&hm_gq_two RCTRL APOS
-                &lt UTILITY Z        	&kp X                	&kp C                	&hm_urob_l MEH V     	&kp B                	                     	&kp N                	&hm_gq_two MEH M     	&kp COMMA            	&kp DOT              	&kp FSLH             
-                                                                                        &lt SYMBOL BSPC      	&mo NUMBER           	                     	&lt FUNC ENTER       	&lt NAV SPACE        	                     	                     	                     
+                &kp Q                    	&kp W                    	&kp E                    	&kp R                    	&kp T                    	                         	&kp Y                    	&kp U                    	&kp I                    	&kp O                    	&kp P                    
+                &hm_urob_l_dev LCTRL A   	&hm_urob_l_dev LSHFT S   	&hm_urob_l_dev LGUI D    	&hm_urob_l_dev LALT F    	&hm_urob_l_dev HIKE G    	                         	&hm_urob_r_dev HIKE H    	&hm_urob_r_dev RALT J    	&hm_urob_r_dev RGUI K    	&hm_urob_r_dev RSHFT L   	&hm_urob_r_dev RCTRL APOS
+                &lt UTILITY Z            	&kp X                    	&kp C                    	&hm_urob_l_dev MEH V     	&kp B                    	                         	&kp N                    	&hm_urob_r_dev MEH M     	&kp COMMA                	&kp DOT                  	&kp FSLH                 
+                                                                                                                &lt SYMBOL BSPC          	&mo NUMBER               	                         	&lt FUNC ENTER           	&lt NAV SPACE            	                         	                         	                         
                 >; };										
                 default_hm_none_layer {										
                         bindings = <									
@@ -108,7 +108,7 @@
                         bindings = <									
                 &mkp MCLK        	&mkp RCLK        	&mmv MOVE_UP     	&mkp LCLK        	&kp K_CMENU      	                 	&kp K_CMENU      	&mkp LCLK        	&mkp MCLK        	&mkp RCLK        	&mkp MCLK        
                 &mwh SCROLL_LEFT 	&mmv MOVE_LEFT   	&mmv MOVE_DOWN   	&mmv MOVE_RIGHT  	&mwh SCROLL_RIGHT	                 	&trans           	&kp RALT         	&kp RGUI         	&kp RSHFT        	&kp RCTRL        
-                &trans           	&mwh SCROLL_LEFT 	&mwh SCROLL_UP   	&mwh SCROLL_DOWN 	&mwh SCROLL_RIGHT	                 	&mo MOUSE_DEAD        	&mo MOUSE_CRAWL  	&mo MOUSE_SLOW   	&mo MOUSE_MEDIUM 	&mo MOUSE_FAST   
+                &trans           	&mwh SCROLL_LEFT 	&mwh SCROLL_UP   	&mwh SCROLL_DOWN 	&mwh SCROLL_RIGHT	                 	&mo MOUSE_DEAD   	&mo MOUSE_CRAWL  	&mo MOUSE_SLOW   	&mo MOUSE_MEDIUM 	&mo MOUSE_FAST   
                                                                                         &trans           	&trans           	                 	&trans           	&trans           	                 	                 	                 
                 >; };										
                 func_layer {										
@@ -155,14 +155,11 @@
                 >; };										
                 convenience_layer {										
                         bindings = <									
-                &none               	&surround_brace     	&surround_paran     	&surround_bracket   	&git_add            	                    	&git_add_i_hunk     	&none               	&none               	&none               	&none               
-                &git_clean_n        	&git_diff_cached    	&git_reflog         	&git_status         	&git_commit         	                    	&git_commit_amend   	&none               	&none               	&none               	&none               
-                &none               	&none               	&git_merged_list    	&git_no_merged_list 	&git_push           	                    	&git_checkout_switch	&git_branch_commit_list &none               	&none               	&none               
-                                                                                        &trans              	&trans              	                    	&trans              	&trans              	                    	                    	                    
+                &none                  	&surround_brace        	&surround_paran        	&surround_bracket      	&git_add               	                       	&git_add_i_hunk        	&none                  	&none                  	&none                  	&none                  
+                &git_clean_n           	&git_diff_cached       	&git_reflog            	&git_status            	&git_commit            	                       	&git_commit_amend      	&none                  	&none                  	&none                  	&none                  
+                &none                  	&none                  	&git_merged_list       	&git_no_merged_list    	&git_push              	                       	&git_checkout_switch   	&git_branch_commit_list	&none                  	&none                  	&none                  
+                                                                                        &trans                 	&trans                 	                       	&trans                 	&trans                 	                       	                       	                       
                 >; };										
-
-
-
 
                 
         };
