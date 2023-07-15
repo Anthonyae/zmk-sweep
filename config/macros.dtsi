@@ -188,7 +188,7 @@
         label = "git_branch_commit_list";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <20>;
+        wait-ms = <20>; 
         tap-ms = <20>;
         bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp F &kp O &kp R &kp MINUS &kp E &kp A &kp C &kp H &kp MINUS &kp R &kp E &kp F &kp SPACE &kp MINUS &kp MINUS &kp S &kp O &kp R &kp T &kp EQUAL &kp MINUS &kp C &kp O &kp M &kp M &kp I &kp T &kp T &kp E &kp R &kp D &kp A &kp T &kp E &kp SPACE &kp R &kp E &kp F &kp S &kp FSLH &kp H &kp E &kp A &kp D &kp S &kp FSLH>
         ;
