@@ -28,8 +28,9 @@
 
 // this changes the movement speed of the mouse
 // time-to-max-speed-ms = <400>; // trying to speed up the mouse movement
+// time-to-max-speed-ms = <385>;
 &mmv {
-  time-to-max-speed-ms = <385>;
+  time-to-max-speed-ms = <360>;
   acceleration-exponent = <1>;
 };
 
