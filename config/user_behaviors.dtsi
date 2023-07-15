@@ -80,7 +80,7 @@ hm_urob_l: hm_urob_l {
         tapping-term-ms = <280>;
         quick-tap-ms = <175>;
         // global-quick-tap-ms = <150>; // requires pr #1387
-        global-quick-tap-ms = <175>; // requires pr #1387
+        // global-quick-tap-ms = <175>; // requires pr #1387
         global-quick-tap;
         flavor = "balanced"; // will trigger the hold behavior when the tapping-term-ms has expired or another key is pressed and released.
         bindings = <&kp>, <&kp>;
@@ -95,7 +95,7 @@ hm_urob_r: hm_urob_r {
         tapping-term-ms = <280>;
         quick-tap-ms = <175>;
         // global-quick-tap-ms = <150>; // requires pr #1387
-        global-quick-tap-ms = <175>; // requires pr #1387
+        // global-quick-tap-ms = <175>; // requires pr #1387
         global-quick-tap;
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
