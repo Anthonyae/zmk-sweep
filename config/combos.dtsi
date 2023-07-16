@@ -169,10 +169,10 @@ combo_control_backspace_right {
     layers = <0 1 2>;
 };
 
-combo_alt_tab_left {
+combo_win_move_other {
     timeout-ms = <COMBO_TERM_LOWEST>; // tried 30 ms, was still getting false positives
     key-positions = <LT1 LT2>;
-    bindings = <&kp LA(TAB)>;
+    bindings = <&macro_move_win_other>;
     layers = <0 1 2>;
 };
 
