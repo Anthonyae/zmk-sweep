@@ -67,7 +67,6 @@ switch_hm_two_layer_side {
     layers = <0 1 2 3>;
 };
 
-
 switch_hm_none_layer {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <RB1 RB2 RB3 RB4>;
@@ -235,14 +234,14 @@ combo_bracket_right {
 
 combo_comma {
     timeout-ms = <COMBO_TERM_MEDIUM>;
-    key-positions = <RT2 RM2>;
+    key-positions = <RT1 RT2>;
     bindings = <&kp COMMA>;
     layers = <NUMBER>;
 };
 
 combo_period {
     timeout-ms = <COMBO_TERM_MEDIUM>;
-    key-positions = <RT3 RM3>;
+    key-positions = <RM1 RM2>;
     bindings = <&kp PERIOD>;
     layers = <NUMBER>;
 };
