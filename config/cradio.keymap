@@ -71,6 +71,13 @@
                 >; };										
                 default_hm_none_layer {										
                         bindings = <									
+                &kp Q               	&kp W               	&kp E               	&kp R               	&kp T               	                    	&kp Y               	&kp U               	&kp I               	&kp O               	&kp P               
+                &hm_two_l LCTRL A   	&hm_two_l LSHFT S   	&hm_two_l LGUI D    	&hm_two_l LALT F    	&hm_two_l HIKE G    	                    	&hm_two_r HIKE H    	&hm_two_r RALT J    	&hm_two_r RGUI K    	&hm_two_r RSHFT L   	&hm_two_r RCTRL APOS
+                &lt UTILITY Z       	&kp X               	&kp C               	&hm_two_l MEH V     	&kp B               	                    	&kp N               	&hm_two_r MEH M     	&kp COMMA           	&kp DOT             	&kp FSLH            
+                                                                                        &lt SYMBOL BSPC     	&mo NUMBER          	                    	&lt FUNC ENTER      	&lt NAV SPACE       	                    	                    	                    
+                >; };										
+                                                                                                
+                        bindings = <									
                 &kp Q            	&kp W            	&kp E            	&kp R            	&kp T            	                 	&kp Y            	&kp U            	&kp I            	&kp O            	&kp P            
                 &hm_gq LCTRL A   	&kp S            	&kp D            	&kp F            	&hm_gq HIKE G    	                 	&hm_gq HIKE H    	&kp J            	&kp K            	&kp L            	&hm_gq RCTRL APOS
                 &kp Z            	&kp X            	&kp C            	&hm_gq MEH V     	&kp B            	                 	&kp N            	&hm_gq MEH M     	&kp COMMA        	&kp DOT          	&kp FSLH         

@@ -46,33 +46,6 @@ switch_base_layer {
     layers = <0 1 2 3>;
 };
 
-switch_hm_one_layer {
-    timeout-ms = <COMBO_TERM_MEDIUM>;
-    key-positions = <LB4 LB3 LB2 LB1>;
-    bindings = <&to DEFAULT_HM_ONE>;
-    layers = <0 1 2 3>;
-};
-
-switch_hm_two_layer {
-    timeout-ms = <COMBO_TERM_HIGH>;
-    key-positions = <RT1 RT2 RT3 RT4>;
-    bindings = <&to DEFAULT_HM_TWO>;
-    layers = <0 1 2 3>;
-};
-
-switch_hm_two_layer_side {
-    timeout-ms = <COMBO_TERM_HIGH>;
-    key-positions = <RT4 RM4 RB4>;
-    bindings = <&to DEFAULT_HM_TWO>;
-    layers = <0 1 2 3>;
-};
-
-switch_hm_none_layer {
-    timeout-ms = <COMBO_TERM_MEDIUM>;
-    key-positions = <RB1 RB2 RB3 RB4>;
-    bindings = <&to DEFAULT_HM_NONE>;
-    layers = <0 1 2 3>;
-};
 
 // What layer am I on?
 combo_layer_zero {
