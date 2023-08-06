@@ -43,7 +43,7 @@ switch_base_layer {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <LT4 LT3 LT2 LT1>;
     bindings = <&to DEFAULT_HM>;
-    layers = <0 1 2 3>;
+    layers = <0 1 2 3 4>;
 };
 
 
@@ -76,6 +76,12 @@ combo_layer_three {
     layers = <3>;
 };
 
+combo_layer_four {
+    timeout-ms = <COMBO_TERM_LOW>;
+    key-positions = <LT4 LM4 LB4>;
+    bindings = <&layer_four>;
+    layers = <0>;
+};
 
 // Device settings
 
