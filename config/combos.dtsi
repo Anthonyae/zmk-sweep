@@ -9,6 +9,7 @@ compatible = "zmk,combos";
 #define COMBO_TERM_MEDIUM 40
 #define COMBO_TERM_HIGH 50
 
+#define BASE_LAYERS DEFAULT_HM DEFAULT_HM_ONE DEFAULT_HM_TWO DEFAULT_HM_THREE DEFAULT_HM_NONE
 // #undef COMBO_HOOK
 // #define COMBO_HOOK global-quick-tap-ms = <100>;
 
@@ -43,7 +44,7 @@ switch_base_layer {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <LT4 LT3 LT2 LT1>;
     bindings = <&to DEFAULT_HM>;
-    layers = <0 1 2 3 4>;
+    layers = <BASE_LAYERS>;
 };
 
 
@@ -80,7 +81,7 @@ combo_layer_four {
     timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <LT4 LM4 LB4>;
     bindings = <&layer_four>;
-    layers = <0>;
+    layers = <4>;
 };
 
 // Device settings
@@ -120,7 +121,7 @@ combo_new_sentence {
     timeout-ms = <COMBO_TERM_HIGH>;
     key-positions = <RB3 RB4>;
     bindings = <&new_sentence>;
-    layers = <0 1 2>;
+    layers = <BASE_LAYERS>;
 };
 
 
@@ -130,42 +131,42 @@ combo_tab_right {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <RM1 RM2>;
     bindings = <&kp TAB>;
-    layers = <0 1 2>;
+    layers = <BASE_LAYERS>;
 };
 
 combo_control_backspace_left {
     timeout-ms = <COMBO_TERM_LOWEST>;
     key-positions = <LM0 LM1>;
     bindings = <&macro_control_back>;
-    layers = <0 1 2>;
+    layers = <BASE_LAYERS>;
 };
 
 combo_control_backspace_right {
     timeout-ms = <COMBO_TERM_LOWEST>;
     key-positions = <RM0 RM1>;
     bindings = <&macro_control_back>;
-    layers = <0 1 2>;
+    layers = <BASE_LAYERS>;
 };
 
 combo_win_move_other {
     timeout-ms = <COMBO_TERM_LOWEST>; // tried 30 ms, was still getting false positives
     key-positions = <LT1 LT2>;
     bindings = <&macro_move_win_other>;
-    layers = <0 1 2>;
+    layers = <BASE_LAYERS>;
 };
 
 combo_alt_tab_right {
     timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <RT1 RT2>;
     bindings = <&kp LA(TAB)>;
-    layers = <0 1 2>;
+    layers = <BASE_LAYERS>;
 };
 
 combo_repeat_left {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <LM1 LM2>;   
     bindings = <&key_repeat>;
-    layers = <0 1 2>;
+    layers = <BASE_LAYERS>;
 };
 
 // symbols
@@ -173,42 +174,42 @@ combo_brace_left {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <LT3 LM3>;
     bindings = <&kp LBRC>;
-    layers = <0 1 2>;
+    layers = <BASE_LAYERS>;
 };
 
 combo_paranthesis_left {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <LT2 LM2>;
     bindings = <&kp LPAR>;
-    layers = <0 1 2>;
+    layers = <BASE_LAYERS>;
 };
 
 combo_bracket_left {
     timeout-ms = <COMBO_TERM_LOWEST>;
     key-positions = <LT1 LM1>;
     bindings = <&kp LBKT>;
-    layers = <0 1 2>;
+    layers = <BASE_LAYERS>;
 };
 
 combo_brace_right {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <RT3 RM3>;
     bindings = <&kp RBRC>;
-    layers = <0 1 2>;
+    layers = <BASE_LAYERS>;
 };
 
 combo_paranthesis_right {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <RT2 RM2>;
     bindings = <&kp RPAR>;
-    layers = <0 1 2>;
+    layers = <BASE_LAYERS>;
 };
 
 combo_bracket_right {
     timeout-ms = <COMBO_TERM_HIGH>;
     key-positions = <RT1 RM1>;
     bindings = <&kp RBKT>;
-    layers = <0 1 2>;
+    layers = <BASE_LAYERS>;
 };
 
 combo_comma {
@@ -238,12 +239,12 @@ combo_esc_left {
     timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <LT0 LT1>;
     bindings = <&kp ESC>;
-    layers = <0 1 2>;
+    layers = <BASE_LAYERS>;
 };
 
 combo_esc_right {
     timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <RT0 RT1>;
     bindings = <&double_esc>;
-    layers = <0 1 2>;
+    layers = <BASE_LAYERS>;
 };
