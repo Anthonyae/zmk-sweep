@@ -15,14 +15,14 @@
 #define HM_TAPPING_TERM 300
 #define HM_TAPPING_TERM_FAST 200
 
-// home row mods - old
 
+// home row mods - old
 hm_gq: homerow_mods_gq {   
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
-        quick-tap-ms = <60>;
+        quick-tap-ms = <60>; -- hm_gq_one
         global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
@@ -162,6 +162,74 @@ hm_shift_r: hm_shift_r {
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_L KEYS_R_T>;
         hold-trigger-on-release;
+};
+
+
+// Layer home row mods (numbered)
+hm_one_l: hm_one_l {   
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
+        quick-tap-ms = <60>;
+        global-quick-tap;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+};
+
+hm_one_r: hm_one_r {   
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
+        quick-tap-ms = <60>;
+        global-quick-tap;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+};
+
+hm_two_l: hm_two_l {   
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
+        quick-tap-ms = <60>;
+        global-quick-tap;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+};
+
+hm_two_r: hm_two_r {   
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
+        quick-tap-ms = <60>;
+        global-quick-tap;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+};
+
+hm_three_l: hm_three_l {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
+        quick-tap-ms = <60>;
+        global-quick-tap;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+};
+
+hm_three_r: hm_three_r {   
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
+        quick-tap-ms = <60>;
+        global-quick-tap;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
 };
 
 
