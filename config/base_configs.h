@@ -16,6 +16,7 @@
 #define MOUSE_CRAWL 14
 #define MOUSE_DEAD 15
 #define CONVENIENCE_LAYER 16
+#define LAYER_CHANGER 17
 
 
 // global settings
