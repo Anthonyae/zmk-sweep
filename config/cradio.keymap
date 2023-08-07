@@ -48,8 +48,7 @@
         keymap {
                 compatible = "zmk,keymap";
 
-        default_layer {										
-                default_layer {										
+        default_layer {														
                 bindings = <									
                 &kp Q                	&kp W                	&kp E                	&kp R                	&kp T                	                     	&kp Y                	&kp U                	&kp I                	&kp O                	&kp P                
                 &hm_urob_l LCTRL A   	&hm_urob_l LSHFT S   	&hm_urob_l LGUI D    	&hm_urob_l LALT F    	&hm_urob_l HIKE G    	                     	&hm_urob_r HIKE H    	&hm_urob_r RALT J    	&hm_urob_r RGUI K    	&hm_urob_r RSHFT L   	&hm_urob_r RCTRL APOS
@@ -179,4 +178,4 @@
 
                 
         };
- }; 
+ }; ll
