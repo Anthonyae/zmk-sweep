@@ -16,8 +16,82 @@
 #define HM_TAPPING_TERM_FAST 200
 
 
-// home row mods - old
-hm_gq: homerow_mods_gq {   
+// DEFINE BEHAVIORS FOR HOME ROW MODS. AND THEN COPY THESE SETTIGNS TO THE HOMEROW MODS LABELED DEFAULT AND THE (1 - 4)
+
+        // home row mods - urob
+        hm_urob_l: hm_urob_l {   
+                compatible = "zmk,behavior-hold-tap";
+                label = "HOMEROW_MODS_LEFT";
+                #binding-cells = <2>;
+                tapping-term-ms = <280>;
+                quick-tap-ms = <175>;
+                // global-quick-tap-ms = <150>; // requires pr #1387
+                // global-quick-tap-ms = <175>; // requires pr #1387
+                global-quick-tap;
+                flavor = "balanced"; // will trigger the hold behavior when the tapping-term-ms has expired or another key is pressed and released.
+                bindings = <&kp>, <&kp>;
+                hold-trigger-key-positions = <KEYS_R THUMBS>; // including this will automatically turn on positional hold-tap
+                hold-trigger-on-release; // If set to true, the evaluation of hold-trigger-key-positions gets delayed until key release. Ths allows combining multiple modifiers when the next key is held, while still deciding the hold-tap in favor of a tap when the next key is tapped.
+        };
+        hm_urob_r: hm_urob_r {   
+                compatible = "zmk,behavior-hold-tap";
+                label = "HOMEROW_MODS_RIGHT";
+                #binding-cells = <2>;
+                tapping-term-ms = <280>;
+                quick-tap-ms = <175>;
+                // global-quick-tap-ms = <150>; // requires pr #1387
+                // global-quick-tap-ms = <175>; // requires pr #1387
+                global-quick-tap;
+                flavor = "balanced";
+                bindings = <&kp>, <&kp>;
+                hold-trigger-key-positions = <KEYS_L THUMBS>;
+                hold-trigger-on-release;
+        };
+
+        // Positional Homerow mods for shift
+        // Use faster tapping term and disable some features that may
+        // cause false negatives.
+        hm_shift_l: hm_shift_l {
+                compatible = "zmk,behavior-hold-tap";
+                label = "HOMEROW_MODS_FAST_LEFT";
+                #binding-cells = <2>;
+                tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+                quick-tap-ms = <175>;
+                // global-quick-tap-ms = <150>; // not used for shift
+                // global-quick-tap;
+                flavor = "balanced";
+                bindings = <&kp>, <&kp>;
+                hold-trigger-key-positions = <KEYS_R KEYS_L_T>;
+                hold-trigger-on-release;
+        };
+
+        hm_shift_r: hm_shift_r {
+                compatible = "zmk,behavior-hold-tap";
+                label = "HOMEROW_MODS_FAST_RIGHT";
+                #binding-cells = <2>;
+                tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+                quick-tap-ms = <175>;
+                // global-quick-tap-ms = <150>;
+                // global-quick-tap;
+                flavor = "balanced";
+                bindings = <&kp>, <&kp>;
+                hold-trigger-key-positions = <KEYS_L KEYS_R_T>;
+                hold-trigger-on-release;
+        };
+
+
+// LAYER DEFAULT
+hm_default_l: hm_default_l {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
+        quick-tap-ms = <60>;
+        global-quick-tap;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+};
+hm_default_r: hm_default_r {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
@@ -28,146 +102,10 @@ hm_gq: homerow_mods_gq {
         bindings = <&kp>, <&kp>;
 };
 
-hm_gq_one: homerow_mods_gq_one {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping-term-ms = <150>;
-        quick-tap-ms = <40>;
-        global-quick-tap;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
-};
 
-hm_gq_two: homerow_mods_gq_two {   
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping-term-ms = <150>;
-        quick-tap-ms = <10>;
-        global-quick-tap;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
-};
+// LAYER HOME ROW MODS (NUMBERED)
 
-// Not in use
-hm_fast_finger: hm_fast_finger {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping-term-ms = <150>;
-        // quick-tap-ms = <-1>;
-        // global-quick-tap;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
-};
-
-// Not in use
-hm_vvslow: homerow_mods {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick-tap-ms = <0>;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
-};
-
-
-// home row mods - urob
-hm_urob_l: hm_urob_l {   
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS_LEFT";
-        #binding-cells = <2>;
-        tapping-term-ms = <280>;
-        quick-tap-ms = <175>;
-        // global-quick-tap-ms = <150>; // requires pr #1387
-        // global-quick-tap-ms = <175>; // requires pr #1387
-        global-quick-tap;
-        flavor = "balanced"; // will trigger the hold behavior when the tapping-term-ms has expired or another key is pressed and released.
-        bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <KEYS_R THUMBS>; // including this will automatically turn on positional hold-tap
-        hold-trigger-on-release; // If set to true, the evaluation of hold-trigger-key-positions gets delayed until key release. Ths allows combining multiple modifiers when the next key is held, while still deciding the hold-tap in favor of a tap when the next key is tapped.
-};
-
-hm_urob_r: hm_urob_r {   
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS_RIGHT";
-        #binding-cells = <2>;
-        tapping-term-ms = <280>;
-        quick-tap-ms = <175>;
-        // global-quick-tap-ms = <150>; // requires pr #1387
-        // global-quick-tap-ms = <175>; // requires pr #1387
-        global-quick-tap;
-        flavor = "balanced";
-        bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <KEYS_L THUMBS>;
-        hold-trigger-on-release;
-};
-
-hm_urob_l_dev: hm_urob_l_dev {   
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS_LEFT";
-        #binding-cells = <2>;
-        tapping-term-ms = <250>;
-        quick-tap-ms = <150>;
-        // global-quick-tap-ms = <150>; // requires pr #1387
-        // global-quick-tap-ms = <175>; // requires pr #1387
-        global-quick-tap;
-        flavor = "balanced"; // will trigger the hold behavior when the tapping-term-ms has expired or another key is pressed and released.
-        bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <KEYS_R KEYS_R_T>; // including this will automatically turn on positional hold-tap
-        hold-trigger-on-release; // If set to true, the evaluation of hold-trigger-key-positions gets delayed until key release. Ths allows combining multiple modifiers when the next key is held, while still deciding the hold-tap in favor of a tap when the next key is tapped.
-};
-
-hm_urob_r_dev: hm_urob_r_dev {   
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS_RIGHT";
-        #binding-cells = <2>;
-        tapping-term-ms = <280>;
-        quick-tap-ms = <150>;
-        // global-quick-tap-ms = <150>; // requires pr #1387
-        // global-quick-tap-ms = <175>; // requires pr #1387
-        global-quick-tap;
-        flavor = "balanced";
-        bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <KEYS_L KEYS_L_T>;
-        hold-trigger-on-release;
-};
-
-// Positional Homerow mods for shift
-// Use faster tapping term and disable some features that may
-// cause false negatives.
-hm_shift_l: hm_shift_l {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS_FAST_LEFT";
-        #binding-cells = <2>;
-        tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-        quick-tap-ms = <175>;
-        // global-quick-tap-ms = <150>; // not used for shift
-        // global-quick-tap;
-        flavor = "balanced";
-        bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <KEYS_R KEYS_L_T>;
-        hold-trigger-on-release;
-};
-
-hm_shift_r: hm_shift_r {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS_FAST_RIGHT";
-        #binding-cells = <2>;
-        tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-        quick-tap-ms = <175>;
-        // global-quick-tap-ms = <150>;
-        // global-quick-tap;
-        flavor = "balanced";
-        bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <KEYS_L KEYS_R_T>;
-        hold-trigger-on-release;
-};
-
-
-// Layer home row mods (numbered)
+// hm mod 1 - layer 1
 hm_one_l: hm_one_l {   
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
@@ -178,7 +116,6 @@ hm_one_l: hm_one_l {
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
-
 hm_one_r: hm_one_r {   
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
@@ -190,6 +127,7 @@ hm_one_r: hm_one_r {
         bindings = <&kp>, <&kp>;
 };
 
+// hm mod 2 - layer 2
 hm_two_l: hm_two_l {   
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
@@ -200,7 +138,6 @@ hm_two_l: hm_two_l {
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
-
 hm_two_r: hm_two_r {   
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
@@ -212,6 +149,7 @@ hm_two_r: hm_two_r {
         bindings = <&kp>, <&kp>;
 };
 
+// hm mod 3 - layer 3
 hm_three_l: hm_three_l {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
@@ -222,7 +160,6 @@ hm_three_l: hm_three_l {
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
-
 hm_three_r: hm_three_r {   
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
@@ -234,10 +171,28 @@ hm_three_r: hm_three_r {
         bindings = <&kp>, <&kp>;
 };
 
-
-
-
-
+// hm mod 4 - layer 4
+// not many home row mods
+hm_four_l: hm_four_l {   
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
+        quick-tap-ms = <60>;
+        global-quick-tap;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+};
+hm_four_r: hm_four_r {   
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
+        quick-tap-ms = <60>;
+        global-quick-tap;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+};
 
 
 
@@ -255,7 +210,6 @@ skq: sticky_key_quick_release {
 };
 
 // layer settings 
-
 ltms: layer_tap_mod {
         compatible = "zmk,behavior-hold-tap";
         label = "ltms";
@@ -288,7 +242,6 @@ mwh_acceleration_fast: mouse_scroll_mod_fast {
         time-to-max-speed-ms = <2000>;
         acceleration-exponent = <1>;
 }; 
-
 mwh_accel_crawl: mouse_scroll_mod_slow {
         compatible = "zmk,behavior-mouse-scroll";
         label = "MOUSE_SCROLL";
