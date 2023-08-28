@@ -50,6 +50,7 @@ hm_gq_two: homerow_mods_gq_two {
         bindings = <&kp>, <&kp>;
 };
 
+// Not in use
 hm_fast_finger: hm_fast_finger {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
@@ -61,6 +62,7 @@ hm_fast_finger: hm_fast_finger {
         bindings = <&kp>, <&kp>;
 };
 
+// Not in use
 hm_vvslow: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
@@ -233,8 +235,15 @@ hm_three_r: hm_three_r {
 };
 
 
-// keys 
 
+
+
+
+
+
+
+
+// KEYS
 skq: sticky_key_quick_release {
         compatible = "zmk,behavior-sticky-key";
         label = "STICKY_KEY_QUICK_RELEASE";
