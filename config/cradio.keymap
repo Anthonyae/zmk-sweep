@@ -49,10 +49,10 @@
                 compatible = "zmk,keymap";
 
         default_layer {										
-                bindings = <									
+	bindings = <									
                 &kp Q                   	&kp W                   	&kp E                   	&kp R                   	&kp T                   	                        	&kp Y                   	&kp U                   	&kp I                   	&kp O                   	&kp P                   
                 &hm_default_l LCTRL A   	&hm_default_l LSHFT S   	&hm_default_l LGUI D    	&hm_default_l LALT F    	&hm_default_l HIKE G    	                        	&hm_default_r HIKE H    	&hm_default_r RALT J    	&hm_default_r RGUI K    	&hm_default_r RSHFT L   	&hm_default_r RCTRL APOS
-                &hm_default_l LSHFT Z          	&lt UTILITY X           	&kp C                   	&hm_default_l MEH V     	&kp B                   	                        	&kp N                   	&hm_default_r MEH M     	&kp COMMA               	&lt UTILITY DOT         	&hm_default_r LSHFT FSLH       
+                &hm_default_l LSHFT Z   	&lt UTILITY X           	&kp C                   	&hm_default_l MEH V     	&kp B                   	                        	&kp N                   	&hm_default_r MEH M     	&kp COMMA               	&lt UTILITY DOT         	&hm_default_r LSHFT FSLH
                                                                                                                 &lt SYMBOL BSPC         	&mo NUMBER              	                        	&lt FUNC ENTER          	&lt NAV SPACE           	                        	                        	                        
                 >; };										
                 default_hm_one_layer {										
@@ -171,7 +171,7 @@
                         bindings = <									
                 &none               	&none               	&to DEFAULT_HM      	&to DEFAULT_HM_ONE  	&none               	                    	&none               	&to DEFAULT_HM_ONE  	&to DEFAULT_HM      	&none               	&none               
                 &none               	&none               	&to DEFAULT_HM_TWO  	&to DEFAULT_HM_THREE	&none               	                    	&none               	&to DEFAULT_HM_THREE	&to DEFAULT_HM_TWO  	&none               	&none               
-                &none               	&none               	&none               	&none               	&none               	                    	&none               	&none               	&none               	&none               	&none               
+                &none               	&none               	&to DEFAULT_HM_NONE 	&none               	&none               	                    	&none               	&none               	&to DEFAULT_HM_NONE 	&none               	&none               
                                                                                         &trans              	&trans              	                    	&trans              	&trans              	                    	                    	                    
                 >; };										
 
