@@ -237,14 +237,14 @@ combo_comma_next {
 // modifiers 2 -- not sure if this placement is what was fixing my collisions with brackets
 combo_esc_left {
     timeout-ms = <COMBO_TERM_LOW>;
-    key-positions = <LT0 LT1>;
+    key-positions = <LM0 LM1>;
     bindings = <&kp ESC>;
     layers = <BASE_LAYERS>;
 };
 
 combo_esc_right {
     timeout-ms = <COMBO_TERM_LOW>;
-    key-positions = <RT0 RT1>;
+    key-positions = <MT0 MT1>;
     bindings = <&double_esc>;
     layers = <BASE_LAYERS>;
 };
