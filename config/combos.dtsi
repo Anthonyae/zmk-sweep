@@ -185,8 +185,15 @@ combo_paranthesis_left {
 };
 
 combo_bracket_left {
-    timeout-ms = <COMBO_TERM_LOWEST>;
+    timeout-ms = <COMBO_TERM_HIGH>;
     key-positions = <LT1 LM1>;
+    bindings = <&kp LBKT>;
+    layers = <BASE_LAYERS>;
+};
+
+combo_bracket_left_second {
+    timeout-ms = <COMBO_TERM_HIGH>;
+    key-positions = <LT0 LM0>;
     bindings = <&kp LBKT>;
     layers = <BASE_LAYERS>;
 };
@@ -235,7 +242,6 @@ combo_comma_next {
 
 
 // modifiers 2 -- not sure if this placement is what was fixing my collisions with brackets
-
 combo_esc_right {
     timeout-ms = <COMBO_TERM_HIGH>;
     key-positions = <RM0 RM1>;
