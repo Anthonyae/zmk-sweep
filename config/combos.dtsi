@@ -242,10 +242,3 @@ combo_esc_right {
     bindings = <&double_esc>;
     layers = <BASE_LAYERS>;
 };
-
-combo_esc_left {
-    timeout-ms = <COMBO_TERM_MEDIUM>;
-    key-positions = <LM0 LM1>;
-    bindings = <&kp ESC>;
-    layers = <BASE_LAYERS>;
-};
