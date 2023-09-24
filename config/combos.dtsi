@@ -171,7 +171,7 @@ combo_repeat_left {
 
 // symbols
 combo_brace_left {
-    timeout-ms = <COMBO_TERM_MEDIUM>;
+    timeout-ms = <COMBO_TERM_HIGH>;
     key-positions = <LT3 LM3>;
     bindings = <&kp LBRC>;
     layers = <BASE_LAYERS>;
@@ -185,7 +185,7 @@ combo_paranthesis_left {
 };
 
 combo_bracket_left {
-    timeout-ms = <COMBO_TERM_LOWEST>;
+    timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <LT1 LM1>;
     bindings = <&kp LBKT>;
     layers = <BASE_LAYERS>;
@@ -246,5 +246,12 @@ combo_esc_right {
     timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <RM0 RM1>;
     bindings = <&double_esc>;
+    layers = <BASE_LAYERS>;
+};
+
+combo_bracket_left_copy {
+    timeout-ms = <COMBO_TERM_MEDIUM>;
+    key-positions = <LT1 LM1>;
+    bindings = <&kp LBKT>;
     layers = <BASE_LAYERS>;
 };
