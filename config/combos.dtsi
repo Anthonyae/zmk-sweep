@@ -185,7 +185,7 @@ combo_paranthesis_left {
 };
 
 combo_bracket_left {
-    timeout-ms = <COMBO_TERM_HIGH>;
+    timeout-ms = <COMBO_TERM_LOWEST>;
     key-positions = <LT1 LM1>;
     bindings = <&kp LBKT>;
     layers = <BASE_LAYERS>;
