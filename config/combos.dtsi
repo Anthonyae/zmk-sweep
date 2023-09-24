@@ -136,14 +136,14 @@ combo_tab_right {
 
 combo_control_backspace_left {
     timeout-ms = <COMBO_TERM_LOWEST>;
-    key-positions = <LM0 LM1>;
+    key-positions = <LT0 LT1>;
     bindings = <&macro_control_back>;
     layers = <BASE_LAYERS>;
 };
 
 combo_control_backspace_right {
     timeout-ms = <COMBO_TERM_LOWEST>;
-    key-positions = <RM0 RM1>;
+    key-positions = <RT0 RT1>;
     bindings = <&macro_control_back>;
     layers = <BASE_LAYERS>;
 };
