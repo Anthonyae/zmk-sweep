@@ -149,7 +149,7 @@ combo_win_move_other {
 };
 
 combo_alt_tab_right {
-    timeout-ms = <COMBO_TERM_LOWEST>; // tried low, but want to see if the lowest willl reduce all fase positives without sacrifiicing abiltity
+    timeout-ms = <COMBO_TERM_LOW>; // tried low, but want to see if the lowest willl reduce all fase positives without sacrifiicing abiltity. Lowest was typing iu too much
     key-positions = <RT1 RT2>;
     bindings = <&kp LA(TAB)>;
     layers = <BASE_LAYERS>;
