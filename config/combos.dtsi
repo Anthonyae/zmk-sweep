@@ -199,7 +199,7 @@ combo_brace_right {
 };
 
 combo_paranthesis_right {
-    timeout-ms = <COMBO_TERM_MEDIUM>;
+    timeout-ms = <COMBO_TERM_HIGH>; // getting mistypes a lot with medium
     key-positions = <RT2 RM2>;
     bindings = <&kp RPAR>;
     layers = <BASE_LAYERS>;
