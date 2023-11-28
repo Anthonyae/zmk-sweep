@@ -111,7 +111,8 @@ hm_one_l: hm_one_l {
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
-        quick-tap-ms = <80>; // from 60 to 80 2023-11-28 - want to reduce accidental holds
+        require-prior-idle-ms = <115>;
+        quick-tap-ms = <130>; // from 60 to 80 2023-11-28 - want to reduce accidental holds
         global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
@@ -121,7 +122,8 @@ hm_one_r: hm_one_r {
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
-        quick-tap-ms = <80>; // from 60 to 80 2023-11-28 - want to reduce accidental holds
+        require-prior-idle-ms = <115>;
+        quick-tap-ms = <130>; // from 60 to 80 2023-11-28 - want to reduce accidental holds 
         global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
