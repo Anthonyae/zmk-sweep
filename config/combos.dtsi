@@ -47,6 +47,19 @@ switch_base_layer {
     layers = <BASE_LAYERS>;
 };
 
+switch_to_number_from_base {
+    timeout-ms = <COMBO_TERM_MEDIUM>;
+    key-positions = <LM0 LM1 LB0 LB1>;
+    bindings = <&to NUMBER>;
+    layers = <BASE_LAYERS>;
+};
+
+switch_to_base_from_number {
+    timeout-ms = <COMBO_TERM_MEDIUM>;
+    key-positions = <LM0 LM1 LB0 LB1>;
+    bindings = <&to DEFAULT_HM>;
+    layers = <NUMBER>;
+};
 
 // What layer am I on?
 combo_layer_zero {
@@ -143,7 +156,7 @@ combo_control_backspace_right {
 
 combo_win_move_other {
     timeout-ms = <COMBO_TERM_LOWEST>; // tried 30 ms, was still getting false positives
-    key-positions = <LT1 LT2>;
+    key-positions = <LT0 LT1>;
     bindings = <&macro_move_win_other>;
     layers = <BASE_LAYERS>;
 };
@@ -221,14 +234,14 @@ combo_comma {
 
 combo_period {
     timeout-ms = <COMBO_TERM_MEDIUM>;
-    key-positions = <RM1 RM2>;
+    key-positions = <RM0 RM1>;
     bindings = <&kp PERIOD>;
     layers = <NUMBER>;
 };
 
 combo_comma_next {
     timeout-ms = <COMBO_TERM_MEDIUM>;
-    key-positions = <RT1 RM1>;
+    key-positions = <RT0 RT1>;
     bindings = <&kp PERIOD>;
     layers = <NUMBER>;
 };
