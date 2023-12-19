@@ -27,7 +27,6 @@
                 quick-tap-ms = <175>;
                 // global-quick-tap-ms = <150>; // requires pr #1387
                 // global-quick-tap-ms = <175>; // requires pr #1387
-                global-quick-tap;
                 flavor = "balanced"; // will trigger the hold behavior when the tapping-term-ms has expired or another key is pressed and released.
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <KEYS_R THUMBS>; // including this will automatically turn on positional hold-tap
@@ -41,7 +40,6 @@
                 quick-tap-ms = <175>;
                 // global-quick-tap-ms = <150>; // requires pr #1387
                 // global-quick-tap-ms = <175>; // requires pr #1387
-                global-quick-tap;
                 flavor = "balanced";
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <KEYS_L THUMBS>;
@@ -87,7 +85,6 @@ hm_default_l: hm_default_l {
         #binding-cells = <2>;
         tapping-term-ms = <150>;
         quick-tap-ms = <60>;
-        global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
@@ -97,7 +94,6 @@ hm_default_r: hm_default_r {
         #binding-cells = <2>;
         tapping-term-ms = <150>;
         quick-tap-ms = <60>;
-        global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
@@ -113,7 +109,6 @@ hm_one_l: hm_one_l {
         tapping-term-ms = <150>;
         require-prior-idle-ms = <115>;
         quick-tap-ms = <130>; // from 60 to 80 2023-11-28 - want to reduce accidental holds
-        global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
@@ -124,7 +119,6 @@ hm_one_r: hm_one_r {
         tapping-term-ms = <150>;
         require-prior-idle-ms = <115>;
         quick-tap-ms = <130>; // from 60 to 80 2023-11-28 - want to reduce accidental holds fix this
-        global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
@@ -138,7 +132,6 @@ hm_two_l: hm_two_l {
         quick-tap-ms = <175>;
         // global-quick-tap-ms = <150>; // requires pr #1387
         // global-quick-tap-ms = <175>; // requires pr #1387
-        global-quick-tap;
         flavor = "balanced"; // will trigger the hold behavior when the tapping-term-ms has expired or another key is pressed and released.
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_R THUMBS>; // including this will automatically turn on positional hold-tap
@@ -152,7 +145,6 @@ hm_two_r: hm_two_r {
         quick-tap-ms = <175>;
         // global-quick-tap-ms = <150>; // requires pr #1387
         // global-quick-tap-ms = <175>; // requires pr #1387
-        global-quick-tap;
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_L THUMBS>;
@@ -189,7 +181,6 @@ hm_four_l: hm_four_l {
         #binding-cells = <2>;
         tapping-term-ms = <150>;
         quick-tap-ms = <60>;
-        global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
@@ -199,7 +190,6 @@ hm_four_r: hm_four_r {
         #binding-cells = <2>;
         tapping-term-ms = <150>;
         quick-tap-ms = <60>;
-        global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
