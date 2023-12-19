@@ -51,7 +51,7 @@
         default_layer {										
 	bindings = <									
                 &kp Q                   	&kp W                   	&kp E                   	&kp R                   	&kp T                   	                        	&kp Y                   	&kp U                   	&kp I                   	&kp O                   	&kp P                   
-                &hm_default_l LCTRL A   	&hm_default_l LSHFT S   	&hm_default_l LGUI D    	&hm_default_l LALT F    	&hm_default_l HIKE G    	                        	&hm_default_r HIKE H    	&hm_default_r RALT J    	&hm_default_r RGUI K    	&hm_default_r RSHFT L   	&hm_default_r RCTRL APOS
+                &hm_default_l LCTRL A   	&hm_default_l   LSHFT S   	&hm_default_l LGUI D    	&hm_default_l LALT F    	&hm_default_l HIKE G    	                        	&hm_default_r HIKE H    	&hm_default_r RALT J    	&hm_default_r RGUI K    	&hm_default_r RSHFT L   	&hm_default_r RCTRL APOS
                 &hm_default_l LSHFT Z   	&lt UTILITY X           	&kp C                   	&hm_default_l MEH V     	&kp B                   	                        	&kp N                   	&hm_default_r MEH M     	&kp COMMA               	&lt UTILITY DOT         	&hm_default_r LSHFT FSLH
                                                                                                                 &lt SYMBOL BSPC         	&mo NUMBER              	                        	&lt FUNC ENTER          	&lt NAV SPACE           	                        	                        	                        
                 >; };										
@@ -179,4 +179,4 @@
 
           
         };
- }; 
+ };
