@@ -1,4 +1,4 @@
-jon: [push, pull_request, workflow_dispatch]
+on: [push, pull_request, workflow_dispatch]
 
 name: Build
 
@@ -40,7 +40,7 @@ jobs:
       - name: Rename zmk.uf2
         run: cp build/zephyr/zmk.uf2 cradio_left_nice_nano_v2.uf2
       - name: Archive (Cradio/Sweep Left)
-        uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+        uses: actions/upload-artifact@v2
         with:
           name: firmware-zmk-sweep
           path: cradio_left_nice_nano_v2.uf2
@@ -52,7 +52,7 @@ jobs:
       - name: Rename zmk.uf2
         run: cp build/zephyr/zmk.uf2 cradio_right_nice_nano_v2.uf2
       - name: Archive (Cradio/Sweep Right)
-        uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+        uses: actions/upload-artifact@v2
         with:
           name: firmware-zmk-sweep
           path: cradio_right_nice_nano_v2.uf2
