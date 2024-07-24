@@ -19,13 +19,11 @@
 #define LAYER_CHANGER 17
 
 // global settings
-&mt
-{
+&mt {
   tapping-term-ms = <200>;
 };
 
-&lt
-{
+&lt {
   tapping-term-ms = <130>;
 };
 
