@@ -21,12 +21,12 @@
 // global settings
 &mt
 {
-  tapping - term - ms = <200>;
+  tapping-term-ms = <200>;
 };
 
 &lt
 {
-  tapping - term - ms = <130>;
+  tapping-term-ms = <130>;
 };
 
 // global keys
