@@ -14,6 +14,16 @@
 #include "keymap_mouse.h"
 #include "base_configs.h"
 
+// global settings
+&mt {
+  tapping-term-ms = <200>;
+};
+
+&lt {
+  tapping-term-ms = <130>;
+};
+
+
 / {
         conditional_layers {
             compatible = "zmk,conditional-layers";
