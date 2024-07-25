@@ -117,7 +117,7 @@
                 >; };										
                 mouse_base_layer {										
                         bindings = <									
-                 &mkp MCLK        	&mkp RCLK        	&mmv MOVE_UP     	&mkp LCLK
+                 &mkp MCLK        	&mkp RCLK        	&mmv MOVE_UP     	&mkp LCLK       &kp K_CMENU
                 
                 >; };										
                 
