@@ -27,6 +27,12 @@
     tapping-term-ms = <130>; 
 };
 
+&sk {
+    release-after-ms = <400>;
+    quick-release;
+};
+
+
 // this changes the movement speed of the mouse
 // time-to-max-speed-ms = <400>; // trying to speed up the mouse movement
 // time-to-max-speed-ms = <385>;
@@ -35,16 +41,11 @@
   acceleration-exponent = <1>;
 };
 
-&sk {
-    release-after-ms = <400>;
-    quick-release;
+// this changes the scrolling behavior (mwh to msc)
+&msc {
+  time-to-max-speed-ms = <300>;
+  acceleration-exponent = <0>;
 };
-
-// this changes the scrolling behavior
-// &mwh {
-//   time-to-max-speed-ms = <300>;
-//   acceleration-exponent = <0>;
-// };
 
 // global keys
 #define HYPER LG(LS(LA(LCTRL)))
