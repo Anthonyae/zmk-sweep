@@ -8,10 +8,10 @@
 #undef SCROLL_RIGHT
 
 /*
-* Mouse Settings Base layer
-*/
+ * Mouse Settings Base layer
+ */
 #define U_MOUSE_MOVE_MAX 3200
-#define U_MOUSE_SCROLL_MAX 75
+#define U_MOUSE_SCROLL_MAX 100 // Changed from 75 to 100  because someone said that it makes encoder work - https://gist.github.com/krissen/dd27082e7ab0575619c7a31f4d2ec7ae?permalink_comment_id=4752313
 
 #define MOVE_UP MOVE_VERT(-U_MOUSE_MOVE_MAX)
 #define MOVE_DOWN MOVE_VERT(U_MOUSE_MOVE_MAX)
@@ -24,8 +24,8 @@
 #define SCROLL_RIGHT SCROLL_HOR(U_MOUSE_SCROLL_MAX)
 
 /*
-* Mouse Settings Fast layer
-*/
+ * Mouse Settings Fast layer
+ */
 #define U_MOUSE_MOVE_MAX_FAST 4000
 #define U_MOUSE_SCROLL_MAX_FAST 800
 
@@ -40,8 +40,8 @@
 #define SCROLL_RIGHT_FAST SCROLL_HOR(U_MOUSE_SCROLL_MAX_FAST)
 
 /*
-* Mouse Settings Medium layer
-*/
+ * Mouse Settings Medium layer
+ */
 #define U_MOUSE_MOVE_MAX_MEDIUM 3000
 #define U_MOUSE_SCROLL_MAX_MEDIUM 150
 
@@ -56,8 +56,8 @@
 #define SCROLL_RIGHT_MEDIUM SCROLL_HOR(U_MOUSE_SCROLL_MAX_MEDIUM)
 
 /*
-* Mouse Settings Slow layer
-*/
+ * Mouse Settings Slow layer
+ */
 #define U_MOUSE_MOVE_MAX_SLOW 4000
 #define U_MOUSE_SCROLL_MAX_SLOW 50
 
@@ -72,8 +72,8 @@
 #define SCROLL_RIGHT_SLOW SCROLL_HOR(U_MOUSE_SCROLL_MAX_SLOW)
 
 /*
-* Mouse Settings DEAD layer
-*/
+ * Mouse Settings DEAD layer
+ */
 #define U_MOUSE_MOVE_MAX_CRAWL 800
 #define U_MOUSE_SCROLL_MAX_CRAWL 15
 
@@ -88,8 +88,8 @@
 #define SCROLL_RIGHT_CRAWL SCROLL_HOR(U_MOUSE_SCROLL_MAX_CRAWL)
 
 /*
-* Mouse Settings dead layer
-*/
+ * Mouse Settings dead layer
+ */
 #define U_MOUSE_MOVE_MAX_DEAD 400
 #define U_MOUSE_SCROLL_MAX_DEAD 7
 
@@ -102,3 +102,12 @@
 #define SCROLL_DOWN_DEAD SCROLL_VERT(-U_MOUSE_SCROLL_MAX_DEAD)
 #define SCROLL_LEFT_DEAD SCROLL_HOR(-U_MOUSE_SCROLL_MAX_DEAD)
 #define SCROLL_RIGHT_DEAD SCROLL_HOR(U_MOUSE_SCROLL_MAX_DEAD)
+
+#define U_MS_U &mmv MOVE_UP
+#define U_MS_D &mmv MOVE_DOWN
+#define U_MS_L &mmv MOVE_LEFT
+#define U_MS_R &mmv MOVE_RIGHT
+#define U_WH_U &msc SCRL_UP
+#define U_WH_D &msc SCRL_DOWN
+#define U_WH_L &msc SCRL_LEFT
+#define U_WH_R &msc SCRL_RIGHT
