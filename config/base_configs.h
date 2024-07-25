@@ -35,11 +35,16 @@
   acceleration-exponent = <1>;
 };
 
-// this changes the scrolling behavior
-&amwh {
-  time-to-max-speed-ms = <300>;
-  acceleration-exponent = <0>;
+&sk {
+    release-after-ms = <400>;
+    quick-release;
 };
+
+// this changes the scrolling behavior
+// &mwh {
+//   time-to-max-speed-ms = <300>;
+//   acceleration-exponent = <0>;
+// };
 
 // global keys
 #define HYPER LG(LS(LA(LCTRL)))
