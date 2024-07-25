@@ -147,13 +147,6 @@ combo_tab_right {
     layers = <BASE_LAYERS>;
 };
 
-combo_control_backspace_right {
-    timeout-ms = <COMBO_TERM_LOWEST>;
-    key-positions = <RT0 RT1>;
-    bindings = <&macro_control_back>;
-    layers = <BASE_LAYERS>;
-};
-
 combo_win_move_other {
     timeout-ms = <COMBO_TERM_LOWEST>; // tried 30 ms, was still getting false positives
     key-positions = <LT0 LT1>;
@@ -163,7 +156,7 @@ combo_win_move_other {
 
 combo_alt_tab_right {
     timeout-ms = <COMBO_TERM_LOW>; // tried low, but want to see if the lowest willl reduce all fase positives without sacrifiicing abiltity. Lowest was typing iu too much
-    key-positions = <RT1 RT2>;
+    key-positions = <RT0 RT1>;
     bindings = <&kp LA(TAB)>;
     layers = <BASE_LAYERS>;
 };
