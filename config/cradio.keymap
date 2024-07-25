@@ -114,7 +114,13 @@
                 &sys_reset       	&mo LAYER_CHANGER	&bt BT_SEL 4     	&bt BT_SEL 5     	&bt BT_CLR       	                 	&kp C_MUTE       	&kp C_VOLUME_DOWN	&kp C_VOLUME_UP  	&mo LAYER_CHANGER	&sys_reset       
                                                                                         &trans           	&trans           	                 	&trans           	&trans           	                 	                 	                 
                 >; };										
-                
+                mouse_base_layer {										
+                        bindings = <									
+                &mkp MCLK        	&mkp RCLK        	&mmv MOVE_UP     	&mkp LCLK        	&kp K_CMENU      	                 	&kp K_CMENU      	&mkp LCLK        	&mkp MCLK        	&mkp RCLK        	&mkp MCLK        
+                &mwh SCROLL_LEFT 	&mmv MOVE_LEFT   	&mmv MOVE_DOWN   	&mmv MOVE_RIGHT  	&mwh SCROLL_RIGHT	                 	&trans           	&kp RALT         	&kp RGUI         	&kp RSHFT        	&kp RCTRL        
+                &trans           	&mwh SCROLL_LEFT 	&mwh SCROLL_UP   	&mwh SCROLL_DOWN 	&mwh SCROLL_RIGHT	                 	&mo MOUSE_DEAD   	&mo MOUSE_CRAWL  	&mo MOUSE_SLOW   	&mo MOUSE_MEDIUM 	&mo MOUSE_FAST   
+                                                                                        &trans           	&trans           	                 	&trans           	&trans           	                 	                 	                 
+                >; };	
 
           
         };
