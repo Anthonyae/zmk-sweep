@@ -24,10 +24,8 @@
                 label = "HOMEROW_MODS_LEFT";
                 #binding-cells = <2>;
                 tapping-term-ms = <280>;
+                require-prior-idle-ms = <100>;
                 quick-tap-ms = <175>;
-                // global-quick-tap-ms = <150>; // requires pr #1387
-                // global-quick-tap-ms = <175>; // requires pr #1387
-                global-quick-tap;
                 flavor = "balanced"; // will trigger the hold behavior when the tapping-term-ms has expired or another key is pressed and released.
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <KEYS_R THUMBS>; // including this will automatically turn on positional hold-tap
@@ -38,10 +36,8 @@
                 label = "HOMEROW_MODS_RIGHT";
                 #binding-cells = <2>;
                 tapping-term-ms = <280>;
+                require-prior-idle-ms = <100>;
                 quick-tap-ms = <175>;
-                // global-quick-tap-ms = <150>; // requires pr #1387
-                // global-quick-tap-ms = <175>; // requires pr #1387
-                global-quick-tap;
                 flavor = "balanced";
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <KEYS_L THUMBS>;
@@ -56,9 +52,8 @@
                 label = "HOMEROW_MODS_FAST_LEFT";
                 #binding-cells = <2>;
                 tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+                // require-prior-idle-ms = <150>; // not used for shift
                 quick-tap-ms = <175>;
-                // global-quick-tap-ms = <150>; // not used for shift
-                // global-quick-tap;
                 flavor = "balanced";
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <KEYS_R KEYS_L_T>;
@@ -70,9 +65,8 @@
                 label = "HOMEROW_MODS_FAST_RIGHT";
                 #binding-cells = <2>;
                 tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+                // require-prior-idle-ms = <150>;
                 quick-tap-ms = <175>;
-                // global-quick-tap-ms = <150>;
-                // global-quick-tap;
                 flavor = "balanced";
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <KEYS_L KEYS_R_T>;
@@ -87,7 +81,7 @@ hm_default_l: hm_default_l {
         #binding-cells = <2>;
         tapping-term-ms = <150>;
         quick-tap-ms = <60>;
-        global-quick-tap;
+        require-prior-idle-ms = <150>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
@@ -97,7 +91,7 @@ hm_default_r: hm_default_r {
         #binding-cells = <2>;
         tapping-term-ms = <150>;
         quick-tap-ms = <60>;
-        global-quick-tap;
+        require-prior-idle-ms = <150>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
@@ -110,9 +104,10 @@ hm_one_l: hm_one_l {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
-        tapping-term-ms = <150>;
+        tapping-term-ms = <150>; // how long to hold to trigger hold
+        require-prior-idle-ms = <100>; // outputs tap if within this time for hold-tap keys
+        // this is like require but 
         quick-tap-ms = <80>; // from 60 to 80 2023-11-28 - want to reduce accidental holds
-        global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
@@ -121,8 +116,8 @@ hm_one_r: hm_one_r {
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
+        require-prior-idle-ms = <100>;
         quick-tap-ms = <80>; // from 60 to 80 2023-11-28 - want to reduce accidental holds
-        global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
@@ -133,10 +128,8 @@ hm_two_l: hm_two_l {
         label = "HOMEROW_MODS_LEFT";
         #binding-cells = <2>;
         tapping-term-ms = <280>;
+        require-prior-idle-ms = <100>;
         quick-tap-ms = <175>;
-        // global-quick-tap-ms = <150>; // requires pr #1387
-        // global-quick-tap-ms = <175>; // requires pr #1387
-        global-quick-tap;
         flavor = "balanced"; // will trigger the hold behavior when the tapping-term-ms has expired or another key is pressed and released.
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_R THUMBS>; // including this will automatically turn on positional hold-tap
@@ -147,10 +140,8 @@ hm_two_r: hm_two_r {
         label = "HOMEROW_MODS_RIGHT";
         #binding-cells = <2>;
         tapping-term-ms = <280>;
+        require-prior-idle-ms = <100>;
         quick-tap-ms = <175>;
-        // global-quick-tap-ms = <150>; // requires pr #1387
-        // global-quick-tap-ms = <175>; // requires pr #1387
-        global-quick-tap;
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_L THUMBS>;
@@ -163,8 +154,8 @@ hm_three_l: hm_three_l {
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
+        require-prior-idle-ms = <100>;
         quick-tap-ms = <60>;
-        global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
@@ -173,8 +164,8 @@ hm_three_r: hm_three_r {
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
+        require-prior-idle-ms = <100>;
         quick-tap-ms = <60>;
-        global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
@@ -186,8 +177,8 @@ hm_four_l: hm_four_l {
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
+        require-prior-idle-ms = <100>;
         quick-tap-ms = <60>;
-        global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
@@ -196,8 +187,8 @@ hm_four_r: hm_four_r {
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
+        require-prior-idle-ms = <100>;
         quick-tap-ms = <60>;
-        global-quick-tap;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
