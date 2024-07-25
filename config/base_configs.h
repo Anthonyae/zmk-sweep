@@ -18,6 +18,15 @@
 #define CONVENIENCE_LAYER 16
 #define LAYER_CHANGER 17
 
+// global settings
+&mt {
+  tapping-term-ms = <200>;
+};
+
+&lt {
+  tapping-term-ms = <130>;
+};
+
 // global keys
 #define HYPER LG(LS(LA(LCTRL)))
 #define MEH LS(LA(LCTRL))
