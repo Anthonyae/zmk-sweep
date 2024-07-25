@@ -117,10 +117,11 @@
                 >; };										
                 mouse_base_layer {										
                         bindings = <									
-                &mkp MCLK                    	&mkp RCLK                    	&mmv_constant MOVE_UP_FAST   	&mkp LCLK                    	&kp K_CMENU                  	                             	&kp K_CMENU                  	&mkp LCLK                    	&mkp MCLK                    	&mkp RCLK                    	&mkp MCLK                    
-                &msc SCROLL_LEFT_FAST        	&mmv_constant MOVE_LEFT_FAST 	&mmv_constant MOVE_DOWN_FAST 	&mmv_constant MOVE_RIGHT_FAST	&msc SCROLL_RIGHT_FAST       	                             	&trans                       	&kp RALT                     	&kp RGUI                     	&kp RSHFT                    	&kp RCTRL                    
-                &trans                       	&trans                       	&msc SCROLL_UP_FAST          	&msc SCROLL_DOWN_FAST        	&trans                       	                             	&mo MOUSE_DEAD               	&mo MOUSE_CRAWL              	&mo MOUSE_SLOW               	&mo MOUSE_MEDIUM             	&mo MOUSE_FAST               
-                                                                                                                &trans                       	&trans                       	                             	&trans                       	&trans                       	                             	                             	                             
+                &mkp MCLK        	&mkp RCLK        	&mmv_constant MOVE_UP     	&mkp LCLK        	&kp K_CMENU      	                 	&kp K_CMENU      	&mkp LCLK        	&mkp MCLK        	&mkp RCLK        	&mkp MCLK        
+                &msc SCROLL_LEFT 	&mmv MOVE_LEFT   	&mmv MOVE_DOWN   	&mmv MOVE_RIGHT  	&msc SCROLL_RIGHT	                 	&trans           	&kp RALT         	&kp RGUI         	&kp RSHFT        	&kp RCTRL        
+                &mkp MB4         	&mkp MB5         	&msc SCROLL_UP   	&msc SCROLL_DOWN 	&none            	                 	&mo MOUSE_DEAD   	&mo MOUSE_CRAWL  	&mo MOUSE_SLOW   	&mo MOUSE_MEDIUM 	&mo MOUSE_FAST   
+                 	                 	                 	&trans           	&trans           	                 	&trans           	&trans           	                 	                 	                 
+
 
                 >; };										
                 func_layer {										

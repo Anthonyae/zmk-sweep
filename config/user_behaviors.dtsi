@@ -207,7 +207,7 @@ ltms: layer_tap_mod {
 // mouse settings
 
 // this changes the movement speed of the mouse
-mmv_constant: mouse_mod {
+mmv_constant: mmv_constant {
         compatible = "zmk,behavior-mouse-move";
         #binding-cells = <1>;
         delay-ms = <0>;
