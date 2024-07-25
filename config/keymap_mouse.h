@@ -109,5 +109,5 @@
 #define U_MS_R &mmv MOVE_RIGHT
 #define U_WH_U &msc SCROLL_UP
 #define U_WH_D &msc SCROLL_DOWN
-#define U_WH_L &msc SCROLL_LEFT
+#define U_WH_L &msc SCRL_LEFT
 #define U_WH_R &msc SCROLL_RIGHT
