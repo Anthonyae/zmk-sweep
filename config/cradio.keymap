@@ -32,6 +32,12 @@
   acceleration-exponent = <1>;
 };
 
+// this changes the scrolling behavior
+&amwh {
+  time-to-max-speed-ms = <300>;
+  acceleration-exponent = <0>;
+};
+
 
 / {
         conditional_layers {
