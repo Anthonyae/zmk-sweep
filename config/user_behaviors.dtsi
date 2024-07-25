@@ -21,7 +21,6 @@
         // home row mods - urob
         hm_urob_l: hm_urob_l {   
                 compatible = "zmk,behavior-hold-tap";
-                label = "HOMEROW_MODS_LEFT";
                 #binding-cells = <2>;
                 tapping-term-ms = <280>;
                 require-prior-idle-ms = <100>;
@@ -33,7 +32,6 @@
         };
         hm_urob_r: hm_urob_r {   
                 compatible = "zmk,behavior-hold-tap";
-                label = "HOMEROW_MODS_RIGHT";
                 #binding-cells = <2>;
                 tapping-term-ms = <280>;
                 require-prior-idle-ms = <100>;
@@ -49,7 +47,6 @@
         // cause false negatives.
         hm_shift_l: hm_shift_l {
                 compatible = "zmk,behavior-hold-tap";
-                label = "HOMEROW_MODS_FAST_LEFT";
                 #binding-cells = <2>;
                 tapping-term-ms = <HM_TAPPING_TERM_FAST>;
                 // require-prior-idle-ms = <150>; // not used for shift
@@ -62,7 +59,6 @@
 
         hm_shift_r: hm_shift_r {
                 compatible = "zmk,behavior-hold-tap";
-                label = "HOMEROW_MODS_FAST_RIGHT";
                 #binding-cells = <2>;
                 tapping-term-ms = <HM_TAPPING_TERM_FAST>;
                 // require-prior-idle-ms = <150>;
@@ -77,7 +73,6 @@
 // LAYER DEFAULT
 hm_default_l: hm_default_l {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
         quick-tap-ms = <60>;
@@ -87,7 +82,6 @@ hm_default_l: hm_default_l {
 };
 hm_default_r: hm_default_r {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
         quick-tap-ms = <60>;
@@ -102,7 +96,6 @@ hm_default_r: hm_default_r {
 // hm mod 1 - layer 1
 hm_one_l: hm_one_l {   
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
         #binding-cells = <2>;
         tapping-term-ms = <150>; // how long to hold to trigger hold
         require-prior-idle-ms = <100>; // outputs tap if within this time for hold-tap keys
@@ -113,7 +106,6 @@ hm_one_l: hm_one_l {
 };
 hm_one_r: hm_one_r {   
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
         require-prior-idle-ms = <100>;
@@ -125,7 +117,6 @@ hm_one_r: hm_one_r {
 // hm mod 2 - layer 2
 hm_two_l: hm_two_l {   
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS_LEFT";
         #binding-cells = <2>;
         tapping-term-ms = <280>;
         require-prior-idle-ms = <100>;
@@ -137,7 +128,6 @@ hm_two_l: hm_two_l {
 };
 hm_two_r: hm_two_r {   
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS_RIGHT";
         #binding-cells = <2>;
         tapping-term-ms = <280>;
         require-prior-idle-ms = <100>;
@@ -151,7 +141,6 @@ hm_two_r: hm_two_r {
 // hm mod 3 - layer 3
 hm_three_l: hm_three_l {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
         require-prior-idle-ms = <100>;
@@ -161,7 +150,6 @@ hm_three_l: hm_three_l {
 };
 hm_three_r: hm_three_r {   
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
         require-prior-idle-ms = <100>;
@@ -174,7 +162,6 @@ hm_three_r: hm_three_r {
 // not many home row mods
 hm_four_l: hm_four_l {   
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
         require-prior-idle-ms = <100>;
@@ -184,7 +171,6 @@ hm_four_l: hm_four_l {
 };
 hm_four_r: hm_four_r {   
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
         require-prior-idle-ms = <100>;
@@ -200,7 +186,6 @@ hm_four_r: hm_four_r {
 // KEYS
 skq: sticky_key_quick_release {
         compatible = "zmk,behavior-sticky-key";
-        label = "STICKY_KEY_QUICK_RELEASE";
         #binding-cells = <1>;
         bindings = <&kp>;
         release-after-ms = <2000>;
@@ -211,7 +196,6 @@ skq: sticky_key_quick_release {
 // layer settings 
 ltms: layer_tap_mod {
         compatible = "zmk,behavior-hold-tap";
-        label = "ltms";
         #binding-cells = <2>;
         tapping-term-ms = <200>;
         quick-tap-ms = <0>;
@@ -225,7 +209,6 @@ ltms: layer_tap_mod {
 // this changes the movement speed of the mouse
 mmv_constant: mouse_mod {
         compatible = "zmk,behavior-mouse-move";
-        label = "mouse_move_constant";
         #binding-cells = <1>;
         delay-ms = <0>;
         time-to-max-speed-ms = <0>;
@@ -235,7 +218,6 @@ mmv_constant: mouse_mod {
 // this changes the scrolling behavior
 mwh_acceleration_fast: mouse_scroll_mod_fast {
         compatible = "zmk,behavior-mouse-scroll";
-        label = "MOUSE_SCROLL";
         #binding-cells = <1>;
         delay-ms = <0>;
         time-to-max-speed-ms = <2000>;
@@ -243,7 +225,6 @@ mwh_acceleration_fast: mouse_scroll_mod_fast {
 }; 
 mwh_accel_crawl: mouse_scroll_mod_slow {
         compatible = "zmk,behavior-mouse-scroll";
-        label = "MOUSE_SCROLL";
         #binding-cells = <1>;
         delay-ms = <0>;
         time-to-max-speed-ms = <0>;
