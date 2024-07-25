@@ -203,30 +203,3 @@ ltms: layer_tap_mod {
         bindings = <&mo>, <&kp>;
 };
 
-
-// mouse settings
-
-// this changes the movement speed of the mouse
-mmv_constant: mmv_constant {
-        compatible = "zmk,behavior-mouse-move";
-        #binding-cells = <1>;
-        delay-ms = <0>;
-        time-to-max-speed-ms = <0>;
-        acceleration-exponent = <0>;
-};
-
-// this changes the scrolling behavior
-mwh_acceleration_fast: mouse_scroll_mod_fast {
-        compatible = "zmk,behavior-mouse-scroll";
-        #binding-cells = <1>;
-        delay-ms = <0>;
-        time-to-max-speed-ms = <2000>;
-        acceleration-exponent = <1>;
-}; 
-mwh_accel_crawl: mouse_scroll_mod_slow {
-        compatible = "zmk,behavior-mouse-scroll";
-        #binding-cells = <1>;
-        delay-ms = <0>;
-        time-to-max-speed-ms = <0>;
-        acceleration-exponent = <0>;
-};
