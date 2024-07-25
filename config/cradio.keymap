@@ -117,11 +117,10 @@
                 >; };										
                 mouse_base_layer {										
                         bindings = <									
-                 &mkp MCLK        	&mkp RCLK        	U_MS_U            &msc SCROLL_LEFT 
-               
+                &msc MCLK        	&msc RCLK        	&mmv MOVE_UP     	
                 
-                >; };	
-
+                >; };										
+                
           
         };
  };
