@@ -78,6 +78,7 @@ hm_default_l: hm_default_l {
         tapping-term-ms = <150>;
         // if you press a hold-tap within quick-tap-ms of the first press it will always trigger 
         // the tap behavior.
+        // AKA - Tap twice within this period (in milliseconds) to trigger a tap, even when held
         quick-tap-ms = <140>;
         // like quick-tap-ms, however only apply for non-modifier key pressed before it.
         // Effectively disables hold-tap when typing quickly.
