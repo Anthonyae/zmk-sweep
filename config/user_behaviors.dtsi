@@ -74,9 +74,17 @@
 hm_default_l: hm_default_l {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
+        // for 'tap-preferred': time to trigger the hold behavior.
         tapping-term-ms = <150>;
-        quick-tap-ms = <60>;
-        require-prior-idle-ms = <150>;
+        // if you press a hold-tap within quick-tap-ms of the first press it will always trigger 
+        // the tap behavior.
+        quick-tap-ms = <140>;
+        // like quick-tap-ms, however only apply for non-modifier key pressed before it.
+        // Effectively disables hold-tap when typing quickly.
+        // Recommended:  As a rule of thumb, you want to set it to at least 10500/x 
+        // where x is your (relaxed) WPM for English prose.
+        // {10,500/80=131}
+        require-prior-idle-ms = <130>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
@@ -84,15 +92,13 @@ hm_default_r: hm_default_r {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
-        quick-tap-ms = <60>;
-        require-prior-idle-ms = <150>;
+        quick-tap-ms = <140>;
+        require-prior-idle-ms = <130>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
 
-
 // LAYER HOME ROW MODS (NUMBERED)
-
 // hm mod 1 - layer 1
 hm_one_l: hm_one_l {   
         compatible = "zmk,behavior-hold-tap";
@@ -160,7 +166,7 @@ hm_three_r: hm_three_r {
 
 // hm mod 4 - layer 4
 // not many home row mods
-hm_four_l: hm_four_l {   
+hm_four_l: hm_four_l {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
@@ -178,9 +184,6 @@ hm_four_r: hm_four_r {
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
-
-
-
 
 
 // KEYS
