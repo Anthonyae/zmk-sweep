@@ -70,6 +70,9 @@
         };
 
 
+// tapping-term-ms // 2024-08-07 had 150 
+// quick-tap-ms // 2024-08-07 had 140
+// require-prior-idle-ms // 2024-08-07 had 140
 // LAYER DEFAULT
 hm_default_l: hm_default_l {
         compatible = "zmk,behavior-hold-tap";
@@ -79,7 +82,7 @@ hm_default_l: hm_default_l {
         // if you press a hold-tap within quick-tap-ms of the first press it will always trigger 
         // the tap behavior.
         // AKA - Tap twice within this period (in milliseconds) to trigger a tap, even when held
-        quick-tap-ms = <140>;
+        quick-tap-ms = <130>;
         // like quick-tap-ms, however only apply for non-modifier key pressed before it.
         // Effectively disables hold-tap when typing quickly.
         // Recommended:  As a rule of thumb, you want to set it to at least 10500/x 
@@ -93,7 +96,7 @@ hm_default_r: hm_default_r {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
-        quick-tap-ms = <140>;
+        quick-tap-ms = <130>;
         require-prior-idle-ms = <130>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
@@ -125,9 +128,9 @@ hm_one_r: hm_one_r {
 hm_two_l: hm_two_l {   
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
-        tapping-term-ms = <280>;
-        require-prior-idle-ms = <100>;
-        quick-tap-ms = <175>;
+        tapping-term-ms = <150>;
+        quick-tap-ms = <80>;
+        require-prior-idle-ms = <130>;
         flavor = "balanced"; // will trigger the hold behavior when the tapping-term-ms has expired or another key is pressed and released.
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_R THUMBS>; // including this will automatically turn on positional hold-tap
@@ -136,9 +139,9 @@ hm_two_l: hm_two_l {
 hm_two_r: hm_two_r {   
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
-        tapping-term-ms = <280>;
-        require-prior-idle-ms = <100>;
-        quick-tap-ms = <175>;
+        tapping-term-ms = <150>;
+        quick-tap-ms = <80>;
+        require-prior-idle-ms = <130>;
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_L THUMBS>;
