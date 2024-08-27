@@ -88,7 +88,7 @@ hm_default_l: hm_default_l {
         // Recommended:  As a rule of thumb, you want to set it to at least 10500/x 
         // where x is your (relaxed) WPM for English prose.
         // {10,500/80=131}
-        require-prior-idle-ms = <130>;
+        require-prior-idle-ms = <50>; // Note 130 => 50 2024-08-27
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
@@ -97,7 +97,7 @@ hm_default_r: hm_default_r {
         #binding-cells = <2>;
         tapping-term-ms = <150>;
         quick-tap-ms = <130>;
-        require-prior-idle-ms = <130>;
+        require-prior-idle-ms = <50>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
 };
