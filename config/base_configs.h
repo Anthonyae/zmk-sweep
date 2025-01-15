@@ -4,19 +4,20 @@
 #define DEFAULT_HM_TWO 2
 #define DEFAULT_HM_THREE 3
 #define DEFAULT_HM_NONE 4
-#define SYMBOL 5
-#define NUMBER 6
-#define NAV 7
-#define UTILITY 8
-#define MOUSE_BASE 9
-#define FUNC 10
-#define MOUSE_FAST 11
-#define MOUSE_MEDIUM 12
-#define MOUSE_SLOW 13
-#define MOUSE_CRAWL 14
-#define MOUSE_DEAD 15
-#define CONVENIENCE_LAYER 16
-#define LAYER_CHANGER 17
+#define DEFAULT_IOS 5
+#define SYMBOL 6
+#define NUMBER 7
+#define NAV 8
+#define UTILITY 9
+#define MOUSE_BASE 10
+#define FUNC 11
+#define MOUSE_FAST 12
+#define MOUSE_MEDIUM 13
+#define MOUSE_SLOW 14
+#define MOUSE_CRAWL 15
+#define MOUSE_DEAD 16
+#define CONVENIENCE_LAYER 17
+#define LAYER_CHANGER 18
 
 // global settings
 &mt {
