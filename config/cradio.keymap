@@ -84,7 +84,7 @@
                         bindings = <									
                 &kp Q                	&kp W                	&kp E                	&kp R                	&kp T                	                     	&kp Y                	&kp U                	&kp I                	&kp O                	&kp P                
                 &hm_four_l LCTRL A   	&kp S                	&kp D                	&kp F                	&hm_four_l HIKE G    	                     	&hm_four_r HIKE H    	&kp J                	&kp K                	&kp L                	&hm_four_r RCTRL APOS
-                &kp Z                	&kp X                	&kp C                	&hm_four_l MEH V     	&kp B                	                     	&kp N                	&hm_four_r MEH M     	&kp COMMA            	&kp DOT              	&kp FSLH             
+                &kp Z                	&lt UTILITY X        	&kp C                	&hm_four_l MEH V     	&kp B                	                     	&kp N                	&hm_four_r MEH M     	&kp COMMA            	&lt UTILITY DOT      	&kp FSLH             
                                                                                         &lt SYMBOL BSPC      	&mo NUMBER           	                     	&lt FUNC ENTER       	&lt NAV SPACE        	                     	                     	                     
                 >; };										
                 default_ios_layer {										
@@ -185,6 +185,7 @@
                 &none               	&none               	&none               	&none               	&none               	                    	&none               	&none               	&none               	&none               	&none               
                                                                                         &trans              	&trans              	                    	&trans              	&trans              	                    	                    	                    
                 >; };										
+
 
           
         };

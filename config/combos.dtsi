@@ -101,14 +101,14 @@ combo_layer_five {
     timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <LT4 LM4 LB4>;
     bindings = <&layer_five>;
-    layers = <0>;
+    layers = <5>;
 };
 
 combo_layer_six {
     timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <LT4 LM4 LB4>;
     bindings = <&layer_six>;
-    layers = <0>;
+    layers = <6>;
 };
 
 // Device settings
