@@ -52,7 +52,6 @@ jobs:
         with:
           name: firmware-zmk-sweep-${{ runner.os }}
           path: cradio_left_nice_nano_v2.uf2
-          overwrite: true
 
       - name: West Build (Cradio/Sweep Right)
         run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=cradio_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
@@ -68,4 +67,3 @@ jobs:
         with:
           name: firmware-zmk-sweep-${{ runner.os }}
           path: cradio_right_nice_nano_v2.uf2
-          overwrite: true
