@@ -42,7 +42,7 @@
         };
         
         combos {
-                #include "combos.dtsi"
+            #include "combos.dtsi"
         }; 
 
         behaviors {
@@ -57,42 +57,42 @@
                 &kp Q                   	&kp W                   	&kp E                   	&kp R                   	&kp T                   	                        	&kp Y                   	&kp U                   	&kp I                   	&kp O                   	&kp P                   
                 &hm_default_l LCTRL A   	&hm_default_l LSHFT S   	&hm_default_l LGUI D    	&hm_default_l LALT F    	&hm_default_l HIKE G    	                        	&hm_default_r HIKE H    	&hm_default_r RALT J    	&hm_default_r RGUI K    	&hm_default_r RSHFT L   	&hm_default_r RCTRL APOS
                 &hm_default_l LSHFT Z   	&lt UTILITY X           	&kp C                   	&hm_default_l MEH V     	&kp B                   	                        	&kp N                   	&hm_default_r MEH M     	&kp COMMA               	&lt UTILITY DOT         	&hm_default_r LSHFT FSLH
-                                                                                                                &lt SYMBOL BSPC         	&mo NUMBER              	                        	&lt FUNC ENTER          	&lt NAV SPACE           	                        	                        	                        
+                                                                                                                &lt SYMBOL BSPC         	&lt NUMBER BSPC         	                        	&lt FUNC ENTER          	&lt NAV SPACE           	                        	                        	                        
                 >; };										
                 default_hm_one_layer {										
                         bindings = <									
                 &kp Q               	&kp W               	&kp E               	&kp R               	&kp T               	                    	&kp Y               	&kp U               	&kp I               	&kp O               	&kp P               
                 &hm_one_l LCTRL A   	&hm_one_l LSHFT S   	&hm_one_l LGUI D    	&hm_one_l LALT F    	&hm_one_l HIKE G    	                    	&hm_one_r HIKE H    	&hm_one_r RALT J    	&hm_one_r RGUI K    	&hm_one_r RSHFT L   	&hm_one_r RCTRL APOS
                 &kp Z               	&lt UTILITY X       	&kp C               	&hm_one_l MEH V     	&kp B               	                    	&kp N               	&hm_one_r MEH M     	&kp COMMA           	&lt UTILITY DOT     	&kp FSLH            
-                                                                                        &lt SYMBOL BSPC     	&mo NUMBER          	                    	&lt FUNC ENTER      	&lt NAV SPACE       	                    	                    	                    
+                                                                                        &lt SYMBOL BSPC     	&lt NUMBER BSPC     	                    	&lt FUNC ENTER      	&lt NAV SPACE       	                    	                    	                    
                 >; };		                        	                        	                        	                        	                        	                        	                        	                        	                        
                 default_hm_two_layer {										
                         bindings = <									
                 &kp Q               	&kp W               	&kp E               	&kp R               	&kp T               	                    	&kp Y               	&kp U               	&kp I               	&kp O               	&kp P               
                 &hm_two_l LCTRL A   	&hm_two_l LSHFT S   	&hm_two_l LGUI D    	&hm_two_l LALT F    	&hm_two_l HIKE G    	                    	&hm_two_r HIKE H    	&hm_two_r RALT J    	&hm_two_r RGUI K    	&hm_two_r RSHFT L   	&hm_two_r RCTRL APOS
                 &kp Z               	&lt UTILITY X       	&kp C               	&hm_two_l MEH V     	&kp B               	                    	&kp N               	&hm_two_r MEH M     	&kp COMMA           	&lt UTILITY DOT     	&kp FSLH            
-                                                                                        &lt SYMBOL BSPC     	&mo NUMBER          	                    	&lt FUNC ENTER      	&lt NAV SPACE       	                    	                    	                    
+                                                                                        &lt SYMBOL BSPC     	&lt NUMBER BSPC     	                    	&lt FUNC ENTER      	&lt NAV SPACE       	                    	                    	                    
                 >; };										
                 default_hm_three_layer {										
                         bindings = <									
                 &kp Q                 	&kp W                 	&kp E                 	&kp R                 	&kp T                 	                      	&kp Y                 	&kp U                 	&kp I                 	&kp O                 	&kp P                 
                 &hm_three_l LCTRL A   	&hm_three_l LSHFT S   	&hm_three_l LGUI D    	&hm_three_l LALT F    	&hm_three_l HIKE G    	                      	&hm_three_r HIKE H    	&hm_three_r RALT J    	&hm_three_r RGUI K    	&hm_three_r RSHFT L   	&hm_three_r RCTRL APOS
                 &kp Z                 	&lt UTILITY X         	&kp C                 	&hm_three_l MEH V     	&kp B                 	                      	&kp N                 	&hm_three_r MEH M     	&kp COMMA             	&lt UTILITY DOT       	&kp FSLH              
-                                                                                        &lt SYMBOL BSPC       	&mo NUMBER            	                      	&lt FUNC ENTER        	&lt NAV SPACE         	                      	                      	                      
+                                                                                        &lt SYMBOL BSPC       	&lt NUMBER BSPC       	                      	&lt FUNC ENTER        	&lt NAV SPACE         	                      	                      	                      
                 >; };										
                 default_hm_none_layer {										
                         bindings = <									
                 &kp Q                	&kp W                	&kp E                	&kp R                	&kp T                	                     	&kp Y                	&kp U                	&kp I                	&kp O                	&kp P                
                 &hm_four_l LCTRL A   	&kp S                	&kp D                	&kp F                	&hm_four_l HIKE G    	                     	&hm_four_r HIKE H    	&kp J                	&kp K                	&kp L                	&hm_four_r RCTRL APOS
                 &kp Z                	&lt UTILITY X        	&kp C                	&hm_four_l MEH V     	&kp B                	                     	&kp N                	&hm_four_r MEH M     	&kp COMMA            	&lt UTILITY DOT      	&kp FSLH             
-                                                                                        &lt SYMBOL BSPC      	&mo NUMBER           	                     	&lt FUNC ENTER       	&lt NAV SPACE        	                     	                     	                     
+                                                                                        &lt SYMBOL BSPC      	&lt NUMBER BSPC      	                     	&lt FUNC ENTER       	&lt NAV SPACE        	                     	                     	                     
                 >; };										
                 default_ios_layer {										
                         bindings = <									
                 &kp Q                   	&kp W                   	&kp E                   	&kp R                   	&kp T                   	                        	&kp Y                   	&kp U                   	&kp I                   	&kp O                   	&kp P                   
                 &hm_default_l LGUI A    	&hm_default_l LSHFT S   	&hm_default_l LCTRL D   	&hm_default_l LALT F    	&hm_default_l HIKE G    	                        	&hm_default_r HIKE H    	&hm_default_r RALT J    	&hm_default_r RCTRL K   	&hm_default_r RSHFT L   	&hm_default_r RGUI APOS 
                 &hm_default_l LSHFT Z   	&lt UTILITY X           	&kp C                   	&hm_default_l MEH V     	&kp B                   	                        	&kp N                   	&hm_default_r MEH M     	&kp COMMA               	&lt UTILITY DOT         	&hm_default_r LSHFT FSLH
-                                                                                                                &lt SYMBOL BSPC         	&mo NUMBER              	                        	&lt FUNC ENTER          	&lt NAV SPACE           	                        	                        	                        
+                                                                                                                &lt SYMBOL BSPC         	&lt NUMBER BSPC         	                        	&lt FUNC ENTER          	&lt NAV SPACE           	                        	                        	                        
                 >; };										
                 symbol_layer {										
                         bindings = <									
@@ -185,7 +185,6 @@
                 &none               	&none               	&none               	&none               	&none               	                    	&none               	&none               	&none               	&none               	&none               
                                                                                         &trans              	&trans              	                    	&trans              	&trans              	                    	                    	                    
                 >; };										
-
 
           
         };

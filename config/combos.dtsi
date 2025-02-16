@@ -9,7 +9,7 @@ compatible = "zmk,combos";
 #define COMBO_TERM_MEDIUM 40
 #define COMBO_TERM_HIGH 50
 
-#define BASE_LAYERS DEFAULT_HM DEFAULT_HM_ONE DEFAULT_HM_TWO DEFAULT_HM_THREE DEFAULT_HM_NONE
+#define BASE_LAYERS DEFAULT_HM DEFAULT_HM_ONE DEFAULT_HM_TWO DEFAULT_HM_THREE DEFAULT_HM_NONE DEFAULT_IOS
 // #undef COMBO_HOOK
 // #define COMBO_HOOK global-quick-tap-ms = <100>;
 
@@ -49,14 +49,14 @@ switch_base_layer {
 
 switch_to_number_from_base {
     timeout-ms = <COMBO_TERM_MEDIUM>;
-    key-positions = <LM0 LM1 LB0 LB1>;
+    key-positions = <LB0 LB1>;
     bindings = <&to NUMBER>;
     layers = <BASE_LAYERS>;
 };
 
 switch_to_base_from_number {
     timeout-ms = <COMBO_TERM_MEDIUM>;
-    key-positions = <LM0 LM1 LB0 LB1>;
+    key-positions = <LB0 LB1>;
     bindings = <&to DEFAULT_HM>;
     layers = <NUMBER>;
 };
@@ -102,13 +102,6 @@ combo_layer_five {
     key-positions = <LT4 LM4 LB4>;
     bindings = <&layer_five>;
     layers = <5>;
-};
-
-combo_layer_six {
-    timeout-ms = <COMBO_TERM_LOW>;
-    key-positions = <LT4 LM4 LB4>;
-    bindings = <&layer_six>;
-    layers = <6>;
 };
 
 // Device settings
@@ -232,13 +225,6 @@ combo_bracket_right {
     layers = <BASE_LAYERS>;
 };
 
-combo_comma {
-    timeout-ms = <COMBO_TERM_MEDIUM>;
-    key-positions = <RT1 RT2>;
-    bindings = <&kp COMMA>;
-    layers = <NUMBER>;
-};
-
 combo_period {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <RM0 RM1>;
@@ -249,7 +235,7 @@ combo_period {
 combo_comma_next {
     timeout-ms = <COMBO_TERM_MEDIUM>;
     key-positions = <RT0 RT1>;
-    bindings = <&kp PERIOD>;
+    bindings = <&kp COMMA>;
     layers = <NUMBER>;
 };
 

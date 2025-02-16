@@ -258,15 +258,6 @@
         #binding-cells = <0>;
         wait-ms = <20>;
         tap-ms = <20>;
-        bindings = <&macro_tap &kp L &kp A &kp Y &kp E &kp R &kp SPACE &kp N5>
-        ;
-    };
-
-    layer_six: layer_six {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <20>;
-        tap-ms = <20>;
         bindings = <&macro_tap &kp L &kp A &kp Y &kp E &kp R &kp SPACE &kp I &kp O &kp S>
         ;
     };
