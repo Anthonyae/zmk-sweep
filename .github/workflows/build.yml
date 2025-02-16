@@ -50,7 +50,7 @@ jobs:
       - name: Archive (Cradio/Sweep Left)
         uses: actions/upload-artifact@v4
         with:
-          name: firmware-zmk-sweep
+          name: firmware-zmk-sweeps
           path: |
             cradio_left_nice_nano_v2.uf2
 
@@ -66,6 +66,6 @@ jobs:
       - name: Archive (Cradio/Sweep Right)
         uses: actions/upload-artifact@v4
         with:
-          name: firmware-zmk-sweep
+          name: firmware-zmk-sweeps
           path: |
             cradio_right_nice_nano_v2.uf2
