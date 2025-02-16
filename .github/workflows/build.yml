@@ -47,13 +47,6 @@ jobs:
       - name: Rename zmk.uf2
         run: cp build/zephyr/zmk.uf2 cradio_left_nice_nano_v2.uf2
 
-      - name: Archive (Cradio/Sweep Left)
-        uses: actions/upload-artifact@v4
-        with:
-          name: firmware-zmk-sweeps
-          path: |
-            cradio_left_nice_nano_v2.uf2
-
       - name: West Build (Cradio/Sweep Right)
         run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=cradio_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 
@@ -66,6 +59,7 @@ jobs:
       - name: Archive (Cradio/Sweep Right)
         uses: actions/upload-artifact@v4
         with:
-          name: firmware-zmk-sweeps
+          name: firmware-zmk-sweep
           path: |
             cradio_right_nice_nano_v2.uf2
+            cradio_left_nice_nano_v2.uf2
