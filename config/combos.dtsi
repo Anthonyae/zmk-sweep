@@ -49,14 +49,14 @@ switch_base_layer {
 
 switch_to_number_from_base {
     timeout-ms = <COMBO_TERM_MEDIUM>;
-    key-positions = <LB0 LB1>;
+    key-positions = <RB0 RB1>;
     bindings = <&to NUMBER>;
     layers = <BASE_LAYERS>;
 };
 
 switch_to_base_from_number {
     timeout-ms = <COMBO_TERM_MEDIUM>;
-    key-positions = <LB0 LB1>;
+    key-positions = <RB0 RB1>;
     bindings = <&to DEFAULT_HM>;
     layers = <NUMBER>;
 };
@@ -158,6 +158,13 @@ combo_win_move_other {
     timeout-ms = <COMBO_TERM_LOWEST>; // tried 30 ms, was still getting false positives
     key-positions = <LT0 LT1>;
     bindings = <&macro_move_win_other>;
+    layers = <BASE_LAYERS>;
+};
+
+combo_win_move_tri {
+    timeout-ms = <COMBO_TERM_LOWEST>; // tried 30 ms, was still getting false positives
+    key-positions = <LB0 LB1>;
+    bindings = <&macro_move_win_tri>;
     layers = <BASE_LAYERS>;
 };
 
