@@ -1,11 +1,12 @@
 
 // General purpose 
-// extras
+// Extras
 // Git commands
 // notes 
 // what layer am I on?
-// modifiers 
+// modifiers
 // system shortcuts
+// go to layers
 
 
 // General purpose 
@@ -54,7 +55,7 @@
         ;
     };
 
-// extras
+// Extras
     triple_grave_macro: triple_grave_macro {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
@@ -203,7 +204,7 @@
         #binding-cells = <0>;
         wait-ms = <20>;
         tap-ms = <20>;
-        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H &kp ENTER>
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp ENTER>
         ;
     };
 
@@ -406,4 +407,19 @@
             , <&macro_tap &kp A>
             , <&macro_release &kp LCTRL>
         ;
+    };
+
+// go to layers
+
+    macro_go_windows: macro_go_windows {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <40>;
+        bindings = <
+                &out OUT_BLE     // Ensure output is Bluetooth
+                &bt BT_SEL 2     // Switch to Bluetooth Profile 2 (zero-based index)
+                &to DEFAULT_HM   // Switch to DEFAULT_HM layer
+
+            >;
     };
