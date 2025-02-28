@@ -100,8 +100,8 @@ combo_layer_four {
 combo_layer_five {
     timeout-ms = <COMBO_TERM_LOW>;
     key-positions = <LT4 LM4 LB4>;
-    bindings = <&layer_three>;
-    layers = <5>;
+    bindings = <&layer_five>;
+    layers = <DEFAULT_IOS>;
 };
 
 // Device settings
