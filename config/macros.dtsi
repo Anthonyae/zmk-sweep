@@ -7,6 +7,7 @@
 // modifiers
 // system shortcuts
 // go to layers
+// work
 
 
 // General purpose 
@@ -432,3 +433,12 @@
             , <&to DEFAULT_IOS>
             ;
     };
+
+// work
+    macro_jira_issue: macro_jira_issue {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp LBKT &kp LBKT &kp V &kp D &kp A &kp T &kp A &kp KP_MINUS &kp RBKT &kp RBKT &kp SPACE &kp KP_MINUS &kp SPACE >;
+    }
