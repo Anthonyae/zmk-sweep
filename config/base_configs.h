@@ -48,6 +48,7 @@
   acceleration-exponent = <0>;
 };
 
+
 // global keys
 #define HYPER LG(LS(LA(LCTRL)))
 #define MEH LS(LA(LCTRL))
