@@ -1,4 +1,4 @@
-// Layer definitions
+// Layer definitions.
 #define DEFAULT_HM 0
 #define DEFAULT_HM_ONE 1
 #define DEFAULT_HM_TWO 2
@@ -20,34 +20,37 @@
 #define LAYER_CHANGER 18
 
 // global settings
-&mt {
-    tapping-term-ms = <200>;
+&mt
+{
+  tapping - term - ms = <200>;
 };
 
-&lt {
-    tapping-term-ms = <130>; 
+&lt
+{
+  tapping - term - ms = <130>;
 };
 
-&sk {
-    release-after-ms = <400>;
-    quick-release;
+&sk
+{
+  release - after - ms = <400>;
+  quick - release;
 };
-
 
 // this changes the movement speed of the mouse
 // time-to-max-speed-ms = <400>; // trying to speed up the mouse movement
 // time-to-max-speed-ms = <385>;
-&mmv {
-  time-to-max-speed-ms = <360>;
-  acceleration-exponent = <1>;
+&mmv
+{
+  time - to - max - speed - ms = <360>;
+  acceleration - exponent = <1>;
 };
 
 // this changes the scrolling behavior (mwh to msc)
-&msc {
-  time-to-max-speed-ms = <300>;
-  acceleration-exponent = <0>;
+&msc
+{
+  time - to - max - speed - ms = <300>;
+  acceleration - exponent = <0>;
 };
-
 
 // global keys
 #define HYPER LG(LS(LA(LCTRL)))
