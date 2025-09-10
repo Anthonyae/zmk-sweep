@@ -1,5 +1,4 @@
-
-// General purpose 
+// General purposes
 // Extras
 // Git commands
 // notes 
@@ -125,6 +124,16 @@
         wait-ms = <20>;
         tap-ms = <20>;
         bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp A &kp D &kp D &kp SPACE &kp MINUS &kp P &kp ENTER>
+        ;
+    };
+
+    // log: get list of branches
+    git_branch: git_branch {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp B &kp R &kp A &kp N &kp C &kp H &kp ENTER>
         ;
     };
 
@@ -411,10 +420,35 @@
     };
 
 // go to layers
-    macro_go_windows: macro_go_windows {
+
+    macro_go_windows_zero: macro_go_windows_zero {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <0>;
+        wait-ms = <50>;
+        tap-ms = <40>;
+        bindings =
+            <&out OUT_BLE>
+            , <&bt BT_SEL 0>
+            , <&to DEFAULT_HM>
+            ;
+    };
+
+    macro_go_windows_one: macro_go_windows_one {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <50>;
+        tap-ms = <40>;
+        bindings =
+            <&out OUT_BLE>
+            , <&bt BT_SEL 1>
+            , <&to DEFAULT_HM>
+            ;
+    };
+
+    macro_go_windows_two: macro_go_windows_two {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <50>;
         tap-ms = <40>;
         bindings = 
             <&out OUT_BLE>
@@ -423,10 +457,46 @@
             ;
     };
 
-    macro_go_ios: macro_go_ios {
+    macro_go_windows_three: macro_go_windows_three {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <0>;
+        wait-ms = <50>;
+        tap-ms = <40>;
+        bindings = 
+            <&out OUT_BLE>
+            , <&bt BT_SEL 3>
+            , <&to DEFAULT_HM>
+            ;
+    };
+
+    macro_go_windows_four: macro_go_windows_four {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <50>;
+        tap-ms = <40>;
+        bindings = 
+            <&out OUT_BLE>
+            , <&bt BT_SEL 4>
+            , <&to DEFAULT_HM>
+            ;
+    };
+
+    macro_go_windows_five: macro_go_windows_five {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <50>;
+        tap-ms = <40>;
+        bindings = 
+            <&out OUT_BLE>
+            , <&bt BT_SEL 5>
+            , <&to DEFAULT_HM>
+            ;
+    };
+    
+    macro_go_ios_zero: macro_go_ios_zero {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <50>;
         tap-ms = <40>;
         bindings = 
             <&out OUT_BLE>
@@ -435,6 +505,66 @@
             ;
     };
 
+    macro_go_ios_one: macro_go_ios_one {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <50>;
+        tap-ms = <40>;
+        bindings = 
+            <&out OUT_BLE>
+            , <&bt BT_SEL 1>
+            , <&to DEFAULT_IOS>
+            ;
+    };
+
+    macro_go_ios_two: macro_go_ios_two {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <50>;
+        tap-ms = <40>;
+        bindings = 
+            <&out OUT_BLE>
+            , <&bt BT_SEL 2>
+            , <&to DEFAULT_IOS>
+            ;
+    };
+
+    macro_go_ios_three: macro_go_ios_three {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <50>;
+        tap-ms = <40>;
+        bindings = 
+            <&out OUT_BLE>
+            , <&bt BT_SEL 3>
+            , <&to DEFAULT_IOS>
+            ;
+    };
+
+    macro_go_ios_four: macro_go_ios_four {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <50>;
+        tap-ms = <40>;
+        bindings = 
+            <&out OUT_BLE>
+            , <&bt BT_SEL 4>
+            , <&to DEFAULT_IOS>
+            ;
+    };
+
+    macro_go_ios_five: macro_go_ios_five {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <50>;
+        tap-ms = <40>;
+        bindings = 
+            <&out OUT_BLE>
+            , <&bt BT_SEL 5>
+            , <&to DEFAULT_IOS>
+            ;
+    };
+     
 // work
     macro_jira_issue: macro_jira_issue {
         compatible = "zmk,behavior-macro";

@@ -105,30 +105,30 @@ combo_layer_five {
 
 combo_reset_left {
     timeout-ms = <COMBO_TERM_HIGH>;
-    key-positions = <LT0 LT1 LT2>;
+    key-positions = <LT0 LM0>;
     bindings = <&sys_reset>;
-    layers = <FUNC>;
+    layers = <UTILITY>;
 };
     
 combo_reset_right {
     timeout-ms = <COMBO_TERM_HIGH>; 
-    key-positions = <RT0 RT1 RT2>;
+    key-positions = <RT0 RM0>;
     bindings = <&sys_reset>;
-    layers = <FUNC>;
+    layers = <UTILITY>;
 };
     
 combo_bootloader_left {
     timeout-ms = <COMBO_TERM_HIGH>;
-    key-positions = <LT0 LT1 LT2 LT3>;
+    key-positions = <LM0 LB0>;
     bindings = <&bootloader>;
-    layers = <FUNC>;
+    layers = <UTILITY>;
 };
 
 combo_bootloader_right {
     timeout-ms = <COMBO_TERM_HIGH>;
-    key-positions = <RT0 RT1 RT2 RT3>;
+    key-positions = <RM0 RB0>;
     bindings = <&bootloader>;
-    layers = <FUNC>;
+    layers = <UTILITY>;
 };
 
 
