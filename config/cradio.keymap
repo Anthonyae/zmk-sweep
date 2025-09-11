@@ -180,10 +180,11 @@
                 >; };										
                 layer_changer_layer {										
                         bindings = <									
-                &none               	&none               	&to DEFAULT_HM_TWO  	&to DEFAULT_HM_ONE  	&to DEFAULT_HM      	                    	&rgb_ug RGB_TOG     	&rgb_ug RGB_BRD     	&rgb_ug RGB_BRI     	&none               	&none               
-                &none               	&none               	&to DEFAULT_HM_NONE 	&to DEFAULT_HM_THREE	&to DEFAULT_IOS     	                    	&ext_power EP_ON    	&rgb_ug RGB_SPD     	&rgb_ug RGB_SPI     	&none               	&none               
-                &none               	&none               	&none               	&none               	&none               	                    	&ext_power EP_OFF   	&rgb_ug RGB_EFR     	&rgb_ug RGB_EFF     	&none               	&none               
+                &none               	&none               	&to DEFAULT_HM_TWO  	&to DEFAULT_HM_ONE  	&to DEFAULT_HM      	                    	&none               	&none               	&none               	&none               	&none               
+                &none               	&none               	&to DEFAULT_HM_NONE 	&to DEFAULT_HM_THREE	&to DEFAULT_IOS     	                    	&none               	&none               	&none               	&none               	&none               
+                &none               	&none               	&none               	&none               	&none               	                    	&none               	&none               	&none               	&none               	&none               
                                                                                         &trans              	&trans              	                    	&trans              	&trans              	                    	                    	                    
+
 
                 >; };										
 
