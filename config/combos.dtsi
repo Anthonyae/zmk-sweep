@@ -174,7 +174,7 @@ combo_alt_tab_right {
 
 combo_repeat_left {
     timeout-ms = <COMBO_TERM_MEDIUM>;
-    key-positions = <LM1 LM2>;   
+    key-positions = <LM1 LB1>;   
     bindings = <&key_repeat>;
     layers = <BASE_LAYERS>;
 };
