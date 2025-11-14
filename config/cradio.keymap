@@ -97,8 +97,8 @@
                 symbol_layer {										
                         bindings = <									
                 &kp EXCL           	&kp AT             	&kp HASH           	&kp DOLLAR         	&kp PERCENT        	                   	&kp CARET          	&kp AMPS           	&kp STAR           	&kp PIPE           	&none              
-                &triple_grave_macro	&kp GRAVE          	&kp SEMI           	&lt NUMBER COLON   	&none              	                   	&none              	&kp UNDER          	&kp EQUAL          	&arrow_single      	&none              
-                &none              	&kp TILDE          	&kp FSLH           	&kp BSLH           	&none              	                   	&none              	&kp MINUS          	&kp PLUS           	&arrow_double      	&none              
+                &triple_grave_macro	&kp GRAVE          	&kp SEMI           	&lt NUMBER COLON   	&kp LBKT           	                   	&kp RBKT           	&kp UNDER          	&kp EQUAL          	&arrow_single      	&none              
+                &none              	&kp TILDE          	&kp FSLH           	&kp BSLH           	&kp LPAR           	                   	&kp RPAR           	&kp MINUS          	&kp PLUS           	&arrow_double      	&none              
                                                                                         &trans             	&trans             	                   	&trans             	&trans             	                   	                   	                   
                 >; };		                        	                        	                        	                        	                        	                        	                        	                        	                        
                 number_layer {										
@@ -184,7 +184,6 @@
                 &none               	&none               	&to DEFAULT_HM_NONE 	&to DEFAULT_HM_THREE	&to DEFAULT_IOS     	                    	&none               	&none               	&none               	&none               	&none               
                 &none               	&none               	&none               	&none               	&none               	                    	&none               	&none               	&none               	&none               	&none               
                                                                                         &trans              	&trans              	                    	&trans              	&trans              	                    	                    	                    
-
                 >; };										
 
         };
